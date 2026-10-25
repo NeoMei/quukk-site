@@ -1,0 +1,61 @@
+/* Product images take the full content width, with copy above the working interface. */
+.product-showcase { min-width: 0; }
+.product-showcase + .product-showcase,
+.product-showcase + .product-feature { margin-top: 150px; }
+.showcase-heading { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: start; gap: 88px; margin-bottom: 42px; }
+.showcase-title .product-heading { margin-bottom: 22px; }
+.showcase-title .product-tagline { margin-bottom: 0; font-size: clamp(34px, 3.2vw, 46px); line-height: 1.4; }
+.showcase-description { padding-top: 3px; }
+.showcase-description .product-description { max-width: 540px; }
+.showcase-description .feature-facts { margin-top: 21px; }
+.showcase-description > .text-link { margin-top: 25px; }
+.showcase-description .product-origin { max-width: none; margin-top: 15px; }
+.product-shot { margin: 0; padding: 42px 42px 0; background: #eee5d9; border-radius: 8px; }
+.product-shot > .screenshot-open { display: block; width: 100%; padding: 0; border: 1px solid #d7d0c6; border-radius: 6px; overflow: hidden; background: white; cursor: zoom-in; transition: border-color .2s; }
+.product-shot > .screenshot-open:hover { border-color: var(--accent); }
+.product-shot > .screenshot-open img { display: block; width: 100%; height: auto; }
+.shot-wiki { background: #e9e7e0; padding-inline: 72px; }
+.shot-wiki > .screenshot-open img { aspect-ratio: 1.6; object-fit: cover; object-position: top; }
+.shot-lingxi { background: #e9e6e0; }
+.shot-xiashuo { background: #ecdfcd; }
+.shot-workflow { background: #eee3d5; }
+.product-shot figcaption { display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 70px; color: var(--muted); font-size: 13px; line-height: 1.6; }
+.product-shot .shot-enlarge { display: inline-flex; align-items: center; gap: 10px; padding: 10px 0; border: 0; background: transparent; color: var(--ink); font-size: 13px; }
+.product-shot .shot-enlarge svg { width: 17px; height: 17px; }
+.product-shot .shot-enlarge:hover { color: var(--accent); }
+@media (max-width: 1199px) {
+  .showcase-heading { gap: 52px; }
+  .showcase-title .product-tagline { font-size: 36px; }
+  .product-shot { padding: 32px 32px 0; }
+  .shot-wiki { padding-inline: 48px; }
+}
+@media (max-width: 900px) {
+  .product-showcase + .product-showcase,
+  .product-showcase + .product-feature { margin-top: 110px; }
+  .showcase-heading { gap: 38px; margin-bottom: 34px; }
+  .showcase-title .product-tagline { font-size: 31px; }
+  .showcase-description .product-description { font-size: 16px; }
+  .product-shot, .shot-wiki { padding: 24px 24px 0; }
+  .product-shot figcaption { min-height: 62px; }
+}
+@media (max-width: 640px) {
+  .product-showcase + .product-showcase,
+  .product-showcase + .product-feature { margin-top: 92px; }
+  .showcase-heading { display: block; margin-bottom: 30px; }
+  .showcase-title .product-heading { margin-bottom: 17px; }
+  .showcase-title .product-tagline { font-size: clamp(28px, 7.15vw, 35px); }
+  .showcase-description { margin-top: 23px; padding-top: 0; }
+  .showcase-description .feature-facts { margin-top: 21px; }
+  .showcase-description > .text-link { margin-top: 25px; font-size: 16px; }
+  .product-shot, .shot-wiki { padding: 12px 12px 0; margin-inline: -3px; border-radius: 6px; }
+  .product-shot > .screenshot-open { border-radius: 3px; }
+  .shot-wiki > .screenshot-open img { aspect-ratio: auto; }
+  .product-shot figcaption { min-height: 57px; gap: 10px; font-size: 12px; }
+  .product-shot .shot-enlarge { gap: 7px; font-size: 12px; flex-shrink: 0; }
+  .product-shot .shot-enlarge svg { width: 15px; height: 15px; }
+}
+
+.shot-tabs { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 22px; }
+.shot-tabs button { border: 1px solid #d5c4af; background: transparent; padding: 10px 17px; border-radius: 4px; font-size: 14px; color: #776452; }
+.shot-tabs button[aria-pressed="true"] { background: #fcf9f4; color: #774a30; border-color: #fcf9f4; }
+@media(max-width:640px) { .shot-tabs { gap: 9px; margin-bottom: 13px; } .shot-tabs button { font-size: 12px; padding: 9px 12px; } }

@@ -21,21 +21,6 @@ document.addEventListener('keydown', event => {
 document.addEventListener('click', event => {
   if (!event.target.closest('.site-header')) closeMenu();
 });
-const demoPrompts = {
-  office: '整理项目资料，生成一份清晰的汇报大纲。',
-  knowledge: '从本地资料中，找到这个项目的背景与关键结论。',
-  code: '阅读项目代码，分析问题并给出修改方案。'
-};
-document.querySelectorAll('[data-demo]').forEach(button => {
-  button.addEventListener('click', () => {
-    document.querySelectorAll('[data-demo]').forEach(item => {
-      const active = item === button;
-      item.classList.toggle('active', active);
-      item.setAttribute('aria-pressed', String(active));
-    });
-    document.querySelector('#demo-prompt-text').textContent = demoPrompts[button.dataset.demo];
-  });
-});
 const products = {
   superwagie: { name: 'SuperWagie', url: 'https://superwagie.quukk.com/' },
   agentwiki: { name: 'AgentWiki', url: 'https://agentwiki.quukk.com/' },
@@ -105,3 +90,41 @@ if ('IntersectionObserver' in window && !reduceMotion) {
     observer.observe(element);
   });
 }
+
+const imageViewer = document.querySelector('.image-viewer');
+const viewerImage = document.querySelector('#viewer-image');
+let imageTrigger;
+document.querySelectorAll('.screenshot-open').forEach(button => {
+  button.addEventListener('click', () => {
+    imageTrigger = button;
+    viewerImage.src = button.dataset.fullImage;
+    viewerImage.alt = button.dataset.imageTitle;
+    document.querySelector('#image-viewer-title').textContent = button.dataset.imageTitle;
+    imageViewer.showModal();
+    imageViewer.querySelector('.viewer-scroll').scrollTo(0, 0);
+    document.body.classList.add('viewer-active');
+  });
+});
+imageViewer.querySelector('.viewer-close').addEventListener('click', () => imageViewer.close());
+imageViewer.addEventListener('click', event => { if (event.target === imageViewer) imageViewer.close(); });
+imageViewer.addEventListener('close', () => {
+  document.body.classList.remove('viewer-active');
+  imageTrigger?.focus();
+});
+
+document.querySelectorAll('[data-shot-src]').forEach(button => {
+  button.addEventListener('click', () => {
+    const figure = button.closest('figure');
+    figure.querySelectorAll('[data-shot-src]').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+    const image = figure.querySelector('.screenshot-open img');
+    image.src = button.dataset.shotSrc;
+    image.alt = button.dataset.shotAlt;
+    image.width = button.dataset.shotSrc.includes('live') ? 1276 : 1280;
+    image.height = button.dataset.shotSrc.includes('live') ? 910 : 860;
+    figure.querySelector('figcaption > span').textContent = button.dataset.shotCaption;
+    figure.querySelectorAll('.screenshot-open').forEach(trigger => {
+      trigger.dataset.fullImage = button.dataset.shotSrc;
+      trigger.dataset.imageTitle = button.dataset.shotTitle;
+    });
+  });
+});
