@@ -25,6 +25,7 @@
     <symbol id="people" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2m20 0v-2a4 4 0 0 0-3-3.87M15 3.13a4 4 0 0 1 0 7.75"/><circle cx="9" cy="7" r="4"/></symbol>
     <symbol id="link" viewBox="0 0 24 24"><path d="m10 13 4-4m-6 6-2 2a4 4 0 0 1-6-6l5-5a4 4 0 0 1 6 0m2 3 2-2a4 4 0 0 1 6 6l-5 5a4 4 0 0 1-6 0" transform="translate(1 0)"/></symbol>
     <symbol id="layers" viewBox="0 0 24 24"><path d="m12 3 10 6-10 6L2 9l10-6ZM2 15l10 6 10-6M2 12l10 6 10-6"/></symbol>
+    <marker id="workflow-arrow" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M1 1l4 2-4 2" fill="none" stroke="#b48261" stroke-width="1"/></marker>
   </defs></svg>
 
   <header class="site-header frame">
@@ -108,13 +109,44 @@
           <span class="diagram-caption">模型路由示意</span>
         </div>
       </article>
+
+      <article id="xuanji" class="product-feature feature-reverse xuanji-feature reveal">
+        <div class="feature-copy">
+          <div class="product-heading"><span class="letter-mark product-letter" aria-hidden="true">璇</span><h3>璇玑</h3></div>
+          <p class="product-tagline">让多智能体，<br>按流程协作。</p>
+          <p class="product-description">把任务分配、进展跟进与多智能体工作流放进同一项目。可视化编排角色分工和输入输出事件，连接开发、审计等环节，并通过子流程复用已有设计。</p>
+          <div class="feature-facts"><span>可视化编排</span><span>事件流转</span><span>子流程复用</span></div>
+          <a class="text-link" href="http://113.249.120.24:3001/cuiqiang/issues" target="_blank" rel="noopener noreferrer">探索璇玑<svg aria-hidden="true"><use href="#arrow-up"/></svg></a>
+          <p class="product-origin">基于 Multica 改造，扩展多智能体工作流设计。</p>
+        </div>
+        <div class="workflow-visual semantic-visual" role="img" aria-label="工作流示意：开始后进入开发模块，再进入审计模块；审计通过后结束，审计不通过则返回开发模块。可通过支线复用子流程。">
+          <svg class="workflow-lines workflow-lines-wide" viewBox="0 0 600 420" preserveAspectRatio="none" aria-hidden="true">
+            <path class="workflow-route" d="M84 244H137M283 244H317M463 244H516"/>
+            <path class="workflow-branch" d="M52 222V97H230M370 97H548V222"/>
+            <path class="workflow-loop" d="M390 288V323H210V290"/>
+          </svg>
+          <svg class="workflow-lines workflow-lines-small" viewBox="0 0 340 460" preserveAspectRatio="none" aria-hidden="true">
+            <path class="workflow-route" d="M153 61V111M153 193V230M153 312V371"/>
+            <path class="workflow-branch" d="M185 41H275V59M275 125V391H186"/>
+            <path class="workflow-loop" d="M78 271H22V152H77"/>
+          </svg>
+          <div class="workflow-node workflow-start"><span>开始</span></div>
+          <div class="workflow-node workflow-develop"><svg aria-hidden="true"><use href="#code"/></svg><strong>开发模块</strong><span>Agent · 开发</span></div>
+          <div class="workflow-node workflow-audit"><svg aria-hidden="true"><use href="#document"/></svg><strong>审计模块</strong><span>Agent · 审核</span></div>
+          <div class="workflow-node workflow-end"><span>结束</span></div>
+          <div class="workflow-node workflow-subflow"><svg aria-hidden="true"><use href="#layers"/></svg><div><strong>子流程</strong><span>复用已有流程</span></div></div>
+          <span class="workflow-event workflow-developed">开发完成</span>
+          <span class="workflow-event workflow-approved">审计通过</span>
+          <span class="workflow-return">审计不通过<span>返回开发</span></span>
+          <span class="diagram-caption">工作流示意</span>
+        </div>
+      </article>
     </section>
 
     <section class="directory frame section-space" aria-labelledby="directory-title">
-      <div class="section-heading"><h2 id="directory-title" class="reveal">更多连接，更多可能。</h2><p class="reveal">让账户、任务、讨论与文档各就其位。<br>为日常工作，多打开一扇门。</p></div>
+      <div class="section-heading"><h2 id="directory-title" class="reveal">更多连接，更多可能。</h2><p class="reveal">连接账户、讨论与文档。<br>为日常工作，多打开一扇门。</p></div>
       <div class="directory-list">
         <a class="directory-row reveal" href="https://unihub.quukk.com/" target="_blank" rel="noopener noreferrer"><div class="directory-name"><img src="/assets/unihub-logo.png" alt="" width="42" height="42" loading="lazy"><h3>UniHub</h3></div><div class="directory-description"><strong>一个身份，连接你的产品。</strong><p>集中管理个人与团队账户、产品会员和模型额度。</p></div><svg class="directory-arrow" aria-hidden="true"><use href="#arrow-up"/></svg></a>
-        <a class="directory-row reveal" href="http://113.249.120.24:3001/cuiqiang/issues" target="_blank" rel="noopener noreferrer"><div class="directory-name"><span class="letter-mark" aria-hidden="true">璇</span><h3>璇玑</h3></div><div class="directory-description"><strong>人和 Agent，在同一个团队。</strong><p>让任务分配、执行与进展持续可见，把智能体纳入项目协作。</p></div><svg class="directory-arrow" aria-hidden="true"><use href="#arrow-up"/></svg></a>
         <a class="directory-row reveal" href="https://newsradar.dreamdt.cn/claw-web/" target="_blank" rel="noopener noreferrer"><div class="directory-name"><img src="/assets/xiashuo-logo.png" alt="" width="42" height="42" loading="lazy"><h3>虾说</h3></div><div class="directory-description"><strong>一个议题，听见不同的思考。</strong><p>多个 AI 智能体按轮次讨论，由你把握方向，沉淀讨论纪要。</p></div><svg class="directory-arrow" aria-hidden="true"><use href="#arrow-up"/></svg></a>
         <a class="directory-row reveal" href="https://newsradar.dreamdt.cn/lingxi/" target="_blank" rel="noopener noreferrer"><div class="directory-name"><span class="letter-mark" aria-hidden="true">灵</span><h3>灵犀知识库</h3></div><div class="directory-description"><strong>让文档，成为可用的答案。</strong><p>围绕文档开展检索与问答，让回答有来源、知识可沉淀。</p></div><svg class="directory-arrow" aria-hidden="true"><use href="#arrow-up"/></svg></a>
       </div>
