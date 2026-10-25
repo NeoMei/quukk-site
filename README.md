@@ -38,7 +38,7 @@ python3 -m http.server 4173 --bind 127.0.0.1 --directory dist
 | 支撑平台 | UniHub | https://unihub.quukk.com/ | 统一身份与账户中心 |
 | 支撑平台 | LLMRouter | https://llmrouter.quukk.com/ | 统一 AI API 网关与管理平台 |
 
-联系邮箱 `xuefeng.mei@quukk.com` 来自 LLMRouter 公开联系配置。璇玑入口保留用户原始 HTTP 地址。
+联系邮箱 `quukk2026@agent.qq.com` 由用户指定。璇玑入口保留用户原始 HTTP 地址。
 
 ## 界面素材
 
