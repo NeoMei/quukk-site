@@ -1,61 +1,91 @@
-/* Product images take the full content width, with copy above the working interface. */
+/* Product stories lead with capabilities; screenshots support the explanation. */
 .product-showcase { min-width: 0; }
-.product-showcase + .product-showcase,
-.product-showcase + .product-feature { margin-top: 150px; }
-.showcase-heading { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: start; gap: 88px; margin-bottom: 42px; }
+.product-showcase + .product-showcase { margin-top: 150px; }
+.showcase-heading { display: grid; grid-template-columns: minmax(0,1.1fr) minmax(0,.9fr); align-items: end; gap: 68px; margin-bottom: 46px; }
 .showcase-title .product-heading { margin-bottom: 22px; }
-.showcase-title .product-tagline { margin-bottom: 0; font-size: clamp(34px, 3.2vw, 46px); line-height: 1.4; }
-.showcase-description { padding-top: 3px; }
-.showcase-description .product-description { max-width: 540px; }
-.showcase-description .feature-facts { margin-top: 21px; }
-.showcase-description > .text-link { margin-top: 25px; }
+.product-heading h3 { display: flex; flex-wrap: wrap; align-items: baseline; gap: 5px 12px; }
+.product-heading .product-name-en { font-size: .75em; font-weight: 400; color: var(--muted); letter-spacing: 0; }
+.showcase-title .product-tagline { margin-bottom: 0; font-size: clamp(34px,3vw,42px); line-height: 1.4; }
+.showcase-description .product-description { max-width: 540px; color: var(--ink); line-height: 1.8; }
 .showcase-description .product-origin { max-width: none; margin-top: 15px; }
-.product-shot { margin: 0; padding: 42px 42px 0; background: #eee5d9; border-radius: 8px; }
-.product-shot > .screenshot-open { display: block; width: 100%; padding: 0; border: 1px solid #d7d0c6; border-radius: 6px; overflow: hidden; background: white; cursor: zoom-in; transition: border-color .2s; }
-.product-shot > .screenshot-open:hover { border-color: var(--accent); }
-.product-shot > .screenshot-open img { display: block; width: 100%; height: auto; }
-.shot-wiki { background: #e9e7e0; padding-inline: 72px; }
-.shot-wiki > .screenshot-open img { aspect-ratio: 1.6; object-fit: cover; object-position: top; }
+.product-story { display: grid; grid-template-columns: minmax(0,1.1fr) minmax(0,.9fr); grid-template-areas: "details image" "example example"; align-items: start; gap: 38px 68px; }
+.product-details { grid-area: details; min-width: 0; }
+.product-capabilities { display: grid; gap: 28px; margin: 0; padding: 0; list-style: none; }
+.product-capabilities li { display: grid; grid-template-columns: minmax(0,.7fr) minmax(0,1.3fr); gap: 24px; align-items: start; }
+.product-capabilities h4 { margin: 0; color: var(--ink); font-size: 18px; font-weight: 550; line-height: 1.65; }
+.product-capabilities p { color: var(--muted); font-size: 16px; line-height: 1.8; }
+.product-details > .text-link { margin-top: 32px; font-size: 16px; }
+.product-shot { grid-area: image; min-width: 0; margin: 0; padding: 20px 20px 0; background: #eee5d9; border-radius: 6px; align-self: start; }
+.product-shot > .screenshot-open { display: block; width: 100%; padding: 0; border: 0; border-radius: 3px; overflow: hidden; background: white; cursor: zoom-in; }
+.product-shot > .screenshot-open img { display: block; width: 100%; max-height: 360px; height: auto; object-fit: contain; }
+.product-shot > .screenshot-open:hover { opacity: .92; }
+.shot-wiki { background: #e9e7e0; }
 .shot-lingxi { background: #e9e6e0; }
 .shot-xiashuo { background: #ecdfcd; }
 .shot-workflow { background: #eee3d5; }
-.product-shot figcaption { display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 70px; color: var(--muted); font-size: 13px; line-height: 1.6; }
-.product-shot .shot-enlarge { display: inline-flex; align-items: center; gap: 10px; padding: 10px 0; border: 0; background: transparent; color: var(--ink); font-size: 13px; }
-.product-shot .shot-enlarge svg { width: 17px; height: 17px; }
+.product-shot figcaption { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 62px; color: var(--muted); font-size: 12px; line-height: 1.6; }
+.product-shot .shot-enlarge { min-height: 44px; display: inline-flex; flex-shrink: 0; align-items: center; gap: 8px; padding: 10px 0; border: 0; background: transparent; color: var(--ink); font-size: 12px; }
+.product-shot .shot-enlarge svg { width: 16px; height: 16px; }
 .product-shot .shot-enlarge:hover { color: var(--accent); }
-@media (max-width: 1199px) {
-  .showcase-heading { gap: 52px; }
+.shot-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.shot-tabs button { min-height: 44px; border: 0; background: transparent; padding: 9px 12px; border-radius: 3px; font-size: 12px; color: #776452; }
+.shot-tabs button[aria-pressed="true"] { background: #fcf9f4; color: #774a30; }
+.product-example { grid-area: example; display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); align-items: center; gap: 48px; padding: 28px 32px; background: #f0e9df; }
+.product-example h4 { margin: 0 0 10px; font-size: 17px; font-weight: 500; line-height: 1.6; }
+.product-example p { max-width: 550px; color: var(--muted); font-size: 14px; line-height: 1.8; }
+.product-path { display: flex; justify-content: space-between; gap: 16px; margin: 0; padding: 0; list-style: none; }
+.product-path li { display: flex; align-items: center; gap: 16px; color: var(--accent-dark); font-size: 15px; line-height: 1.6; }
+.product-path li:not(:last-child)::after { content: '→'; color: #bba28b; }
+.story-reverse .product-story { grid-template-columns: minmax(0,.9fr) minmax(0,1.1fr); grid-template-areas: "image details" "example example"; }
+html[lang="en"] .product-capabilities li { grid-template-columns: minmax(0,.8fr) minmax(0,1.2fr); }
+html[lang="en"] .product-capabilities h4 { font-size: 17px; line-height: 1.5; }
+html[lang="en"] .product-capabilities p { line-height: 1.7; }
+html[lang="en"] .product-path li { font-size: 14px; }
+@media(max-width:1199px) {
+  .showcase-heading, .product-story { column-gap: 42px; }
   .showcase-title .product-tagline { font-size: 36px; }
-  .product-shot { padding: 32px 32px 0; }
-  .shot-wiki { padding-inline: 48px; }
+  .product-capabilities li, html[lang="en"] .product-capabilities li { display: block; }
+  .product-capabilities h4 { margin-bottom: 7px; }
+  .product-capabilities { gap: 23px; }
+  .product-example { gap: 30px; padding: 26px; }
+  .product-path { gap: 12px; }
+  .product-path li { gap: 12px; }
 }
-@media (max-width: 900px) {
-  .product-showcase + .product-showcase,
-  .product-showcase + .product-feature { margin-top: 110px; }
-  .showcase-heading { gap: 38px; margin-bottom: 34px; }
+@media(max-width:900px) {
+  .product-showcase + .product-showcase { margin-top: 110px; }
+  .showcase-heading { gap: 30px; margin-bottom: 32px; }
   .showcase-title .product-tagline { font-size: 31px; }
   .showcase-description .product-description { font-size: 16px; }
-  .product-shot, .shot-wiki { padding: 24px 24px 0; }
-  .product-shot figcaption { min-height: 62px; }
+  .product-story, .story-reverse .product-story { grid-template-columns: minmax(0,1fr); grid-template-areas: "details" "example" "image"; gap: 30px; }
+  .product-capabilities li, html[lang="en"] .product-capabilities li { display: grid; grid-template-columns: minmax(0,.7fr) minmax(0,1.3fr); gap: 28px; }
+  .product-capabilities h4 { margin: 0; }
+  .product-shot { padding: 20px 20px 0; }
+  .product-shot > .screenshot-open img { max-height: 360px; }
+  .product-example { grid-template-columns: minmax(0,1fr); gap: 22px; }
+  .product-path { justify-content: flex-start; gap: 26px; }
+  .product-path li { gap: 26px; }
 }
-@media (max-width: 640px) {
-  .product-showcase + .product-showcase,
-  .product-showcase + .product-feature { margin-top: 92px; }
-  .showcase-heading { display: block; margin-bottom: 30px; }
+@media(max-width:640px) {
+  .product-showcase + .product-showcase { margin-top: 92px; }
+  .showcase-heading { display: block; margin-bottom: 28px; }
   .showcase-title .product-heading { margin-bottom: 17px; }
-  .showcase-title .product-tagline { font-size: clamp(28px, 7.15vw, 35px); }
-  .showcase-description { margin-top: 23px; padding-top: 0; }
-  .showcase-description .feature-facts { margin-top: 21px; }
-  .showcase-description > .text-link { margin-top: 25px; font-size: 16px; }
-  .product-shot, .shot-wiki { padding: 12px 12px 0; margin-inline: -3px; border-radius: 6px; }
-  .product-shot > .screenshot-open { border-radius: 3px; }
-  .shot-wiki > .screenshot-open img { aspect-ratio: auto; }
-  .product-shot figcaption { min-height: 57px; gap: 10px; font-size: 12px; }
-  .product-shot .shot-enlarge { gap: 7px; font-size: 12px; flex-shrink: 0; }
-  .product-shot .shot-enlarge svg { width: 15px; height: 15px; }
+  .showcase-title .product-tagline { font-size: clamp(28px,7.15vw,35px); }
+  .showcase-description { margin-top: 20px; }
+  .product-capabilities { gap: 24px; }
+  .product-capabilities li, html[lang="en"] .product-capabilities li { display: block; }
+  .product-capabilities h4 { font-size: 18px; margin-bottom: 7px; }
+  .product-capabilities p { font-size: 15px; line-height: 1.8; }
+  .product-details > .text-link { margin-top: 28px; }
+  .product-story, .story-reverse .product-story { gap: 28px; }
+  .product-shot { padding: 12px 12px 0; border-radius: 4px; }
+  .product-shot > .screenshot-open img { max-height: 300px; }
+  .product-shot figcaption { min-height: 57px; gap: 10px; }
+  .product-example { padding: 22px; gap: 20px; }
+  .product-example h4 { font-size: 16px; }
+  .product-example p { font-size: 14px; }
+  .product-path { flex-direction: column; gap: 10px; }
+  .product-path li { font-size: 14px; gap: 12px; }
+  .product-path li:not(:last-child)::after { content: '↓'; }
+  .shot-tabs { gap: 7px; margin-bottom: 13px; }
+  .shot-tabs button { padding: 9px 10px; }
 }
-
-.shot-tabs { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 22px; }
-.shot-tabs button { border: 1px solid #d5c4af; background: transparent; padding: 10px 17px; border-radius: 4px; font-size: 14px; color: #776452; }
-.shot-tabs button[aria-pressed="true"] { background: #fcf9f4; color: #774a30; border-color: #fcf9f4; }
-@media(max-width:640px) { .shot-tabs { gap: 9px; margin-bottom: 13px; } .shot-tabs button { font-size: 12px; padding: 9px 12px; } }

@@ -1,14 +1,16 @@
+const isEnglish = document.documentElement.lang.startsWith('en');
+const menuLabels = isEnglish ? { open: 'Open navigation menu', close: 'Close navigation menu' } : { open: '打开导航菜单', close: '关闭导航菜单' };
 const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('#main-nav');
 function closeMenu() {
   menuButton.setAttribute('aria-expanded', 'false');
-  menuButton.setAttribute('aria-label', '打开导航菜单');
+  menuButton.setAttribute('aria-label', menuLabels.open);
   navigation.classList.remove('open');
 }
 menuButton.addEventListener('click', () => {
   const open = menuButton.getAttribute('aria-expanded') !== 'true';
   menuButton.setAttribute('aria-expanded', String(open));
-  menuButton.setAttribute('aria-label', open ? '关闭导航菜单' : '打开导航菜单');
+  menuButton.setAttribute('aria-label', open ? menuLabels.close : menuLabels.open);
   navigation.classList.toggle('open', open);
 });
 navigation.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
@@ -22,17 +24,22 @@ document.addEventListener('click', event => {
   if (!event.target.closest('.site-header')) closeMenu();
 });
 const products = {
-  superwagie: { name: 'SuperWagie', url: 'https://superwagie.quukk.com/' },
-  agentwiki: { name: 'AgentWiki', url: 'https://agentwiki.quukk.com/' },
-  xuanji: { name: '璇玑', url: 'http://113.249.120.24:3001/cuiqiang/issues' },
-  xiashuo: { name: '虾说', url: 'https://newsradar.dreamdt.cn/claw-web/' },
-  lingxi: { name: '灵犀知识库', url: 'https://newsradar.dreamdt.cn/lingxi/' }
+  superwagie: { name: isEnglish ? 'SuperWagie' : '犇马 SuperWagie', url: 'https://www.superwagie.com/' },
+  agentwiki: { name: isEnglish ? 'AgentWiki' : '天枢 AgentWiki', url: 'https://AgentWiki.quukk.com/' },
+  xuanji: { name: isEnglish ? 'XuanGene' : '璇玑 XuanGene', url: 'http://113.249.120.24:3001/cuiqiang/issues' },
+  xiashuo: { name: isEnglish ? 'ClawMessenger' : '虾说 ClawMessenger', url: 'https://newsradar.dreamdt.cn/claw-web/' },
+  lingxi: { name: isEnglish ? 'LingXi' : '灵犀 LingXi', url: 'https://newsradar.dreamdt.cn/lingxi/' }
 };
-const scenarios = {
-  create: { title: '让一个想法，走得更远。', description: '从资料整理、内容创作到代码开发，用 SuperWagie 推进任务；需要更多视角时，邀请虾说中的智能体一起讨论。', products: ['superwagie', 'xiashuo'] },
-  knowledge: { title: '让已有知识，回答新问题。', description: '用 AgentWiki 积累人与智能体共享的项目知识；用灵犀知识库围绕文档检索、提问，找到有来源的答案。', products: ['agentwiki', 'lingxi'] },
-  team: { title: '让团队与 Agent，一起向前。', description: '用虾说讨论议题、梳理分歧，用璇玑分配任务、跟进进展，用 AgentWiki 记录项目知识与团队经验。', products: ['xiashuo', 'xuanji', 'agentwiki'] },
-  build: { title: '把角色分工，组织成流程。', description: '在璇玑中配置智能体角色、输入输出事件与返工分支，通过子流程复用已有设计；用 AgentWiki 记录流程说明与项目经验。', products: ['xuanji', 'agentwiki'] }
+const scenarios = isEnglish ? {
+  create: { title: 'Take an idea further.', description: 'Use SuperWagie to organize research, create content and write code. Bring in ClawMessenger when you need more perspectives.', products: ['superwagie', 'xiashuo'] },
+  knowledge: { title: 'Let what you know answer what’s next.', description: 'Build shared project knowledge for people and agents with AgentWiki. Use LingXi to search documents and ask questions with traceable sources.', products: ['agentwiki', 'lingxi'] },
+  team: { title: 'Move forward with your AI team.', description: 'Discuss ideas and differences in ClawMessenger, assign tasks and track progress in XuanGene, and capture project knowledge in AgentWiki.', products: ['xiashuo', 'xuanji', 'agentwiki'] },
+  build: { title: 'Give every role a place in the workflow.', description: 'Define agent roles, input and output events, and review loops in XuanGene. Reuse designs through subflows and document them in AgentWiki.', products: ['xuanji', 'agentwiki'] }
+} : {
+  create: { title: '让一个想法，走得更远。', description: '从资料整理、内容创作到代码开发，用犇马推进任务；需要更多视角时，邀请虾说中的智能体一起讨论。', products: ['superwagie', 'xiashuo'] },
+  knowledge: { title: '让已有知识，回答新问题。', description: '用天枢积累人与智能体共享的项目知识；用灵犀围绕文档检索、提问，找到有来源的答案。', products: ['agentwiki', 'lingxi'] },
+  team: { title: '让团队与 Agent，一起向前。', description: '用虾说讨论议题、梳理分歧，用璇玑分配任务、跟进进展，用天枢记录项目知识与团队经验。', products: ['xiashuo', 'xuanji', 'agentwiki'] },
+  build: { title: '把角色分工，组织成流程。', description: '在璇玑中配置智能体角色、输入输出事件与返工分支，通过子流程复用已有设计；用天枢记录流程说明与项目经验。', products: ['xuanji', 'agentwiki'] }
 };
 const tabs = [...document.querySelectorAll('[data-scenario]')];
 function selectScenario(tab, moveFocus = false) {
