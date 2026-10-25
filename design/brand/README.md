@@ -1,6 +1,6 @@
-# quukk Q(ai) 标志 · 第 3 款对称定稿
+# quukk Q(ai) 标志 · 平行缺口定稿
 
-2026-10-25，采用用户选定的第 3 款，并按随后要求修正严格对称与底边平齐。
+2026-10-25，采用用户选定的第 3 款，按随后要求修正严格对称、底边平齐，并将圆环缺口改为与 i 平行的直线。用户对最终效果表示“这个不错”。
 
 ## 形态
 
@@ -20,7 +20,7 @@
 
 ## 生成与矢量化
 
-内置 Image Gen 生成三款概念，见 `ai/concepts.png`。按用户确认的第3款重绘 SVG，并精确调整圆点、斜杆与镜像开口。当前实际矢量预览位于 `option3/logo-preview.png`，符号截图为 `option3/symbol-reference.png`；`ai/` 保留上一版记录。首页雕塑根据该符号由内置 Image Gen 重新生成，正式文件为 `dist/assets/quukk-warm-sculpture.jpg`。
+内置 Image Gen 生成三款概念，见 `ai/concepts.png`。按用户确认的第3款重绘 SVG，并精确调整圆点、斜杆与镜像开口。当前实际矢量预览位于 `parallel-cut/logo-preview.png`，符号截图为 `parallel-cut/symbol-reference.png`；`ai/` 保留上一版记录。首页雕塑根据该符号由内置 Image Gen 重新生成，正式文件为 `dist/assets/quukk-warm-sculpture.jpg`。
 
 概念提示：Q monogram constructed from lowercase single-storey a and lowercase i; a circular bowl as dominant ring, tilted i stem as Q tail, dot inside lower-right counter; one unified mark, flat terracotta #AA603F on warm ivory #FAF7F2, consistent substantial strokes, no uppercase A/I, gradients, textures or mockups.
 
@@ -35,7 +35,9 @@
 ## 定稿几何约束
 
 - 标志坐标系224×224，圆心(112,112)，外半径96、内半径60。
-- 对称轴为 x=y，所有开口端点与贝塞尔控制点成镜像对；圆点中心(133,133)，尾杆中心线(163,163)→(191,191)。
+- 对称轴为 x=y，所有内外圆开口端点成镜像对，缺口边线为 x−y=±25√2，均平行于 i 的中心线；圆点中心(133,133)，尾杆中心线(163,163)→(191,191)。
 - 外圆最低点112+96=208；尾杆圆帽最低点191+17=208，基线差0。由于镜像对称，右侧边界也同为208。
-- `option3/geometry.json` 保留可核验坐标。SVG为几何定稿；首页陶瓷雕塑是依据该稿生成的品牌演绎。
-- 最终雕塑提示：使用正式图形轮廓，严格45°对称，圆环与缩短后的i杆底边同一水平基线；正面视角、象牙白陶瓷、暖光、无文字。由内置Image Gen生成。
+- `parallel-cut/geometry.json` 保留可核验坐标。SVG为几何定稿；首页陶瓷雕塑是依据该稿生成的品牌演绎。
+- 最终雕塑提示：使用正式图形轮廓，严格45°对称，圆环缺口直线与i杆平行，两侧净空相等；圆环与i杆底边同一水平基线；正面视角、象牙白陶瓷、暖光、无文字。由内置Image Gen生成。
+
+- 平行缺口定稿：两侧边线斜率均为1，与i轴相同；缺口半宽25、i半宽17，两侧垂直净空均为8。

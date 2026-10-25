@@ -1,0 +1,32 @@
+{
+  "axis": "x = y",
+  "center": [
+    112,
+    112
+  ],
+  "outer_radius": 96,
+  "inner_radius": 60,
+  "cut_half_width": 25,
+  "upper_outer": [
+    195.2177336126351,
+    159.86239455330772
+  ],
+  "upper_inner": [
+    168.24579108101747,
+    132.8904520216901
+  ],
+  "lower_outer": [
+    159.86239455330772,
+    195.2177336126351
+  ],
+  "lower_inner": [
+    132.8904520216901,
+    168.24579108101747
+  ],
+  "cut_slope": 1.0,
+  "i_slope": 1,
+  "arc_bottom": 208,
+  "i_bottom": 208,
+  "baseline_delta": 0,
+  "perpendicular_gap_to_i": 8
+}

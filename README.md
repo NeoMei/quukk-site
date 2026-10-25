@@ -1,6 +1,6 @@
 # quukk 公司主页
 
-中文响应式公司主页，以七款真实产品为基础。纯 HTML、CSS、JavaScript，无构建依赖。
+中文响应式公司主页，以五款应用平台和两款支撑平台为基础。纯 HTML、CSS、JavaScript，无构建依赖。
 
 ## 本地查看
 
@@ -27,30 +27,34 @@ python3 -m http.server 4173 --bind 127.0.0.1 --directory dist
 
 2026-10-25 根据用户提供的公开产品页面及前端发布资源核验；璇玑的工作流信息另依据用户说明与编辑器截图补充。产品功能未进行登录后的端到端验收，站点不承诺性能、准确率、服务可用率或跨产品自动集成。
 
-| 产品 | 官方来源 | 主页定位 |
-| --- | --- | --- |
-| SuperWagie | https://superwagie.quukk.com/ | 本地 AI 办公与编程智能体 |
-| AgentWiki | https://agentwiki.quukk.com/ | 多 Agent 协作的共同大脑 |
-| LLMRouter | https://llmrouter.quukk.com/ | 统一 AI API 网关与管理平台 |
-| UniHub | https://unihub.quukk.com/ | 统一身份与账户中心 |
-| 璇玑 | 用户提供的产品入口 http://113.249.120.24:3001/cuiqiang/issues 、产品说明与工作流编辑器截图 | 人与智能体项目协作、多智能体工作流设计 |
-| 虾说 | https://newsradar.dreamdt.cn/claw-web/ | 多 AI 智能体讨论 |
-| 灵犀知识库 | https://newsradar.dreamdt.cn/lingxi/ | 文档检索与知识问答 |
+| 层级 | 产品 | 官方来源 | 主页定位 |
+| --- | --- | --- | --- |
+| 应用平台 | SuperWagie | https://superwagie.quukk.com/ | 本地 AI 办公与编程智能体 |
+| 应用平台 | AgentWiki | https://agentwiki.quukk.com/ | 多 Agent 协作的共同大脑 |
+| 应用平台 | 璇玑 | 用户提供的产品入口 http://113.249.120.24:3001/cuiqiang/issues 、产品说明与工作流编辑器截图 | 人与智能体项目协作、多智能体工作流设计 |
+| 应用平台 | 灵犀知识库 | https://newsradar.dreamdt.cn/lingxi/ | 文档检索与知识问答 |
+| 应用平台 | 虾说 | https://newsradar.dreamdt.cn/claw-web/ | 多 AI 智能体讨论 |
+| 支撑平台 | UniHub | https://unihub.quukk.com/ | 统一身份与账户中心 |
+| 支撑平台 | LLMRouter | https://llmrouter.quukk.com/ | 统一 AI API 网关与管理平台 |
 
 联系邮箱 `xuefeng.mei@quukk.com` 来自 LLMRouter 公开联系配置。璇玑入口保留用户原始 HTTP 地址。
 
 璇玑的来源说明：用户说明该产品基于 GitHub 上的 Multica 改造，并新增多智能体工作流设计。用户提供的工作流编辑器截图显示了开始、开发模块、审计模块、结束节点与子流程，以及 Agent 选择、角色行为、输入/输出事件配置；开发完成、审计通过和审计不通过的连线体现了事件流转和返工分支。主页据此制作暖色的“工作流示意”，没有使用原始浏览器截图、个人工作空间名称或私有工作流深链。截图中 Agent 显示离线，不能作为执行成功或运行可靠性的证据；此次更新未对工作流运行进行验收，也未对 Multica 上游功能作额外推断。
 
-品牌图标直接来自各产品官方静态资源，沿用品牌标识；首屏使用内置 Image Gen 生成的暖色 Q(ai) 陶瓷雕塑，没有第三方人物或客户背书。璇玑和灵犀使用文字标识，以避免把上游/默认 favicon 当成品牌。SuperWagie 工作台和璇玑工作流均为明确标注的场景示意，非真实截图，也不会在主页中调用 AI 或执行任务。
+品牌图标直接来自各产品官方静态资源，沿用品牌标识；首屏使用内置 Image Gen 生成的暖色 Q(ai) 陶瓷雕塑，没有第三方人物或客户背书。璇玑和灵犀使用文字标识，以避免把上游/默认 favicon 当成品牌。SuperWagie 工作台、璇玑工作流、灵犀知识问答及虾说讨论均为明确标注的场景示意，非真实截图，也不会在主页中调用 AI 或执行任务。
 
 ## 交互与检查
 
-- 七款产品入口与外链安全属性：四款独立产品区、三款补充产品目录。
+- 七款产品入口与外链安全属性：五款应用独立展示、两款支撑平台在应用场景之后单独介绍。
 - 四个应用场景，支持鼠标、触摸、方向键、Home/End。
 - 三个工作示意提示，点击切换。
 - 手机菜单展开、点击跳转后收起、Escape 关闭。
 - 1440、768、390 像素完整页面截图检查；IAB 实测交互与 390 像素无横向溢出。
-- 璇玑工作流补充：静态结构与脚本语法检查；本次编辑未运行浏览器验收。
+- 璇玑工作流的桌面、手机浏览器验收见 `design/warm/xuanji-review.md`。
 - 无后端表单、无跟踪代码、无第三方脚本运行时依赖。
 
 当前暖色设计与验收见 `design/warm/REVIEW.md`，Logo 说明见 `design/brand/README.md`。`dist/brand.html` 提供标志预览及 SVG 下载。
+
+## 产品层级
+
+依据用户最新定位，SuperWagie、AgentWiki、璇玑、灵犀知识库、虾说为五款重点应用，均使用独立图文展示与同等标题层级。UniHub、LLMRouter归入支撑平台，置于场景之后，使用简明开放目录。主导航分别提供应用平台、应用场景、支撑平台入口。场景推荐只呈现应用平台，未把账户或模型服务混入应用推荐；不承诺跨产品自动集成。

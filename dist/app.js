@@ -39,8 +39,6 @@ document.querySelectorAll('[data-demo]').forEach(button => {
 const products = {
   superwagie: { name: 'SuperWagie', url: 'https://superwagie.quukk.com/' },
   agentwiki: { name: 'AgentWiki', url: 'https://agentwiki.quukk.com/' },
-  llmrouter: { name: 'LLMRouter', url: 'https://llmrouter.quukk.com/' },
-  unihub: { name: 'UniHub', url: 'https://unihub.quukk.com/' },
   xuanji: { name: '璇玑', url: 'http://113.249.120.24:3001/cuiqiang/issues' },
   xiashuo: { name: '虾说', url: 'https://newsradar.dreamdt.cn/claw-web/' },
   lingxi: { name: '灵犀知识库', url: 'https://newsradar.dreamdt.cn/lingxi/' }
@@ -48,8 +46,8 @@ const products = {
 const scenarios = {
   create: { title: '让一个想法，走得更远。', description: '从资料整理、内容创作到代码开发，用 SuperWagie 推进任务；需要更多视角时，邀请虾说中的智能体一起讨论。', products: ['superwagie', 'xiashuo'] },
   knowledge: { title: '让已有知识，回答新问题。', description: '用 AgentWiki 积累人与智能体共享的项目知识；用灵犀知识库围绕文档检索、提问，找到有来源的答案。', products: ['agentwiki', 'lingxi'] },
-  team: { title: '让团队与 Agent，一起向前。', description: '用璇玑分配团队任务、编排多智能体工作流，通过输入与输出事件衔接角色分工；用虾说展开讨论，用 UniHub 管理个人与团队账户。', products: ['xuanji', 'xiashuo', 'unihub'] },
-  build: { title: '把模型能力，接入你的应用。', description: '用 LLMRouter 统一模型接口与路由，用 AgentWiki 积累知识与上下文；用璇玑设计多智能体协作流程，配置事件流转与可复用的子流程。', products: ['llmrouter', 'agentwiki', 'xuanji'] }
+  team: { title: '让团队与 Agent，一起向前。', description: '用虾说讨论议题、梳理分歧，用璇玑分配任务、跟进进展，用 AgentWiki 记录项目知识与团队经验。', products: ['xiashuo', 'xuanji', 'agentwiki'] },
+  build: { title: '把角色分工，组织成流程。', description: '在璇玑中配置智能体角色、输入输出事件与返工分支，通过子流程复用已有设计；用 AgentWiki 记录流程说明与项目经验。', products: ['xuanji', 'agentwiki'] }
 };
 const tabs = [...document.querySelectorAll('[data-scenario]')];
 function selectScenario(tab, moveFocus = false) {
