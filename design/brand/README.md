@@ -1,42 +1,33 @@
-# quukk 几何 Q 标志
+# quukk Q(ai) 标志 · 暖色版
 
-2026-10-25，根据用户提供的旧版蓝色 Q 标志进行简化设计。
+2026-10-25，依据用户“小写 a 和小写 i 更容易组合成为 Q”的意见调整。
 
-## 设计
+## 形态
 
-保留圆环 Q 与右下尾部，去除渐变、半透明叠层和网格底纹。以清晰留白分离尾部与圆环，配合几何小写 quukk 字标。蓝色图形与深蓝字标延续旧版的蓝色识别；网站原有鲜绿继续用于内容板与强调色。
+第一眼是 Q，细看为单层 a 的圆碗与倾斜 i。主体右侧保持一段短竖边，圆点和圆头斜杆同轴，形成小写 i；斜杆同时构成 Q 尾部。a 为意象表达，并非完整排印字形。保留原版小写 quukk 矢量字标。
 
-- 主蓝：`#246BDB`
-- 深蓝：`#102C44`
-- 反白：`#FFFFFF`
-- SVG 背景透明，全部使用几何路径，无字体、滤镜、外部链接或脚本依赖。
+## 配色与文件
 
-## 素材
+- 主色陶土：`#AA603F`；深棕：`#302A25`；暖白：`#FAF7F2`。
+- `quukk-logo-warm.svg` / `quukk-symbol-warm.svg`：暖色组合与独立图形。
+- `quukk-logo-ai-mono.svg` / `quukk-symbol-ai-mono.svg`：深棕单色。
+- `quukk-logo-ai-white.svg` / `quukk-symbol-ai-white.svg`：暖白反白。
+- `quukk-logo-white.svg` 为主页页脚使用的反白同版副本；前版已保存在 `quukk-logo-original-white.svg`。
+- `favicon.svg` 同步为暖色 Q(ai)，深色浏览器主题自动用浅陶土。
+- 全部 SVG 为透明背景几何矢量，不依赖字体。组合标志建议宽度不小于 120px；小尺寸用独立图形。
 
-正式素材位于 `../../dist/assets/brand/`：
+旧版蓝色素材继续保留，原设计说明见 README-original.md。在线 `brand.html` 展示当前版本并提供下载。
 
-| 文件 | 用途 |
-| --- | --- |
-| quukk-logo-color.svg | 蓝色 Q + 深蓝字标，浅底主要版本 |
-| quukk-logo-mono.svg | 深蓝单色，单色输出与页脚 |
-| quukk-logo-white.svg | 白色版本，适配深色背景 |
-| quukk-symbol-color.svg | 独立蓝色 Q |
-| quukk-symbol-mono.svg | 独立深蓝 Q |
-| quukk-symbol-white.svg | 独立反白 Q |
-| quukk-wordmark.svg | 独立路径字标 |
+## 生成与矢量化
 
-`dist/favicon.svg` 使用独立 Q，并为深色浏览器主题提供浅蓝色。组合标志建议不小于120px宽；更小场景使用独立 Q。四周至少留出圆环笔画宽度的空白，勿拉伸或添加阴影渐变。
+内置 Image Gen 生成三款概念，见 `ai/concepts.png`。从第一款方向重绘 SVG，并调整圆点、斜杆间距与字标比例。`ai/logo-preview.png` 是实际矢量页面截图；`ai/symbol-reference.png` 是符号截图。首页雕塑根据该符号由内置 Image Gen 重新生成，正式文件为 `dist/assets/quukk-warm-sculpture.jpg`。
 
-## 生成与落地
+概念提示：Q monogram constructed from lowercase single-storey a and lowercase i; a circular bowl as dominant ring, tilted i stem as Q tail, dot inside lower-right counter; one unified mark, flat terracotta #AA603F on warm ivory #FAF7F2, consistent substantial strokes, no uppercase A/I, gradients, textures or mockups.
 
-内置 Image Gen 用旧图作为参考生成 `logo-concept.png`；随后以路径重绘并做比例调整，得到适合网站的 SVG。`original-logo.png` 保留用户旧标志；`logo-preview.png` 为最终 SVG 在浏览器中的实际效果，并非生成概念图。
-
-Image Gen 提示：以旧版作为参考，为 quukk 设计更简洁、大气的标志。保留圆形 Q 和蓝色识别；单色粗几何圆环配短而有力的右下斜尾；负空间清晰、16px可辨认；不用渐变、透明叠层、网格、3D或阴影。主图蓝色 `#246BDB`，小写字标深蓝 `#102C44`；展示相同标志的彩色、单色与反白版本，白底，字母严格为 quukk。生成用内置 image_gen，不使用 API CLI。
+雕塑编辑提示：保持原有暖光与象牙白陶瓷材质，将 Q 轮廓替换为正式 Q(ai) 符号；保留独立圆点和圆头斜杆，形状以矢量截图为准。
 
 ## 验收
 
-- 在内置浏览器查看三种配色与16、24、32、48、64px图标；轮廓与负空间可辨。
-- 查看桌面和390px手机页头及手机页脚；标志加载正常，页面无横向溢出。
-- SVG XML 解析通过；没有 SVG text 元素或外部字体引用。
-- 已替换页头、页脚、favicon；各产品自身标志保持原样。
-- 在线品牌素材页 `brand.html` 可预览并下载SVG，沿用原站的私有访问权限。
+- 浏览器检查 16、24、32、48、64px 尺寸及暖白反白版本。
+- 1440px 桌面和 390px 手机品牌页均无横向溢出，SVG 全部加载。
+- 所有 SVG 通过 XML 解析。主页页头、页脚和首屏雕塑使用同一 Q(ai) 方向。

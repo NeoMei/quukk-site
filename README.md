@@ -39,7 +39,7 @@ python3 -m http.server 4173 --bind 127.0.0.1 --directory dist
 
 联系邮箱 `xuefeng.mei@quukk.com` 来自 LLMRouter 公开联系配置。璇玑入口保留用户原始 HTTP 地址。
 
-品牌图标直接来自各产品官方静态资源，沿用品牌标识；没有使用图库照片、第三方人物或客户背书。璇玑和灵犀使用文字标识，以避免把上游/默认 favicon 当成品牌。两处 SuperWagie 工作台为明确标注的场景示意，非真实截图，也不会在主页中调用 AI 或执行任务。
+品牌图标直接来自各产品官方静态资源，沿用品牌标识；首屏使用内置 Image Gen 生成的暖色 Q(ai) 陶瓷雕塑，没有第三方人物或客户背书。璇玑和灵犀使用文字标识，以避免把上游/默认 favicon 当成品牌。SuperWagie 工作台为明确标注的场景示意，非真实截图，也不会在主页中调用 AI 或执行任务。
 
 ## 交互与检查
 
@@ -50,4 +50,4 @@ python3 -m http.server 4173 --bind 127.0.0.1 --directory dist
 - 1440、768、390 像素完整页面截图检查；IAB 实测交互与 390 像素无横向溢出。
 - 无后端表单、无跟踪代码、无第三方脚本运行时依赖。
 
-详细设计与验收见 `design/REVIEW.md`。
+当前暖色设计与验收见 `design/warm/REVIEW.md`，Logo 说明见 `design/brand/README.md`。`dist/brand.html` 提供标志预览及 SVG 下载。
