@@ -8,3 +8,8 @@
 .mini-tasks i{display:inline-flex;align-items:center;justify-content:center;vertical-align:middle}.mini-tasks i svg{width:12px;height:12px}.illustration-note{font-size:13px}
 @media(min-width:541px) and (max-width:800px){.section-heading>p,.feature-secondary .product-description,.about-copy>p:nth-child(2),.directory-description p{font-size:16px}}
 @media(max-width:540px){.illustration-note{font-size:13px;writing-mode:horizontal-tb;left:17px;bottom:12px;background:var(--green);padding:4px}.hero-wiki>p,.hero-router>p{font-size:13px;max-width:none}.hero-board{grid-template-rows:285px 222px}.hero-copy h1{font-size:clamp(35px,10.8vw,54px)}}
+
+/* quukk geometric identity, October 2026 */
+.wordmark{display:inline-flex;align-items:center;line-height:1;letter-spacing:normal}.wordmark img{width:158px;height:auto}.footer-wordmark{display:block;width:min(54vw,720px);font-size:inherit;line-height:1;letter-spacing:normal}.footer-wordmark img{width:100%;height:auto}.footer-main{min-height:200px}.brand-dot{display:none}@media(max-width:800px){.wordmark img{width:145px}.footer-wordmark{width:52vw}.footer-main{min-height:150px}}@media(max-width:540px){.wordmark img{width:132px}.footer-wordmark{width:100%;max-width:420px}.footer-main{min-height:0}.footer-action{margin-top:40px}}
+
+.wordmark img{width:164px}@media(max-width:800px){.wordmark img{width:150px}}@media(max-width:540px){.wordmark img{width:140px}}
