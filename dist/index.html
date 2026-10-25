@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#c4f564">
+  <title>quukk — 让智能，成为生产力。</title>
+  <meta name="description" content="探索 quukk 的 AI 产品：SuperWagie 本地工作台、AgentWiki 共享知识、LLMRouter 模型接入，以及 UniHub、璇玑、虾说与灵犀知识库。连接工具、知识与团队。">
+  <meta property="og:title" content="quukk — 让智能，成为生产力。">
+  <meta property="og:description" content="从办公创作到知识协作，探索面向真实工作的 AI 产品。">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <svg class="svg-defs" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
+    <symbol id="arrow-up" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></symbol>
+    <symbol id="arrow-right" viewBox="0 0 24 24"><path d="M4 12h16m-7-7 7 7-7 7"/></symbol>
+    <symbol id="document" viewBox="0 0 24 24"><path d="M14 3H5v18h14V8l-5-5Zm0 0v6h5M8 13h8m-8 4h6"/></symbol>
+    <symbol id="code" viewBox="0 0 24 24"><path d="m7 6-6 6 6 6m10-12 6 6-6 6M14 3l-4 18"/></symbol>
+    <symbol id="chat" viewBox="0 0 24 24"><path d="M21 15a3 3 0 0 1-3 3H9l-6 4V6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3Zm-14-5h10m-10 4h6"/></symbol>
+    <symbol id="spark" viewBox="0 0 24 24"><path d="m12 2 3 7 7 3-7 3-3 7-3-7-7-3 7-3Z"/></symbol>
+    <symbol id="check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+  </defs></svg>
+  <header class="site-header frame">
+    <a href="#" class="wordmark" aria-label="quukk 首页">quukk<span class="brand-dot"></span></a>
+    <nav id="main-nav" aria-label="主导航"><a href="#products">产品</a><a href="#scenarios">应用场景</a><a href="#about">关于我们</a></nav>
+    <a class="button header-cta" href="#products">探索产品<svg><use href="#arrow-up"/></svg></a>
+    <button class="menu-toggle" aria-label="打开导航菜单" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
+  </header>
+  <main id="main">
+    <section class="hero frame" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title" class="reveal">让智能，<br>成为生产力。</h1>
+        <p class="hero-description reveal">quukk 打造面向真实工作的 AI 产品，<br class="desktop-break">连接工具、知识与团队，<br class="desktop-break">让想法更快成为成果。</p>
+        <a class="button reveal" href="#products">探索产品<svg><use href="#arrow-up"/></svg></a>
+      </div>
+      <div class="hero-board" aria-label="quukk 核心产品">
+        <a class="hero-work hero-tile" href="https://superwagie.quukk.com/" target="_blank" rel="noopener noreferrer">
+          <div class="tile-title"><span>SuperWagie</span><svg><use href="#arrow-up"/></svg></div>
+          <p>把想法，变成完成。</p>
+          <div class="work-illustration" aria-hidden="true" data-ui>
+            <div class="mini-sidebar"><strong>W.</strong><svg><use href="#spark"/></svg><svg><use href="#document"/></svg><svg><use href="#code"/></svg></div>
+            <div class="mini-main"><span class="window-caption">你的 AI 工作台</span><div class="mini-prompt">开始今天的工作<span>↗</span></div><div class="mini-tasks"><span><i><svg><use href="#check"/></svg></i> 整理资料</span><span><i><svg><use href="#check"/></svg></i> 创作内容</span><span><i><svg><use href="#check"/></svg></i> 编写代码</span></div><div class="mini-status"><span class="status-dot"></span>从任务出发，专注于成果</div></div>
+          </div>
+          <span class="illustration-note">工作场景示意</span>
+        </a>
+        <a class="hero-wiki hero-tile" href="https://agentwiki.quukk.com/" target="_blank" rel="noopener noreferrer">
+          <div class="tile-title"><span>AgentWiki</span><svg><use href="#arrow-up"/></svg></div><p>让知识与 Agent 共同生长。</p>
+          <div class="knowledge-art" aria-hidden="true" data-ui><svg class="connections" viewBox="0 0 360 180"><path d="M180 92 78 40M180 92l111-40M180 92 80 152M180 92l115 52M180 92V8"/></svg><div class="node n1">文档</div><div class="node n2">Agent</div><div class="node n3">经验</div><div class="node n4">团队</div><div class="core-node"><svg><use href="#document"/></svg></div></div>
+        </a>
+        <a class="hero-router hero-tile" href="https://llmrouter.quukk.com/" target="_blank" rel="noopener noreferrer">
+          <div class="tile-title"><span>LLMRouter</span><svg><use href="#arrow-up"/></svg></div><p>多种模型，一个入口。</p>
+          <div class="route-art" aria-hidden="true" data-ui><span class="route-source">API</span><svg class="route-lines" viewBox="0 0 240 100"><path d="M20 50h67q12 0 12-12V14h65M99 50h65M99 50v36h65"/></svg><div class="route-targets"><span>对话</span><span>推理</span><span>创作</span></div></div>
+        </a>
+      </div>
+    </section>
+    <div class="product-ribbon frame" aria-label="全部产品入口">
+      <a href="https://superwagie.quukk.com/" target="_blank" rel="noopener noreferrer">SuperWagie</a><a href="https://agentwiki.quukk.com/" target="_blank" rel="noopener noreferrer">AgentWiki</a><a href="https://llmrouter.quukk.com/" target="_blank" rel="noopener noreferrer">LLMRouter</a><a href="https://unihub.quukk.com/" target="_blank" rel="noopener noreferrer">UniHub</a><a href="http://113.249.120.24:3001/cuiqiang/issues" target="_blank" rel="noopener noreferrer">璇玑</a><a href="https://newsradar.dreamdt.cn/claw-web/" target="_blank" rel="noopener noreferrer">虾说</a><a href="https://newsradar.dreamdt.cn/lingxi/" target="_blank" rel="noopener noreferrer">灵犀知识库</a>
+    </div>
+    <section id="products" class="products frame section-space" aria-labelledby="products-title">
+      <div class="section-heading"><h2 id="products-title" class="reveal">为每一种工作，<br>找到新的可能。</h2><p class="reveal">从一个人的效率，到一群人的协作。<br>在具体的工作里，找到 AI 的价值。</p></div>
+      <article class="feature-work reveal">
+        <div class="feature-copy dark-panel"><img class="product-logo" src="/assets/superwagie-logo.png" width="48" height="48" alt="" loading="lazy"><h3>SuperWagie</h3><p class="product-tagline">你的 AI 工作搭子</p><p class="product-description">从办公创作到代码开发，在本地工作区把任务推进到完成。让资料检索、内容创作与代码工作，回到同一个桌面。</p><a class="text-link" href="https://superwagie.quukk.com/" target="_blank" rel="noopener noreferrer">了解 SuperWagie<svg><use href="#arrow-up"/></svg></a></div>
+        <div class="work-demo" data-ui aria-label="SuperWagie 工作场景示意">
+          <div class="demo-window-top"><span class="window-dots"><i></i><i></i><i></i></span><span>工作场景示意</span></div>
+          <div class="demo-body"><aside class="demo-sidebar"><strong>SuperWagie</strong><span class="selected"><svg><use href="#spark"/></svg>新建任务</span><span><svg><use href="#document"/></svg>资料库</span><span><svg><use href="#chat"/></svg>AI 对话</span><span><svg><use href="#code"/></svg>开发工作</span><span class="sidebar-bottom">你的本地工作区</span></aside><div class="demo-content"><h4>今天，想完成什么？</h4><p>从一个想法开始，让任务向前一步。</p><div class="demo-prompt"><span id="demo-prompt-text">整理项目资料，生成一份清晰的汇报大纲。</span><svg><use href="#arrow-right"/></svg></div><div class="demo-options" aria-label="切换工作场景示意"><button class="active" data-demo="office" aria-pressed="true"><svg><use href="#document"/></svg>办公创作</button><button data-demo="knowledge" aria-pressed="false"><svg><use href="#chat"/></svg>资料检索</button><button data-demo="code" aria-pressed="false"><svg><use href="#code"/></svg>代码开发</button></div><span class="demo-note">点击上方场景，看看如何开始</span></div></div>
+        </div>
+      </article>
+      <div class="feature-pair">
+        <article class="feature-secondary wiki-feature reveal"><div class="feature-copy"><img class="product-logo" src="/assets/agentwiki-logo.svg" width="44" height="44" alt="" loading="lazy"><h3>AgentWiki</h3><p class="product-tagline">让知识，持续生长。</p><p class="product-description">多 Agent 协作的共同大脑。把文档、经验与上下文连接起来，让团队与智能体共享可追溯的知识。</p><div class="feature-facts"><span>共享 Wiki</span><span>知识图谱</span><span>语义搜索</span></div><a class="text-link" href="https://agentwiki.quukk.com/" target="_blank" rel="noopener noreferrer">探索 AgentWiki<svg><use href="#arrow-up"/></svg></a></div><div class="wiki-word-art" aria-hidden="true"><span>知识</span><span>↕</span><span>人 × Agent</span></div></article>
+        <article class="feature-secondary router-feature reveal"><div class="feature-copy"><img class="product-logo" src="/assets/llmrouter-logo.png" width="44" height="44" alt="" loading="lazy"><h3>LLMRouter</h3><p class="product-tagline">多种模型，一个入口。</p><p class="product-description">统一 AI API 网关与管理平台。用一致的接口接入模型，集中管理路由、调用与用量。</p><div class="feature-facts"><span>统一接口</span><span>模型路由</span><span>用量管理</span></div><a class="text-link" href="https://llmrouter.quukk.com/" target="_blank" rel="noopener noreferrer">进入 LLMRouter<svg><use href="#arrow-up"/></svg></a></div><div class="router-word-art" aria-hidden="true">{<span>AI</span>}</div></article>
+      </div>
+    </section>
+    <section class="directory frame section-space" aria-labelledby="directory-title"><div class="section-heading"><h2 id="directory-title" class="reveal">更多连接，<br>更多可能。</h2><p class="reveal">让账户、任务、讨论与文档各就其位。<br>为日常工作，多打开一扇门。</p></div>
+      <a class="directory-row reveal" href="https://unihub.quukk.com/" target="_blank" rel="noopener noreferrer"><div class="directory-name"><img src="/assets/unihub-logo.png" alt="" width="42" height="42" loading="lazy"><h3>UniHub</h3></div><div class="directory-description"><strong>一个身份，连接你的产品。</strong><p>集中管理个人与团队账户、产品会员和模型额度。</p></div><span class="directory-category">账户与连接</span><svg><use href="#arrow-up"/></svg></a>
+      <a class="directory-row reveal" href="http://113.249.120.24:3001/cuiqiang/issues" target="_blank" rel="noopener noreferrer"><div class="directory-name"><span class="letter-mark" aria-hidden="true">璇</span><h3>璇玑</h3></div><div class="directory-description"><strong>人和 Agent，在同一个团队。</strong><p>让任务分配、执行与进展持续可见，把智能体纳入项目协作。</p></div><span class="directory-category">项目与协作</span><svg><use href="#arrow-up"/></svg></a>
+      <a class="directory-row reveal" href="https://newsradar.dreamdt.cn/claw-web/" target="_blank" rel="noopener noreferrer"><div class="directory-name"><img src="/assets/xiashuo-logo.png" alt="" width="42" height="42" loading="lazy"><h3>虾说</h3></div><div class="directory-description"><strong>一个议题，听见不同的思考。</strong><p>多个 AI 智能体按轮次讨论，由你把握方向，沉淀讨论纪要。</p></div><span class="directory-category">讨论与共创</span><svg><use href="#arrow-up"/></svg></a>
+      <a class="directory-row reveal" href="https://newsradar.dreamdt.cn/lingxi/" target="_blank" rel="noopener noreferrer"><div class="directory-name"><span class="letter-mark" aria-hidden="true">灵</span><h3>灵犀知识库</h3></div><div class="directory-description"><strong>让文档，成为可用的答案。</strong><p>围绕文档开展检索与问答，让回答有来源、知识可沉淀。</p></div><span class="directory-category">文档与问答</span><svg><use href="#arrow-up"/></svg></a>
+    </section>
+    <section id="scenarios" class="scenarios frame section-space" aria-labelledby="scenarios-title"><div class="section-heading"><h2 id="scenarios-title" class="reveal">从你的需求出发。</h2><p class="reveal">选一个工作场景，<br>找到适合你的 quukk 产品。</p></div><div class="scenario-layout"><div class="scenario-tabs" role="tablist" aria-label="工作场景"><button id="tab-create" role="tab" aria-controls="scenario-panel" aria-selected="true" data-scenario="create">高效创作<svg><use href="#arrow-right"/></svg></button><button id="tab-knowledge" role="tab" aria-controls="scenario-panel" aria-selected="false" tabindex="-1" data-scenario="knowledge">管理知识<svg><use href="#arrow-right"/></svg></button><button id="tab-team" role="tab" aria-controls="scenario-panel" aria-selected="false" tabindex="-1" data-scenario="team">团队协作<svg><use href="#arrow-right"/></svg></button><button id="tab-build" role="tab" aria-controls="scenario-panel" aria-selected="false" tabindex="-1" data-scenario="build">构建 AI 应用<svg><use href="#arrow-right"/></svg></button></div><div id="scenario-panel" class="scenario-panel" role="tabpanel" aria-labelledby="tab-create" tabindex="0"><div><h3 id="scenario-title">让一个想法，走得更远。</h3><p id="scenario-description">从资料整理、内容创作到代码开发，用 SuperWagie 推进任务；需要更多视角时，邀请虾说中的智能体一起讨论。</p></div><div id="scenario-products" class="scenario-products"><a href="https://superwagie.quukk.com/" target="_blank" rel="noopener noreferrer">SuperWagie<svg><use href="#arrow-up"/></svg></a><a href="https://newsradar.dreamdt.cn/claw-web/" target="_blank" rel="noopener noreferrer">虾说<svg><use href="#arrow-up"/></svg></a></div></div></div></section>
+    <section id="about" class="about section-space" aria-labelledby="about-title"><div class="frame about-inner"><h2 id="about-title" class="reveal">把 AI，<br>放进真实工作。</h2><div class="about-copy"><p class="reveal">我们相信，好工具的价值，<br>在于让人更专注于创造。</p><p class="reveal">quukk 围绕工具、知识与协作构建 AI 产品。让个人的灵感有处落地，让团队的经验持续积累，让复杂的技术成为日常可用的能力。</p><a href="mailto:xuefeng.mei@quukk.com?subject=quukk%20%E4%BA%A7%E5%93%81%E4%B8%8E%E5%90%88%E4%BD%9C%E5%92%A8%E8%AF%A2" class="text-link reveal">与我们聊聊<svg><use href="#arrow-up"/></svg></a></div></div></section>
+  </main>
+  <footer class="site-footer frame"><div class="footer-main"><a class="footer-wordmark" href="#" aria-label="返回 quukk 首页">quukk<span>.</span></a><div class="footer-action"><p>从一个好工具开始。</p><a class="button" href="#products">探索产品<svg><use href="#arrow-right"/></svg></a></div></div><div class="footer-bottom"><span>© <span id="year">2026</span> quukk</span><span>让智能，成为生产力。</span><a href="mailto:xuefeng.mei@quukk.com">xuefeng.mei@quukk.com<svg><use href="#arrow-up"/></svg></a><a href="#" class="back-top">回到顶部 ↑</a></div></footer>
+</body>
+</html>

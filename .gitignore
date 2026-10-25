@@ -1,0 +1,4 @@
+.taste-skill/inspect/
+.DS_Store
+*.tar.gz
+.openai/*.local.*
