@@ -200,17 +200,17 @@ svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width:
 .about { padding: 112px 0 96px; color: var(--paper); background: var(--dark); }
 .about-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 100px; }
 .about h2 { font-size: clamp(40px, 4.1vw, 58px); font-weight: 500; line-height: 1.38; letter-spacing: -.045em; }
+.about-heading .footer-wordmark { display: block; width: 260px; max-width: 100%; margin-top: 42px; }
 .about-copy { padding-top: 2px; }
 .about-copy .about-belief { margin-bottom: 25px; color: #f1e6d8; font-size: 22px; line-height: 1.7; }
 .about-copy > p { max-width: 490px; color: #baa99a; font-size: 16px; line-height: 1.95; }
 .about .text-link { margin-top: 30px; color: #eedbc6; }
 .site-footer { color: var(--paper); background: var(--dark); }
-.footer-main { display: flex; justify-content: space-between; align-items: center; gap: 70px; border-top: 1px solid #665246; padding: 64px 0 70px; }
 .footer-wordmark { width: 320px; max-width: 48%; }
 .footer-wordmark img { width: 100%; }
-.footer-action { min-width: 220px; }
+.footer-action { margin-top: 42px; }
 .footer-action p { margin-bottom: 19px; font-size: 18px; color: #d8c9b9; }
-.footer-action .text-link { color: #f0dfce; font-size: 15px; }
+.footer-action .text-link { margin-top: 0; color: #f0dfce; font-size: 15px; }
 .footer-bottom { display: flex; align-items: center; flex-wrap: wrap; gap: 22px 36px; padding: 30px 0; border-top: 1px solid #55473d; color: #af9d8b; font-size: 12px; line-height: 1.6; }
 .footer-bottom > a { display: inline-flex; align-items: center; gap: 9px; }
 .footer-bottom > a:hover { color: var(--paper); }
@@ -334,7 +334,6 @@ svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width:
   .about h2 { font-size: 40px; }
   .about-copy .about-belief { font-size: 18px; }
   .about-copy > p { font-size: 14px; }
-  .footer-main { padding: 55px 0; }
   .footer-wordmark { width: 270px; }
   .footer-action { min-width: 180px; }
   .footer-bottom { gap: 17px 25px; }
@@ -466,11 +465,10 @@ svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width:
   .about-copy .about-belief { font-size: 20px; margin-bottom: 22px; }
   .about-copy > p { font-size: 15px; line-height: 1.95; }
   .about .text-link { margin-top: 27px; font-size: 16px; }
-  .footer-main { align-items: flex-start; gap: 34px; padding: 43px 0 45px; }
-  .footer-wordmark { width: 174px; max-width: 47%; padding-top: 5px; }
-  .footer-action { min-width: 0; }
+  .about-heading .footer-wordmark { width: 174px; margin-top: 30px; }
+  .footer-action { margin-top: 32px; }
   .footer-action p { font-size: 14px; line-height: 1.7; margin-bottom: 15px; }
-  .footer-action .text-link { font-size: 13px; gap: 13px; }
+  .footer-action .text-link { margin-top: 0; font-size: 13px; gap: 13px; }
   .footer-bottom { padding: 24px 0 29px; gap: 18px 20px; font-size: 11px; }
   .footer-bottom > a:not(.back-top) { order: 3; flex-basis: 100%; }
   .footer-bottom .back-top { margin-left: auto; }

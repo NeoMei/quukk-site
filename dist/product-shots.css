@@ -4,7 +4,18 @@
 .showcase-heading { display: grid; grid-template-columns: minmax(0,1.1fr) minmax(0,.9fr); align-items: end; gap: 68px; margin-bottom: 46px; }
 .showcase-title .product-heading { margin-bottom: 22px; }
 .product-heading h3 { display: flex; flex-wrap: wrap; align-items: baseline; gap: 5px 12px; }
-.product-heading .product-name-en { font-size: .75em; font-weight: 400; color: var(--muted); letter-spacing: 0; }
+.product-heading .product-name-en, .directory-name .product-name-en { font-size: .75em; font-weight: 400; color: var(--muted); letter-spacing: 0; }
+/* Match AgentWiki's primary buttons (Tailwind blue-600), preserving the original knot. */
+.showcase-wiki .product-logo {
+  display: block;
+  flex-shrink: 0;
+  background-color: #155dfc;
+  background-color: oklch(54.6% 0.245 262.881);
+  -webkit-mask: url('/assets/agentwiki-knot-v1.png') center / contain no-repeat;
+  mask: url('/assets/agentwiki-knot-v1.png') center / contain no-repeat;
+}
+.showcase-lingxi .product-logo { width: 48px; height: 48px; flex-shrink: 0; }
+.showcase-workflow .product-logo { width: 36px; height: 36px; flex-shrink: 0; }
 .showcase-title .product-tagline { margin-bottom: 0; font-size: clamp(34px,3vw,42px); line-height: 1.4; }
 .showcase-description .product-description { max-width: 540px; color: var(--ink); line-height: 1.8; }
 .showcase-description .product-origin { max-width: none; margin-top: 15px; }

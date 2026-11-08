@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img"><title>knowisp-icon-small</title><desc>knowisp · 灵犀知识库. Geometric rotating-paper symbol with outlined typography. Blue #3262F6; teal #2CB9BF; violet #8053ED.</desc><g transform="translate(512 512) scale(1.01352)"><defs>
+<mask id="k10-seams" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse" x="-330" y="-365" width="660" height="730" mask-type="luminance" style="mask-type:luminance">
+<rect x="-330" y="-365" width="660" height="730" fill="#FFFFFF"/>
+<g fill="none" stroke="#000000" stroke-width="36" stroke-linecap="round" stroke-linejoin="round">
+<path d="M 0 -100 A 354.93023747 321.67603808 0 0 1 141.72364658 -130.0510738"/>
+<path d="M 0 -100 A 354.93023747 321.67603808 0 0 1 -136.06262106 -70.10956342"/>
+<path d="M 0 -100 A 354.93023747 321.67603808 0 0 1 136.06262106 70.10956338"/>
+<path d="M 0 -100 A 354.93023747 321.67603808 0 0 1 -141.72364658 130.05107375"/>
+<path d="M 0 -100 L 0 100"/>
+</g>
+</mask>
+</defs>
+<g id="k10-artwork" mask="url(#k10-seams)" stroke="none">
+<path id="k10-page-4" data-page="4" fill="#8053ED" d="M 0 -100 A 354.93023747 321.67603808 0 0 1 -150 -335.46567017 L -150 -135.46567017 A 354.93023747 321.67603808 0 0 0 0 100 Z"/>
+<path id="k10-page-5" data-page="5" fill="#2CB9BF" d="M 0 -100 A 354.93023747 321.67603808 0 0 1 150 -335.46567017 L 150 -135.46567017 A 354.93023747 321.67603808 0 0 0 0 100 Z"/>
+<path id="k10-page-3" data-page="3" fill="#3262F6" d="M 0 -100 A 354.93023747 321.67603808 0 0 1 -300 -100 L -300 100 A 354.93023747 321.67603808 0 0 0 0 100 Z"/>
+<path id="k10-page-0" data-page="0" fill="#3262F6" d="M 0 -100 A 354.93023747 321.67603808 0 0 1 300 -100 L 300 100 A 354.93023747 321.67603808 0 0 0 0 100 Z"/>
+<path id="k10-page-2" data-page="2" fill="#2CB9BF" d="M 0 -100 A 354.93023747 321.67603808 0 0 1 -150 135.46567017 L -150 335.46567017 A 354.93023747 321.67603808 0 0 0 0 100 Z"/>
+<path id="k10-page-1" data-page="1" fill="#8053ED" d="M 0 -100 A 354.93023747 321.67603808 0 0 1 150 135.46567017 L 150 335.46567017 A 354.93023747 321.67603808 0 0 0 0 100 Z"/>
+</g></g></svg>

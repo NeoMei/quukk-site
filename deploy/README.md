@@ -59,3 +59,16 @@ Nginx 的 80/7680 虚拟主机已配置跳转至 HTTPS www，服务器本机测�
 若要撤销本次新增虚拟主机，只移除 `/etc/nginx/sites-enabled/zz-quukk-company` 这一条启用链接，执行 `nginx -t`，检查成功后 `systemctl reload nginx`。不要直接覆盖整个 Nginx 备份，以免覆盖其他产品后续配置。站点文件保留供恢复使用。
 
 共享目录 `/var/www/quukk` 服务于其他应用，本次没有改动；官网使用独立 `/var/www/quukk-company`。
+
+## SEO 静态文件准备（2026-11-08）
+
+本次将已核查的生产静态文件基线完整同步到仓库 `dist/`，包含 CSS、JavaScript 和图片资源。四个中英文页面更新搜索与分享元信息、语言互链及 JSON-LD；首页页脚新增品牌页入口。
+
+新增公开抓取文件：
+
+- `dist/robots.txt`，发布路径 `/robots.txt`，声明 `https://www.quukk.com/sitemap.xml`。
+- `dist/sitemap.xml`，发布路径 `/sitemap.xml`，包含中文与英文首页、品牌页四个规范 URL 及语言互链。
+
+部署时完整发布 `dist/`，继续保留 `design/`、`deploy/` 等仓库文件在发布目录之外。发布后核查上述两条路径返回 200、内容类型正确，四页 canonical、hreflang、JSON-LD 和本地资源引用与发布文件一致。搜索收录与流量结果需通过站长平台核实。
+
+本节记录仓库静态文件准备状态；裸域 `quukk.com` 的公网 TLS 与入口配置验收由对应运维记录确认。
