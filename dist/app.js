@@ -26,13 +26,13 @@ document.addEventListener('click', event => {
 const products = {
   superwagie: { name: isEnglish ? 'SuperWagie' : '犇马 SuperWagie', url: 'https://www.superwagie.com/' },
   agentwiki: { name: isEnglish ? 'AgentWiki' : '天枢 AgentWiki', url: 'https://AgentWiki.quukk.com/' },
-  xuanji: { name: isEnglish ? 'XuanGene' : '璇玑 XuanGene', url: 'http://113.249.120.24:3001/cuiqiang/issues' },
+  xuanji: { name: isEnglish ? 'XuanGene' : '璇玑 XuanGene', url: 'https://www.xuangene.com/' },
   xiashuo: { name: isEnglish ? 'ClawMessenger' : '虾说 ClawMessenger', url: 'https://newsradar.dreamdt.cn/claw-web/' },
-  lingxi: { name: isEnglish ? 'LingXi' : '灵犀 LingXi', url: 'https://newsradar.dreamdt.cn/lingxi/' }
+  lingxi: { name: isEnglish ? 'Knowisp' : '灵犀 Knowisp', url: 'https://newsradar.dreamdt.cn/knowisp/' }
 };
 const scenarios = isEnglish ? {
   create: { title: 'Take an idea further.', description: 'Use SuperWagie to organize research, create content and write code. Bring in ClawMessenger when you need more perspectives.', products: ['superwagie', 'xiashuo'] },
-  knowledge: { title: 'Let what you know answer what’s next.', description: 'Build shared project knowledge for people and agents with AgentWiki. Use LingXi to search documents and ask questions with traceable sources.', products: ['agentwiki', 'lingxi'] },
+  knowledge: { title: 'Let what you know answer what’s next.', description: 'Build shared project knowledge for people and agents with AgentWiki. Use Knowisp to search documents and ask questions with traceable sources.', products: ['agentwiki', 'lingxi'] },
   team: { title: 'Move forward with your AI team.', description: 'Discuss ideas and differences in ClawMessenger, assign tasks and track progress in XuanGene, and capture project knowledge in AgentWiki.', products: ['xiashuo', 'xuanji', 'agentwiki'] },
   build: { title: 'Give every role a place in the workflow.', description: 'Define agent roles, input and output events, and review loops in XuanGene. Reuse designs through subflows and document them in AgentWiki.', products: ['xuanji', 'agentwiki'] }
 } : {

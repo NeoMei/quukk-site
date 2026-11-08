@@ -84,3 +84,13 @@ python3 -m http.server 4173 --bind 127.0.0.1 --directory dist
 ## 产品层级
 
 依据用户最新定位，SuperWagie、AgentWiki、璇玑、灵犀知识库、虾说为五款重点应用，均使用独立图文展示与同等标题层级。UniHub、LLMRouter归入支撑平台，置于场景之后，使用简明开放目录。主导航分别提供应用平台、应用场景、支撑平台入口。场景推荐只呈现应用平台，未把账户或模型服务混入应用推荐；不承诺跨产品自动集成。
+
+## SEO 静态文件更新（2026-11-08）
+
+`dist/` 已同步本次核查的生产静态文件基线，包括完整的 CSS、JavaScript 与图片素材，并更新中英文首页和品牌页的搜索标题、描述、canonical、hreflang、Open Graph、Twitter Card 与 JSON-LD。结构化数据采用页面已有的品牌、公开邮箱及五款应用信息，首页页脚增加对应语言的品牌页链接。
+
+- `dist/robots.txt`：允许抓取公开站点，并声明 `https://www.quukk.com/sitemap.xml`。
+- `dist/sitemap.xml`：列出 `/`、`/en/`、`/brand.html`、`/en/brand.html` 四个规范 URL 及对应语言版本。
+- 正式发布根目录仍为 `dist/`；部署步骤及验收边界见 `deploy/README.md`。
+
+本次仓库同步完成了静态文件与本地引用核查；搜索收录、排名和流量变化需要发布后通过站长平台及实际数据确认。
