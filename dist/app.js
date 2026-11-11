@@ -27,7 +27,7 @@ const products = {
   superwagie: { name: isEnglish ? 'SuperWagie' : '犇马 SuperWagie', url: 'https://www.superwagie.com/' },
   agentwiki: { name: isEnglish ? 'AgentWiki' : '天枢 AgentWiki', url: 'https://AgentWiki.quukk.com/' },
   xuanji: { name: isEnglish ? 'XuanGene' : '璇玑 XuanGene', url: 'https://www.xuangene.com/' },
-  xiashuo: { name: isEnglish ? 'ClawMessenger' : '虾说 ClawMessenger', url: 'https://newsradar.dreamdt.cn/claw-web/' },
+  xiashuo: { name: isEnglish ? 'ClawMessenger' : '虾说 ClawMessenger', url: 'https://clawmessenger.quukk.com/' },
   lingxi: { name: isEnglish ? 'Knowisp' : '灵犀 Knowisp', url: 'https://newsradar.dreamdt.cn/knowisp/' }
 };
 const scenarios = isEnglish ? {
