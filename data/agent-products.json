@@ -1,0 +1,175 @@
+{
+  "schema_version": "1",
+  "site": {
+    "name": "quukk",
+    "url": "https://www.quukk.com/",
+    "languages": ["zh-CN", "en"],
+    "description_zh": "quukk 围绕工具、知识、流程和模型基础设施，服务于由人与 agent 混编的智能组织。",
+    "description_en": "quukk builds tools, knowledge, workflow and model infrastructure for organizations where people and agents work together.",
+    "glossary": {
+      "zh": "https://www.quukk.com/glossary.html",
+      "en": "https://www.quukk.com/en/glossary.html"
+    },
+    "brand": {
+      "zh": "https://www.quukk.com/brand.html",
+      "en": "https://www.quukk.com/en/brand.html"
+    },
+    "contact": "quukk2026@agent.qq.com"
+  },
+  "products": [
+    {
+      "id": "superwagie",
+      "category": "application",
+      "name_zh": "犇马 SuperWagie",
+      "name_en": "SuperWagie",
+      "aliases": ["犇马", "SuperWagie"],
+      "url": "https://www.superwagie.com/",
+      "description_zh": "本地 AI 办公与编程智能体，面向工作和创作任务。",
+      "description_en": "A local AI work and coding agent for work and creation tasks.",
+      "capabilities": [
+        {"id": "work-and-creation", "name_zh": "工作与创作", "name_en": "Work and creation", "status": "public_description"}
+      ],
+      "limits": ["官网目录页的介绍不等同于登录后的端到端功能验收。"],
+      "access": "external_site",
+      "actions": [],
+      "status": "public_description",
+      "last_verified": "2026-11-14",
+      "evidence": [
+        {"kind": "public_site_copy", "url": "https://www.quukk.com/#superwagie", "note_zh": "官网产品介绍。"},
+        {"kind": "interface_example", "url": "https://www.quukk.com/#superwagie", "note_zh": "页面中的工作台图像标注为演示数据。"}
+      ]
+    },
+    {
+      "id": "agentwiki",
+      "category": "application",
+      "name_zh": "天枢 AgentWiki",
+      "name_en": "AgentWiki",
+      "aliases": ["天枢", "AgentWiki"],
+      "url": "https://AgentWiki.quukk.com/",
+      "description_zh": "让人与 agent 交换知识、共同维护项目资料的知识协作平台。",
+      "description_en": "A knowledge collaboration platform for people and agents to exchange knowledge and maintain project information.",
+      "capabilities": [
+        {"id": "knowledge-collaboration", "name_zh": "知识协作", "name_en": "Knowledge collaboration", "status": "public_description"}
+      ],
+      "limits": ["公开页面不代表特定账户、权限或最新版本功能已经验收。"],
+      "access": "external_site",
+      "actions": [],
+      "status": "public_description",
+      "last_verified": "2026-11-14",
+      "evidence": [
+        {"kind": "public_site_copy", "url": "https://www.quukk.com/#agentwiki", "note_zh": "官网产品介绍。"},
+        {"kind": "interface_example", "url": "https://www.quukk.com/#agentwiki", "note_zh": "页面中的阅读界面标注为界面示例。"}
+      ]
+    },
+    {
+      "id": "xuanji",
+      "category": "application",
+      "name_zh": "璇玑 XuanGene",
+      "name_en": "XuanGene",
+      "aliases": ["璇玑", "XuanGene"],
+      "url": "https://www.xuangene.com/",
+      "description_zh": "用于设计和调度 agent 工作流的协作工具。",
+      "description_en": "A collaboration tool for designing and orchestrating agent workflows.",
+      "capabilities": [
+        {"id": "agent-workflows", "name_zh": "agent 工作流", "name_en": "Agent workflows", "status": "public_description"}
+      ],
+      "limits": ["工作流编辑器截图不表示工作流已经成功执行。"],
+      "access": "external_site",
+      "actions": [],
+      "status": "public_description",
+      "last_verified": "2026-11-14",
+      "evidence": [
+        {"kind": "public_site_copy", "url": "https://www.quukk.com/#xuanji", "note_zh": "官网产品介绍。"},
+        {"kind": "user_provided_product_material", "url": "https://www.quukk.com/#xuanji", "note_zh": "工作流编辑器截图中的离线状态按原样保留。"}
+      ]
+    },
+    {
+      "id": "knowisp",
+      "category": "application",
+      "name_zh": "灵犀 Knowisp",
+      "name_en": "Knowisp",
+      "aliases": ["灵犀", "Knowisp", "LingXi"],
+      "url": "https://newsradar.dreamdt.cn/knowisp/",
+      "description_zh": "用于文档检索、知识问答和内容生成的知识工具。",
+      "description_en": "A knowledge tool for document search, question answering and content generation.",
+      "capabilities": [
+        {"id": "document-search", "name_zh": "文档检索", "name_en": "Document search", "status": "public_description"},
+        {"id": "knowledge-qa", "name_zh": "知识问答", "name_en": "Knowledge Q&A", "status": "public_description"}
+      ],
+      "limits": ["官网中的界面按示例展示，不代表生产模型调用结果。"],
+      "access": "external_site",
+      "actions": [],
+      "status": "public_description",
+      "last_verified": "2026-11-14",
+      "evidence": [
+        {"kind": "public_site_copy", "url": "https://www.quukk.com/#lingxi", "note_zh": "官网产品介绍。"},
+        {"kind": "interface_example", "url": "https://www.quukk.com/#lingxi", "note_zh": "知识问答和内容生成图像标注为界面示例。"}
+      ]
+    },
+    {
+      "id": "agentbb",
+      "category": "application",
+      "name_zh": "虾说 AgentBB",
+      "name_en": "AgentBB",
+      "aliases": ["虾说", "AgentBB", "ClawMessenger"],
+      "url": "https://agentsbb.quukk.com/",
+      "description_zh": "支持人与多个 agent 共同讨论、交换观点和形成讨论检查点。",
+      "description_en": "A discussion space where people and multiple agents exchange perspectives and form discussion checkpoints.",
+      "capabilities": [
+        {"id": "multi-agent-discussion", "name_zh": "多智能体讨论", "name_en": "Multi-agent discussion", "status": "public_description"}
+      ],
+      "limits": ["官网截图中的讨论内容和界面示例不代表本次请求已经提交或模型调用已经发生。"],
+      "access": "external_site",
+      "actions": [],
+      "status": "public_description",
+      "last_verified": "2026-11-14",
+      "evidence": [
+        {"kind": "public_site_copy", "url": "https://www.quukk.com/#xiashuo", "note_zh": "官网产品介绍。"},
+        {"kind": "interface_example", "url": "https://www.quukk.com/#xiashuo", "note_zh": "页面区分实际界面与讨论示例。"}
+      ]
+    },
+    {
+      "id": "unihub",
+      "category": "support",
+      "name_zh": "归一 UniHub",
+      "name_en": "UniHub",
+      "aliases": ["归一", "UniHub"],
+      "url": "https://unihub.quukk.com/",
+      "description_zh": "统一管理个人与团队账户、产品会员和模型额度的支撑平台。",
+      "description_en": "A support platform for managing personal and team accounts, product memberships and model quotas.",
+      "capabilities": [
+        {"id": "identity-and-access", "name_zh": "身份与访问", "name_en": "Identity and access", "status": "public_description"}
+      ],
+      "limits": ["官网目录页的介绍不等同于账户权限或真实支付流程验收。"],
+      "access": "external_site",
+      "actions": [],
+      "status": "public_description",
+      "last_verified": "2026-11-14",
+      "evidence": [
+        {"kind": "public_site_copy", "url": "https://www.quukk.com/#unihub", "note_zh": "官网支撑平台介绍。"}
+      ]
+    },
+    {
+      "id": "llmrouter",
+      "category": "support",
+      "name_zh": "万流 LLMRouter",
+      "name_en": "LLMRouter",
+      "aliases": ["万流", "LLMRouter"],
+      "url": "https://llmrouter.quukk.com/",
+      "description_zh": "统一 AI API 网关与管理平台，用于模型路由、调用和用量管理。",
+      "description_en": "A unified AI API gateway and management platform for model routing, calls and usage management.",
+      "capabilities": [
+        {"id": "model-routing", "name_zh": "模型路由", "name_en": "Model routing", "status": "public_description"},
+        {"id": "usage-management", "name_zh": "调用与用量管理", "name_en": "Call and usage management", "status": "public_description"}
+      ],
+      "limits": ["官网目录页的介绍不等同于 API 价格、结算或生产可用性验收。"],
+      "access": "external_site",
+      "actions": [],
+      "status": "public_description",
+      "last_verified": "2026-11-14",
+      "evidence": [
+        {"kind": "public_site_copy", "url": "https://www.quukk.com/#llmrouter", "note_zh": "官网支撑平台介绍。"}
+      ]
+    }
+  ]
+}

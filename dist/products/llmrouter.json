@@ -1,0 +1,39 @@
+{
+  "schema_version": "1",
+  "id": "llmrouter",
+  "category": "support",
+  "name": "万流 LLMRouter",
+  "aliases": [
+    "万流",
+    "LLMRouter"
+  ],
+  "description": "统一 AI API 网关与管理平台，用于模型路由、调用和用量管理。",
+  "url": "https://llmrouter.quukk.com/",
+  "detail_page": "https://www.quukk.com/products/llmrouter.html",
+  "capabilities": [
+    {
+      "id": "model-routing",
+      "name": "模型路由",
+      "status": "public_description"
+    },
+    {
+      "id": "usage-management",
+      "name": "调用与用量管理",
+      "status": "public_description"
+    }
+  ],
+  "limits": [
+    "官网目录页的介绍不等同于 API 价格、结算或生产可用性验收。"
+  ],
+  "access": "external_site",
+  "actions": [],
+  "status": "public_description",
+  "last_verified": "2026-11-14",
+  "evidence": [
+    {
+      "kind": "public_site_copy",
+      "url": "https://www.quukk.com/#llmrouter",
+      "note_zh": "官网支撑平台介绍。"
+    }
+  ]
+}

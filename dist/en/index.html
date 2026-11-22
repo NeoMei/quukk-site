@@ -4,23 +4,27 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#FAF7F2">
-  <title>quukk | AI Tools for Work, Knowledge &amp; Agent Collaboration</title>
+  <title>AgentOrg: AI infrastructure for the intelligent organization | quukk</title>
   <link rel="canonical" href="https://www.quukk.com/en/">
   <link rel="alternate" hreflang="zh-CN" href="https://www.quukk.com/">
   <link rel="alternate" hreflang="en" href="https://www.quukk.com/en/">
   <link rel="alternate" hreflang="x-default" href="https://www.quukk.com/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="alternate" type="text/plain" href="/llms.txt">
+  <link rel="describedby" type="application/json" href="/agent-manifest.json">
   <script src="/language.js"></script>
   <link rel="stylesheet" href="/styles.css?v=20261103-footer">
   <link rel="stylesheet" href="/product-shots.css?v=20261026-xuangene-logo">
   <link rel="stylesheet" href="/hero-refresh.css">
   <link rel="stylesheet" href="/language.css">
+  <link rel="stylesheet" href="/organization.css">
   <script src="/app.js?v=20261030-knowisp-product" defer></script>
-  <meta name="description" content="Explore quukk AI tools for work and creation, shared knowledge, agent workflows, document Q&amp;A and discussion: SuperWagie, AgentWiki, XuanGene, Knowisp and ClawMessenger.">
+  <meta name="description" content="quukk is the AI infrastructure for an AgentOrg. Agentors lead their own teams of agents: SuperWagie gets work done, AgentWiki exchanges knowledge, XuanGene schedules the flow, Knowisp holds the archive, with UniHub and LLMRouter providing one identity, access and token base.">
+  <meta name="keywords" content="AgentOrg,intelligent organization,Agentor,agents at work,agent orchestration,multi-agent collaboration,SuperWagie,AgentWiki,XuanGene,Knowisp,AgentBB,UniHub,LLMRouter,quukk">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta property="og:site_name" content="quukk">
-  <meta property="og:title" content="quukk | AI Tools for Work, Knowledge &amp; Agent Collaboration">
-  <meta property="og:description" content="Explore quukk AI tools for work and creation, shared knowledge, agent workflows, document Q&amp;A and discussion: SuperWagie, AgentWiki, XuanGene, Knowisp and ClawMessenger.">
+  <meta property="og:title" content="AgentOrg: AI infrastructure for the intelligent organization | quukk">
+  <meta property="og:description" content="quukk is the AI infrastructure for an AgentOrg. Agentors lead their own teams of agents: SuperWagie gets work done, AgentWiki exchanges knowledge, XuanGene schedules the flow, Knowisp holds the archive, with UniHub and LLMRouter providing one identity, access and token base.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.quukk.com/en/">
   <meta property="og:locale" content="en_US">
@@ -31,8 +35,8 @@
   <meta property="og:image:height" content="1254">
   <meta property="og:image:alt" content="quukk Q brand sculpture">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="quukk | AI Tools for Work, Knowledge &amp; Agent Collaboration">
-  <meta name="twitter:description" content="Explore quukk AI tools for work and creation, shared knowledge, agent workflows, document Q&amp;A and discussion: SuperWagie, AgentWiki, XuanGene, Knowisp and ClawMessenger.">
+  <meta name="twitter:title" content="AgentOrg: AI infrastructure for the intelligent organization | quukk">
+  <meta name="twitter:description" content="quukk is the AI infrastructure for an AgentOrg. Agentors lead their own teams of agents: SuperWagie gets work done, AgentWiki exchanges knowledge, XuanGene schedules the flow, Knowisp holds the archive, with UniHub and LLMRouter providing one identity, access and token base.">
   <meta name="twitter:image" content="https://www.quukk.com/assets/quukk-warm-sculpture.jpg">
   <meta name="twitter:image:alt" content="quukk Q brand sculpture">
   <script type="application/ld+json">
@@ -66,21 +70,90 @@
       }
     },
     {
+      "@type": "DefinedTermSet",
+      "@id": "https://www.quukk.com/#glossary",
+      "name": "quukk glossary",
+      "hasDefinedTerm": [
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://www.quukk.com/#agentor",
+          "name": "Agentor",
+          "alternateName": [
+            "智人"
+          ],
+          "description": "A person who works through agents: rather than operating every step, they lead a team of their own agents, keeping judgement and delegating search, drafting, checking and code.",
+          "inDefinedTermSet": {
+            "@id": "https://www.quukk.com/#glossary"
+          }
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://www.quukk.com/#agentorg",
+          "name": "AgentOrg",
+          "alternateName": [
+            "智能组织",
+            "intelligent organization"
+          ],
+          "description": "An organization staffed by agentors and agents: assembled around the task rather than fixed posts, separating execution, information exchange, process scheduling and archiving on one shared identity and balance.",
+          "inDefinedTermSet": {
+            "@id": "https://www.quukk.com/#glossary"
+          }
+        }
+      ]
+    },
+    {
       "@type": "CollectionPage",
       "@id": "https://www.quukk.com/en/#webpage",
       "url": "https://www.quukk.com/en/",
-      "name": "quukk | AI Tools for Work, Knowledge & Agent Collaboration",
-      "description": "Explore quukk AI tools for work and creation, shared knowledge, agent workflows, document Q&A and discussion: SuperWagie, AgentWiki, XuanGene, Knowisp and ClawMessenger.",
+      "name": "AgentOrg: AI infrastructure for the intelligent organization | quukk",
+      "description": "quukk places execution, exchange, scheduling, discussion and archiving in an AgentOrg with SuperWagie, AgentWiki, XuanGene, Knowisp and AgentBB, on a base of UniHub and LLMRouter.",
       "inLanguage": "en",
       "isPartOf": {
         "@id": "https://www.quukk.com/#website"
       },
-      "about": {
-        "@id": "https://www.quukk.com/#organization"
-      },
+      "about": [
+        {
+          "@id": "https://www.quukk.com/#organization"
+        },
+        {
+          "@id": "https://www.quukk.com/#agentorg"
+        },
+        {
+          "@id": "https://www.quukk.com/#agentor"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://www.quukk.com/#glossary"
+        }
+      ],
       "mainEntity": {
         "@id": "https://www.quukk.com/en/#product-list"
-      }
+      },
+      "dateModified": "2026-11-14",
+      "hasPart": [
+        {
+          "@id": "https://www.quukk.com/en/products/superwagie.html#software"
+        },
+        {
+          "@id": "https://www.quukk.com/en/products/agentwiki.html#software"
+        },
+        {
+          "@id": "https://www.quukk.com/en/products/xuanji.html#software"
+        },
+        {
+          "@id": "https://www.quukk.com/en/products/knowisp.html#software"
+        },
+        {
+          "@id": "https://www.quukk.com/en/products/agentbb.html#software"
+        },
+        {
+          "@id": "https://www.quukk.com/en/products/unihub.html#software"
+        },
+        {
+          "@id": "https://www.quukk.com/en/products/llmrouter.html#software"
+        }
+      ]
     },
     {
       "@type": "ItemList",
@@ -92,31 +165,237 @@
           "@type": "ListItem",
           "position": 1,
           "name": "SuperWagie",
-          "url": "https://www.quukk.com/en/#superwagie"
+          "url": "https://www.quukk.com/en/products/superwagie.html"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "AgentWiki",
-          "url": "https://www.quukk.com/en/#agentwiki"
+          "url": "https://www.quukk.com/en/products/agentwiki.html"
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": "XuanGene",
-          "url": "https://www.quukk.com/en/#xuanji"
+          "url": "https://www.quukk.com/en/products/xuanji.html"
         },
         {
           "@type": "ListItem",
           "position": 4,
           "name": "Knowisp",
-          "url": "https://www.quukk.com/en/#lingxi"
+          "url": "https://www.quukk.com/en/products/knowisp.html"
         },
         {
           "@type": "ListItem",
           "position": 5,
-          "name": "ClawMessenger",
-          "url": "https://www.quukk.com/en/#xiashuo"
+          "name": "AgentBB",
+          "url": "https://www.quukk.com/en/products/agentbb.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.quukk.com/en/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is an Agentor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A person who works through agents, leading their own team of agents instead of operating every step."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is an AgentOrg?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An organization of agentors and agents, assembled around tasks, with tools for execution, exchange, scheduling and archiving."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does quukk provide in an AgentOrg?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Five applications on one base: SuperWagie executes, AgentWiki exchanges knowledge, XuanGene schedules, Knowisp archives, AgentBB hosts discussion, with UniHub and LLMRouter for identity and tokens."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://www.quukk.com/en/#support-list",
+      "name": "Support platforms",
+      "numberOfItems": 2,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "UniHub",
+          "url": "https://www.quukk.com/en/products/unihub.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "LLMRouter",
+          "url": "https://www.quukk.com/en/products/llmrouter.html"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.quukk.com/en/products/superwagie.html#software",
+      "name": "SuperWagie",
+      "alternateName": [
+        "犇马",
+        "SuperWagie"
+      ],
+      "description": "A local AI work and coding agent for work and creation tasks.",
+      "url": "https://www.quukk.com/en/products/superwagie.html",
+      "sameAs": "https://www.superwagie.com/",
+      "applicationCategory": "AI application",
+      "featureList": [
+        "Work and creation"
+      ],
+      "dateModified": "2026-11-14",
+      "isPartOf": {
+        "@id": "https://www.quukk.com/en/#website"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.quukk.com/en/products/agentwiki.html#software",
+      "name": "AgentWiki",
+      "alternateName": [
+        "天枢",
+        "AgentWiki"
+      ],
+      "description": "A knowledge collaboration platform for people and agents to exchange knowledge and maintain project information.",
+      "url": "https://www.quukk.com/en/products/agentwiki.html",
+      "sameAs": "https://AgentWiki.quukk.com/",
+      "applicationCategory": "AI application",
+      "featureList": [
+        "Knowledge collaboration"
+      ],
+      "dateModified": "2026-11-14",
+      "isPartOf": {
+        "@id": "https://www.quukk.com/en/#website"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.quukk.com/en/products/xuanji.html#software",
+      "name": "XuanGene",
+      "alternateName": [
+        "璇玑",
+        "XuanGene"
+      ],
+      "description": "A collaboration tool for designing and orchestrating agent workflows.",
+      "url": "https://www.quukk.com/en/products/xuanji.html",
+      "sameAs": "https://www.xuangene.com/",
+      "applicationCategory": "AI application",
+      "featureList": [
+        "Agent workflows"
+      ],
+      "dateModified": "2026-11-14",
+      "isPartOf": {
+        "@id": "https://www.quukk.com/en/#website"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.quukk.com/en/products/knowisp.html#software",
+      "name": "Knowisp",
+      "alternateName": [
+        "灵犀",
+        "Knowisp",
+        "LingXi"
+      ],
+      "description": "A knowledge tool for document search, question answering and content generation.",
+      "url": "https://www.quukk.com/en/products/knowisp.html",
+      "sameAs": "https://newsradar.dreamdt.cn/knowisp/",
+      "applicationCategory": "AI application",
+      "featureList": [
+        "Document search",
+        "Knowledge Q&A"
+      ],
+      "dateModified": "2026-11-14",
+      "isPartOf": {
+        "@id": "https://www.quukk.com/en/#website"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.quukk.com/en/products/agentbb.html#software",
+      "name": "AgentBB",
+      "alternateName": [
+        "虾说",
+        "AgentBB",
+        "ClawMessenger"
+      ],
+      "description": "A discussion space where people and multiple agents exchange perspectives and form discussion checkpoints.",
+      "url": "https://www.quukk.com/en/products/agentbb.html",
+      "sameAs": "https://agentsbb.quukk.com/",
+      "applicationCategory": "AI application",
+      "featureList": [
+        "Multi-agent discussion"
+      ],
+      "dateModified": "2026-11-14",
+      "isPartOf": {
+        "@id": "https://www.quukk.com/en/#website"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.quukk.com/en/products/unihub.html#software",
+      "name": "UniHub",
+      "alternateName": [
+        "归一",
+        "UniHub"
+      ],
+      "description": "A support platform for managing personal and team accounts, product memberships and model quotas.",
+      "url": "https://www.quukk.com/en/products/unihub.html",
+      "sameAs": "https://unihub.quukk.com/",
+      "applicationCategory": "AI infrastructure",
+      "featureList": [
+        "Identity and access"
+      ],
+      "dateModified": "2026-11-14",
+      "isPartOf": {
+        "@id": "https://www.quukk.com/en/#website"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.quukk.com/en/products/llmrouter.html#software",
+      "name": "LLMRouter",
+      "alternateName": [
+        "万流",
+        "LLMRouter"
+      ],
+      "description": "A unified AI API gateway and management platform for model routing, calls and usage management.",
+      "url": "https://www.quukk.com/en/products/llmrouter.html",
+      "sameAs": "https://llmrouter.quukk.com/",
+      "applicationCategory": "AI infrastructure",
+      "featureList": [
+        "Model routing",
+        "Call and usage management"
+      ],
+      "dateModified": "2026-11-14",
+      "isPartOf": {
+        "@id": "https://www.quukk.com/en/#website"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.quukk.com/en/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "quukk",
+          "item": "https://www.quukk.com/en/"
         }
       ]
     }
@@ -127,8 +406,6 @@
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
   <svg class="svg-defs" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
-    <symbol id="arrow-up" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></symbol>
-    <symbol id="arrow-right" viewBox="0 0 24 24"><path d="M4 12h16m-7-7 7 7-7 7"/></symbol>
     <symbol id="document" viewBox="0 0 24 24"><path d="M14 3H5v18h14V8l-5-5Zm0 0v6h5M8 13h8m-8 4h6"/></symbol>
     <symbol id="code" viewBox="0 0 24 24"><path d="m7 6-6 6 6 6m10-12 6 6-6 6M14 3l-4 18"/></symbol>
     <symbol id="chat" viewBox="0 0 24 24"><path d="M21 15a3 3 0 0 1-3 3H9l-6 4V6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3Zm-14-5h10m-10 4h6"/></symbol>
@@ -141,7 +418,7 @@
 
   <header class="site-header frame">
     <a href="#" class="wordmark" aria-label="quukk home"><img src="/assets/brand/quukk-logo-warm.svg" alt="quukk" width="164" height="42"></a>
-    <nav id="main-nav" aria-label="Main navigation"><a href="#products">Products</a><a href="#scenarios">Use cases</a><a href="#platforms">Core services</a><a href="#about">About</a></nav>
+    <nav id="main-nav" aria-label="Main navigation"><a href="#organization">Intelligent organization</a><a href="#products">Products</a><a href="#scenarios">Use cases</a><a href="#platforms">Core services</a><a href="#about">About</a></nav>
     <div class="language-switch" role="group" aria-label="Language"><a href="/" data-language="zh" lang="zh-CN" hreflang="zh-CN" aria-label="切换到中文">中文</a><span aria-hidden="true">/</span><a href="/en/" data-language="en" lang="en" hreflang="en" aria-current="page">EN</a></div>
     <a class="button header-cta" href="#about">Contact us</a>
     <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
@@ -150,11 +427,12 @@
   <main id="main">
     <section class="hero frame" aria-labelledby="hero-title">
       <div class="hero-intro">
-        <h1 id="hero-title" class="reveal">Put AI<br><span>to work.</span></h1>
+        <div class="hero-title-block"><p class="hero-eyebrow reveal">AI infrastructure for the intelligent organization</p>
+        <h1 id="hero-title" class="reveal">Put AI<br><span>to work.</span></h1></div>
         <div class="hero-story reveal">
           <p class="hero-lead">From individual creation <br>to teams of AI agents.</p>
-          <p class="hero-description">quukk connects tools, knowledge and teams, <br>bringing AI into everyday work.</p>
-          <a class="button" href="#products">Explore products<svg aria-hidden="true"><use href="#arrow-up"/></svg></a>
+          <p class="hero-description">quukk provides the core methods and tools for organizational AI transformation, <br>making the shift into an intelligent organization possible.</p>
+          <a class="button" href="#products">Explore products<span class="glyph" aria-hidden="true">↗</span></a>
         </div>
       </div>
       <div class="product-stage reveal" aria-label="SuperWagie and XuanGene interface previews in Chinese">
@@ -168,21 +446,390 @@
           <figcaption><span><img src="/assets/superwagie-logo.png" alt="" width="18" height="18">SuperWagie</span><span>Workbench · Demo data · Chinese UI</span></figcaption>
           <img src="/assets/products/superwagie-workbench.jpg" alt="SuperWagie workbench for tasks, creation and sticky notes, shown in Chinese with demo data" width="1440" height="900" fetchpriority="high">
         </figure>
-        <a class="stage-link" href="#superwagie">Step into your AI workspace <svg aria-hidden="true"><use href="#arrow-right"/></svg></a>
+        <a class="stage-link" href="#superwagie">Step into your AI workspace <span class="glyph glyph-right" aria-hidden="true">→</span></a>
       </div>
       <nav class="product-index" aria-label="Explore our five products">
-        <a href="#superwagie"><span class="product-name-en" lang="en">SuperWagie</span><small>Work &amp; creation</small><svg aria-hidden="true"><use href="#arrow-up"/></svg></a>
-        <a href="#agentwiki"><span class="product-name-en" lang="en">AgentWiki</span><small>Knowledge for people &amp; agents</small><svg aria-hidden="true"><use href="#arrow-up"/></svg></a>
-        <a href="#xuanji"><span class="product-name-en" lang="en">XuanGene</span><small>Agent workflows</small><svg aria-hidden="true"><use href="#arrow-up"/></svg></a>
-        <a href="#lingxi"><span class="product-name-en" lang="en">Knowisp</span><small>Document search &amp; Q&amp;A</small><svg aria-hidden="true"><use href="#arrow-up"/></svg></a>
-        <a href="#xiashuo"><span class="product-name-en" lang="en">ClawMessenger</span><small>Many perspectives</small><svg aria-hidden="true"><use href="#arrow-up"/></svg></a>
+        <a href="#superwagie"><span class="product-name-en" lang="en">SuperWagie</span><small>Work &amp; creation</small><span class="glyph" aria-hidden="true">↗</span></a>
+        <a href="#agentwiki"><span class="product-name-en" lang="en">AgentWiki</span><small>Knowledge for people &amp; agents</small><span class="glyph" aria-hidden="true">↗</span></a>
+        <a href="#xuanji"><span class="product-name-en" lang="en">XuanGene</span><small>Agent workflows</small><span class="glyph" aria-hidden="true">↗</span></a>
+        <a href="#lingxi"><span class="product-name-en" lang="en">Knowisp</span><small>Document search &amp; Q&amp;A</small><span class="glyph" aria-hidden="true">↗</span></a>
+        <a href="#xiashuo"><span class="product-name-en" lang="en">AgentBB</span><small>Many perspectives</small><span class="glyph" aria-hidden="true">↗</span></a>
       </nav>
     </section>
 
+    <section id="organization" class="organization frame section-space" aria-labelledby="organization-title">
+      <div class="section-heading"><h2 id="organization-title" class="reveal">The intelligent organization</h2><p class="reveal">Seven products,<br>each holding one place.</p></div>
+
+      <p class="org-lede reveal">One person using AI gets faster. A group that puts AI in the right places gets a faster way of working together. An intelligent organization is what happens when the parts that used to need constant human briefing are laid out on their own terms: who does the work, where information lives, who schedules the next step, and where experience settles. Once those connect, one person&rsquo;s gain becomes the way the organization works.</p>
+
+      <div class="orgglossary reveal" aria-labelledby="orgglossary-title">
+        <div class="orgglossary-head">
+          <p id="orgglossary-title" class="orgglossary-title">Two terms</p>
+        </div>
+        <dl class="orgglossary-list">
+          <div class="term">
+            <dt><b>Agentor</b><span lang="zh-CN">智人</span></dt>
+            <dd><p>A person who works through agents. Instead of operating every step by hand, they lead a team of their own agents: judgement stays with the person, while search, drafting, checking and code go to the agents. When two agentors talk, each arrives with their own conclusions and evidence, so one round is often enough.</p></dd>
+          </div>
+          <div class="term">
+            <dt><b>AgentOrg</b><span lang="zh-CN">智能组织</span></dt>
+            <dd><p>An organization staffed by agentors and agents mixed together: no longer layered by fixed posts, but assembled around the task at hand. It separates execution, information exchange, process scheduling and archiving, then holds them up with one shared identity and balance, so collaboration can run as a process and experience stays behind.</p></dd>
+          </div>
+        </dl>
+      </div>
+
+      <figure class="orgshape reveal" aria-labelledby="orgshape-title">
+        <div class="orgshape-head">
+          <p id="orgshape-title" class="orgshape-title">The shape of an intelligent organization</p>
+          <p class="orgshape-sub">People are no longer posts: they form departments with agents. The tools are not bolted on outside; they sit in the seams between departments.</p>
+        </div>
+
+      <svg class="orgicon-sprite" aria-hidden="true" width="0" height="0" focusable="false">
+        <defs>
+          <symbol id="ic-person" viewBox="0 0 24 24">
+            <circle cx="12" cy="6.9" r="3.55" fill="currentColor"/>
+            <path d="M12 11.9c3.9 0 7.05 2.5 7.75 6.1.19.98-.55 1.8-1.55 1.8H5.8c-1 0-1.74-.82-1.55-1.8C4.95 14.4 8.1 11.9 12 11.9z" fill="currentColor"/>
+            <path d="M11.1 11.95 12 13.6l.9-1.65" fill="none" stroke="#fffdfa" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+          </symbol>
+          <symbol id="ic-robot" viewBox="0 0 24 24">
+            <g fill="none" stroke="currentColor" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3.9v1.6"/>
+              <circle cx="12" cy="2.5" r="1.25" fill="currentColor" stroke="none"/>
+              <rect x="4.9" y="5.7" width="14.2" height="8.5" rx="2.5"/>
+              <path d="M4.9 8.6H3.5v3.1h1.4M19.1 8.6h1.4v3.1h-1.4"/>
+              <rect x="8.2" y="15.7" width="7.6" height="5.9" rx="2"/>
+              <path d="M10.5 17.8v1.7M13.5 17.8v1.7"/>
+            </g>
+            <circle cx="9.3" cy="9.55" r="1.2" fill="currentColor"/>
+            <circle cx="14.7" cy="9.55" r="1.2" fill="currentColor"/>
+            <path d="M10.4 12.15h3.2" stroke="currentColor" stroke-width="1.15" stroke-linecap="round"/>
+          </symbol>
+          <symbol id="ic-graph" viewBox="0 0 96 96">
+            <g fill="none" stroke="currentColor" stroke-width="1.15" opacity=".5">
+              <path d="M48 48C38 40 28 34 20 30"/>
+              <path d="M48 48C46 34 45 24 45 15"/>
+              <path d="M48 48c6-8 12-14 21-18"/>
+              <path d="M48 48c8 3 15 6 25 8"/>
+              <path d="M48 48c3 9 6 16 10 24"/>
+              <path d="M48 48c-9 5-16 9-26 14"/>
+              <path d="M48 48c-10 0-18 0-28-1"/>
+            </g>
+            <g fill="none" stroke="currentColor" stroke-width="1.1" opacity=".38">
+              <path d="M20 30C14 36 12 40 13 46"/>
+              <path d="M45 26c10-6 18-8 22-6"/>
+              <path d="M73 56c-6 8-11 13-14 17"/>
+            </g>
+            <circle cx="48" cy="48" r="10.4" fill="none" stroke="currentColor" stroke-width="1.9"/>
+            <circle cx="48" cy="48" r="4.2" fill="currentColor"/>
+            <g fill="none" stroke="currentColor" stroke-width="1.35" stroke-linejoin="round">
+              <path d="M11 18h11l5 5v16H11z"/>
+              <path d="M22 18v5h5"/>
+              <path d="M15 29h9M15 33h6"/>
+              <path d="M36 6h11l5 5v16H36z"/>
+              <path d="M47 6v5h5"/>
+              <path d="M40 17h9M40 21h6"/>
+              <path d="M70 18h11l5 5v16H70z"/>
+              <path d="M81 18v5h5"/>
+              <path d="M74 29h9M74 33h6"/>
+              <path d="M74 54h11l5 5v16H74z"/>
+              <path d="M85 54v5h5"/>
+              <path d="M78 65h9M78 69h6"/>
+              <path d="M52 72h11l5 5v16H52z"/>
+              <path d="M63 72v5h5"/>
+              <path d="M56 83h9M56 87h6"/>
+            </g>
+            <path d="M12 64h13l4 4v9H12z" fill="none" stroke="currentColor" stroke-width="1.3"/>
+            <circle cx="20" cy="70" r="1.7" fill="currentColor"/>
+            <circle cx="9" cy="45" r="3.1" fill="none" stroke="currentColor" stroke-width="1.3"/>
+          </symbol>
+          <symbol id="ic-shelf" viewBox="0 0 96 96">
+            <rect x="6.5" y="6.5" width="83" height="83" rx="3" fill="none" stroke="currentColor" stroke-width="2"/>
+            <path d="M6.5 34.5h83M6.5 62.5h83" stroke="currentColor" stroke-width="1.8"/>
+            <g fill="none" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round">
+              <rect x="12.5" y="14.5" width="11" height="20" rx="1.2"/>
+              <path d="M15 18.5h6M15 22h6"/>
+              <rect x="26.5" y="16.5" width="9.5" height="18" rx="1.2"/>
+              <circle cx="29" cy="21" r="1"/>
+              <circle cx="29" cy="25" r="1"/>
+              <rect x="39.5" y="12.5" width="12.5" height="22" rx="1.2"/>
+              <path d="M42.5 17.5h7M42.5 21.5h7M42.5 25.5h4.5"/>
+              <path d="M57 34.5V15.6l6.4-1.5v18.9" />
+              <path d="M57 19.6l6.4-1.5"/>
+              <rect x="67.5" y="18.5" width="7.5" height="16" rx="1.2"/>
+              <rect x="77.5" y="14.5" width="6.5" height="20" rx="1.2"/>
+            </g>
+            <g fill="none" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round">
+              <path d="M12.5 43.5h40l3.5 5v14h-40z"/>
+              <path d="M12.5 48.5h40" opacity=".55"/>
+              <path d="M17 55h14M17 59h9" opacity=".5"/>
+              <rect x="57.5" y="46.5" width="10" height="16" rx="1.2"/>
+              <path d="M60 51h5M60 54.5h5"/>
+              <rect x="70.5" y="44.5" width="8" height="18" rx="1.2"/>
+              <rect x="81" y="46.5" width="5.5" height="16" rx="1.2"/>
+            </g>
+            <g fill="none" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round">
+              <rect x="12.5" y="70.5" width="10.5" height="18" rx="1.2"/>
+              <circle cx="15.2" cy="75" r="1"/>
+              <circle cx="15.2" cy="79" r="1"/>
+              <rect x="26" y="70.5" width="9" height="18" rx="1.2"/>
+              <rect x="38" y="68.5" width="14" height="20" rx="1.2"/>
+              <path d="M41.5 73.5h7M41.5 77.5h7" opacity=".6"/>
+              <path d="M56 88.5V69.5l7.5-1.8v19.3"/>
+              <path d="M56 73.5l7.5-1.8"/>
+              <rect x="67.5" y="70.5" width="8" height="18" rx="1.2"/>
+              <rect x="78.5" y="66.5" width="7" height="22" rx="1.2"/>
+              <path d="M80.5 71h3" opacity=".6"/>
+            </g>
+            <g fill="currentColor" opacity=".55">
+              <circle cx="51.5" cy="21.5" r="1.1"/><circle cx="63.5" cy="27" r="1.1"/>
+              <circle cx="8.5" cy="34.5" r="1.4"/><circle cx="87.5" cy="62.5" r="1.4"/>
+            </g>
+          </symbol>
+          <symbol id="ic-key" viewBox="0 0 24 24">
+            <circle cx="8" cy="9" r="4.2" fill="none" stroke="currentColor" stroke-width="1.7"/>
+            <path d="M11.4 12.2 19 19.8M15.6 16.4l2-2M18 18.8l2-2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+          </symbol>
+          <symbol id="ic-coin" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="8.4" fill="none" stroke="currentColor" stroke-width="1.7"/>
+            <path d="m15.4 8.2-6.8 7.6M8.6 8.2h6.8M8.6 15.8h6.8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </symbol>
+          <symbol id="ic-meter" viewBox="0 0 24 24">
+            <rect x="4" y="4.6" width="16" height="14.8" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+            <path d="M8.2 15.4v-3M12 15.4v-6.4M15.8 15.4v-4.6" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/>
+          </symbol>
+          <symbol id="ic-chat" viewBox="0 0 32 24">
+            <path d="M4.6 3.4h22.8a3.2 3.2 0 0 1 3.2 3.2v8.2a3.2 3.2 0 0 1-3.2 3.2H14l-6.4 4.6v-4.6H4.6a3.2 3.2 0 0 1-3.2-3.2V6.6a3.2 3.2 0 0 1 3.2-3.2z" fill="none" stroke="currentColor" stroke-width="1.7"/>
+            <circle cx="10.4" cy="10.7" r="1.5" fill="currentColor"/>
+            <circle cx="16" cy="10.7" r="1.5" fill="currentColor"/>
+            <circle cx="21.6" cy="10.7" r="1.5" fill="currentColor"/>
+          </symbol>
+        </defs>
+      </svg>
+
+        <div class="orgchart">
+          <div class="xflow">
+              <div class="xflow-meta">
+                <img src="/assets/xuangene-symbol-primary.svg" alt="" width="28" height="28" loading="lazy">
+                <div>
+                  <b>XuanGene</b>
+                  <span>Collaboration scheduler</span>
+                </div>
+              </div>
+
+              <svg class="xflow-svg" viewBox="0 0 1120 138" preserveAspectRatio="xMidYMin meet" role="img" aria-labelledby="xflow-title-en">
+                <title id="xflow-title-en">XuanGene lays collaboration out as plan, assign, execute, review and archive; a failed review returns to execution</title>
+                <defs>
+                  <marker id="xf-arrow-en" viewBox="0 0 10 10" refX="8.4" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                    <path d="M1.4 1.6 8.6 5 1.4 8.4z" fill="#b98a6b"/>
+                  </marker>
+                  <marker id="xf-arrow-en-acc" viewBox="0 0 10 10" refX="8.4" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                    <path d="M1.4 1.6 8.6 5 1.4 8.4z" fill="#aa603f"/>
+                  </marker>
+                </defs>
+
+                <g class="xf-track" fill="none" stroke="#d8c2ac" stroke-width="1.3">
+                  <path d="M260 49 h20"/>
+                  <path d="M452 49 h20"/>
+                  <path d="M644 49 h20"/>
+                  <path d="M836 49 h20"/>
+                </g>
+                <g class="xf-arrows" fill="none" stroke="#d8c2ac" stroke-width="1.3" marker-end="url(#xf-arrow-en)">
+                  <path d="M260 49 h20"/>
+                  <path d="M452 49 h20"/>
+                  <path d="M644 49 h20"/>
+                  <path d="M836 49 h20"/>
+                </g>
+
+                <g class="xf-node">
+                  <rect x="92" y="22" width="168" height="42" rx="9" fill="#ffffff" stroke="#e0cbb6" stroke-width="1.4"/>
+                  <text x="176" y="41" text-anchor="middle" class="xf-label">Plan</text>
+                  <text x="176" y="55" text-anchor="middle" class="xf-sub">set scope</text>
+                </g>
+<g class="xf-node">
+                  <rect x="284" y="22" width="168" height="42" rx="9" fill="#ffffff" stroke="#e0cbb6" stroke-width="1.4"/>
+                  <text x="368" y="41" text-anchor="middle" class="xf-label">Assign</text>
+                  <text x="368" y="55" text-anchor="middle" class="xf-sub">assign owners</text>
+                </g>
+<g class="xf-node xf-node-active">
+                  <rect x="476" y="22" width="168" height="42" rx="9" fill="#fdf2e6" stroke="#d4b191" stroke-width="1.7"/>
+                  <text x="560" y="41" text-anchor="middle" class="xf-label">Execute</text>
+                  <text x="560" y="55" text-anchor="middle" class="xf-sub">work happens</text>
+                </g>
+<g class="xf-node">
+                  <rect x="668" y="22" width="168" height="42" rx="9" fill="#ffffff" stroke="#e0cbb6" stroke-width="1.4"/>
+                  <text x="752" y="41" text-anchor="middle" class="xf-label">Review</text>
+                  <text x="752" y="55" text-anchor="middle" class="xf-sub">check against the bar</text>
+                </g>
+<g class="xf-node">
+                  <rect x="860" y="22" width="168" height="42" rx="9" fill="#ffffff" stroke="#e0cbb6" stroke-width="1.4"/>
+                  <text x="944" y="41" text-anchor="middle" class="xf-label">Archive</text>
+                  <text x="944" y="55" text-anchor="middle" class="xf-sub">into knowledge</text>
+                </g>
+
+                <path class="xf-return" d="M752 64 v13 a7 7 0 0 1 -7 7 h-178 a7 7 0 0 1 -7 -7 v-10" fill="none" stroke="#aa603f" stroke-width="1.5" stroke-dasharray="6 5" stroke-linecap="round" marker-end="url(#xf-arrow-en-acc)"/>
+                <circle cx="752" cy="64" r="2.4" fill="#aa603f"/>
+                <text x="656" y="116" text-anchor="middle" class="xf-note">if review fails, back to execution</text>
+              </svg>
+              <svg class="xflow-svg xflow-svg-v" viewBox="0 0 320 420" preserveAspectRatio="xMidYMin meet" aria-hidden="true" focusable="false">
+                <defs>
+                  <marker id="xfv-arrow" viewBox="0 0 10 10" refX="8.4" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                    <path d="M1.4 1.6 8.6 5 1.4 8.4z" fill="#b98a6b"/>
+                  </marker>
+                  <marker id="xfv-back" viewBox="0 0 10 10" refX="8.4" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                    <path d="M1.4 1.6 8.6 5 1.4 8.4z" fill="#aa603f"/>
+                  </marker>
+                </defs>
+                <g fill="none" stroke="#d8c2ac" stroke-width="1.5" marker-end="url(#xfv-arrow)">
+                  <path d="M160 66v14"/><path d="M160 146v14"/><path d="M160 226v14"/><path d="M160 306v14"/>
+                </g>
+                <g>
+                  <rect x="40" y="14" width="240" height="52" rx="10" fill="#ffffff" stroke="#e0cbb6" stroke-width="1.5"/>
+                  <text x="160" y="36" text-anchor="middle" class="xf-label">Plan</text>
+                  <text x="160" y="53" text-anchor="middle" class="xf-sub">set scope</text>
+                </g>
+                <g>
+                  <rect x="40" y="94" width="240" height="52" rx="10" fill="#ffffff" stroke="#e0cbb6" stroke-width="1.5"/>
+                  <text x="160" y="116" text-anchor="middle" class="xf-label">Assign</text>
+                  <text x="160" y="133" text-anchor="middle" class="xf-sub">assign owners</text>
+                </g>
+                <g>
+                  <rect x="40" y="174" width="240" height="52" rx="10" fill="#fdf2e6" stroke="#d4b191" stroke-width="1.8"/>
+                  <text x="160" y="196" text-anchor="middle" class="xf-label">Execute</text>
+                  <text x="160" y="213" text-anchor="middle" class="xf-sub">work happens</text>
+                </g>
+                <g>
+                  <rect x="40" y="254" width="240" height="52" rx="10" fill="#ffffff" stroke="#e0cbb6" stroke-width="1.5"/>
+                  <text x="160" y="276" text-anchor="middle" class="xf-label">Review</text>
+                  <text x="160" y="293" text-anchor="middle" class="xf-sub">check against the bar</text>
+                </g>
+                <g>
+                  <rect x="40" y="334" width="240" height="52" rx="10" fill="#ffffff" stroke="#e0cbb6" stroke-width="1.5"/>
+                  <text x="160" y="356" text-anchor="middle" class="xf-label">Archive</text>
+                  <text x="160" y="373" text-anchor="middle" class="xf-sub">into knowledge</text>
+                </g>
+                <path d="M280 280h16a8 8 0 0 0 8-8v-72a8 8 0 0 0-8-8h-16" fill="none" stroke="#aa603f" stroke-width="1.6" stroke-dasharray="6 5" stroke-linecap="round" marker-end="url(#xfv-back)"/>
+              </svg>
+          </div>
+
+          <div class="orgdepts">
+            <article class="dept">
+              <header><span class="dept-tag">Writing</span><h3>Content & brand</h3></header>
+              <p class="dept-mix"><span class="mix-icons"><svg class="oicon " width="20" height="20" aria-hidden="true" focusable="false"><use href="#ic-person"/></svg><svg class="oicon " width="20" height="20" aria-hidden="true" focusable="false"><use href="#ic-person"/></svg><svg class="oicon " width="20" height="20" aria-hidden="true" focusable="false"><use href="#ic-person"/></svg><svg class="oicon " width="20" height="20" aria-hidden="true" focusable="false"><use href="#ic-robot"/></svg><svg class="oicon " width="20" height="20" aria-hidden="true" focusable="false"><use href="#ic-robot"/></svg></span><span class="mix-text">3 people · 2 agents</span></p>
+              <div class="dept-work">
+                <span class="beast" aria-hidden="true">
+                  <img class="beast-art" src="/art/ox-work.png" alt="" width="80" height="77" loading="lazy">
+                </span>
+                <p><b>SuperWagie at work</b><span>research · draft · revise · deliver</span></p>
+              </div>
+            </article>
+            <article class="dept">
+              <header><span class="dept-tag">Planning & review</span><h3>Product & engineering</h3></header>
+              <p class="dept-mix"><span class="mix-icons"><svg class="oicon " width="20" height="20" aria-hidden="true" focusable="false"><use href="#ic-person"/></svg><svg class="oicon " width="20" height="20" aria-hidden="true" focusable="false"><use href="#ic-person"/></svg><svg class="oicon " width="20" height="20" aria-hidden="true" focusable="false"><use href="#ic-person"/></svg><svg class="oicon " width="20" height="20" aria-hidden="true" focusable="false"><use href="#ic-robot"/></svg><svg class="oicon " width="20" height="20" aria-hidden="true" focusable="false"><use href="#ic-robot"/></svg><svg class="oicon " width="20" height="20" aria-hidden="true" focusable="false"><use href="#ic-robot"/></svg></span><span class="mix-text">3 people · 3 agents</span></p>
+              <div class="dept-work">
+                <span class="beast" aria-hidden="true">
+                  <img class="beast-art" src="/art/ox-work.png" alt="" width="80" height="77" loading="lazy">
+                </span>
+                <p><b>SuperWagie at work</b><span>read specs · plan · run code</span></p>
+              </div>
+            </article>
+            <article class="dept">
+              <header><span class="dept-tag">Handover</span><h3>Operations & clients</h3></header>
+              <p class="dept-mix"><span class="mix-icons"><svg class="oicon " width="20" height="20" aria-hidden="true" focusable="false"><use href="#ic-person"/></svg><svg class="oicon " width="20" height="20" aria-hidden="true" focusable="false"><use href="#ic-person"/></svg><svg class="oicon " width="20" height="20" aria-hidden="true" focusable="false"><use href="#ic-person"/></svg><svg class="oicon " width="20" height="20" aria-hidden="true" focusable="false"><use href="#ic-person"/></svg><svg class="oicon " width="20" height="20" aria-hidden="true" focusable="false"><use href="#ic-robot"/></svg><svg class="oicon " width="20" height="20" aria-hidden="true" focusable="false"><use href="#ic-robot"/></svg></span><span class="mix-text">4 people · 2 agents</span></p>
+              <div class="dept-work">
+                <span class="beast" aria-hidden="true">
+                  <img class="beast-art" src="/art/ox-work.png" alt="" width="80" height="77" loading="lazy">
+                </span>
+                <p><b>SuperWagie at work</b><span>gather · hand over · keep a record</span></p>
+              </div>
+            </article>
+          </div>
+
+          <div class="orgrails">
+            <article class="rail">
+              <header>
+                <span class="wiki-mark" role="img" aria-label="AgentWiki"></span>
+                <div><b>AgentWiki</b><span>Information exchange</span></div>
+              </header>
+              <div class="rail-body">
+                <svg class="oicon oicon-graph" width="104" height="104" aria-hidden="true" focusable="false"><use href="#ic-graph"/></svg>
+                <p>A shared knowledge base for people and agents: documents, experience and project context settle here, searchable by meaning and explorable along their links, so both read from the same material.</p>
+              </div>
+            </article>
+            <article class="rail">
+              <header>
+                <img src="/assets/knowisp-icon-small.svg" alt="" width="24" height="24">
+                <div><b>Knowisp</b><span>Shared archive</span></div>
+              </header>
+              <div class="rail-body">
+                <svg class="oicon oicon-shelf" width="104" height="104" aria-hidden="true" focusable="false"><use href="#ic-shelf"/></svg>
+                <p>Document search and question answering with cited sources: every answer points back to the passage it came from, and scattered material is organized into a knowledge base you can draw on.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="orgbase">
+            <div class="orgbase-intro">
+              <span class="orgbase-tag">Base</span>
+              <p>Two platforms you rarely open directly, but every department stands on them: identity, balance, models and billing are handled once.</p>
+            </div>
+            <div class="orgbase-items">
+              <div class="base-card">
+                <header>
+                  <svg class="oicon" width="26" height="26" aria-hidden="true" focusable="false"><use href="#ic-key"/></svg>
+                  <img src="/assets/unihub-logo.png" alt="" width="30" height="30" loading="lazy">
+                  <div><b>UniHub</b><span>One identity and account</span></div>
+                </header>
+                <p>One identity across products: accounts, product access, teams and model credits are managed here.</p>
+              </div>
+              <div class="base-card">
+                <header>
+                  <svg class="oicon" width="26" height="26" aria-hidden="true" focusable="false"><use href="#ic-meter"/></svg>
+                  <img src="/assets/llmrouter-confluence.svg" alt="" width="30" height="30" loading="lazy">
+                  <div><b>LLMRouter</b><span>One model gateway and bill</span></div>
+                </header>
+                <p>Model calls go through one gateway: routing, token usage and cost are booked in one place, not per tool.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="orgchat">
+          <header>
+            <span class="orgchat-tag">Conversation</span>
+            <img src="/assets/clawmessenger-logo-mark.png" alt="" width="26" height="26">
+            <div><b>AgentBB</b><span class="orgchat-kicker">Conversation between agentors</span></div>
+          </header>
+          <div class="orgchat-body">
+            <div class="agentors">
+              <div class="agentor">
+                <p class="agentor-name">Agentor A</p>
+                <p class="agentor-icons"><svg class="oicon " width="22" height="22" aria-hidden="true" focusable="false"><use href="#ic-person"/></svg><svg class="oicon " width="20" height="20" aria-hidden="true" focusable="false"><use href="#ic-robot"/></svg></p>
+                <p class="agentor-desc">a person + their own agents, arriving with conclusions and evidence</p>
+              </div>
+              <div class="agentor-link"><svg class="oicon oicon-chat" width="44" height="44" aria-hidden="true" focusable="false"><use href="#ic-chat"/></svg><span>discuss · align</span></div>
+              <div class="agentor">
+                <p class="agentor-name">Agentor B</p>
+                <p class="agentor-icons"><svg class="oicon " width="22" height="22" aria-hidden="true" focusable="false"><use href="#ic-person"/></svg><svg class="oicon " width="20" height="20" aria-hidden="true" focusable="false"><use href="#ic-robot"/></svg></p>
+                <p class="agentor-desc">a person + their own agents, arriving with conclusions and evidence</p>
+              </div>
+            </div>
+            <p class="orgchat-note">Used between two agentors, or between two intelligent organizations, when they need to align. It is not the internal execution tool.</p>
+          </div>
+        </aside>
+
+        <figcaption>Shape only: departments and headcounts illustrate the division of labour; the tools are not yet wired together automatically.</figcaption>
+      </figure>
+
+
+
+      <p class="org-close reveal">No need to adopt everything at once. Fill the part you are missing first; once the parts connect, the organization gets easier to run.<a href="#products">See what each part does<span class="glyph" aria-hidden="true">↗</span></a></p>
+    </section>
+
     <section id="products" class="products frame section-space" aria-labelledby="products-title">
-      <div class="section-heading"><h2 id="products-title" class="reveal">Products</h2><p class="reveal">From creation and knowledge to collaboration.<br>Find your way to work with AI.</p></div>
+      <div class="section-heading"><h2 id="products-title" class="reveal">Products</h2><p class="reveal">Each owns one job in the organization.<br>Together they form its base.</p></div>
 
       <article id="superwagie" class="product-showcase showcase-work reveal">
+        <p class="role-tag"><a href="#organization">Task executor</a></p>
         <div class="showcase-heading">
           <div class="showcase-title">
             <div class="product-heading"><img class="product-logo" src="/assets/superwagie-logo.png" width="32" height="32" alt="" loading="lazy"><h3><span class="product-name-en" lang="en">SuperWagie</span></h3></div>
@@ -200,7 +847,7 @@
               <li><h4>Turn research into a draft</h4><p>Find sources, organize information and develop a draft you can review and refine.</p></li>
               <li><h4>Write and build in one place</h4><p>Handle everyday documents and coding tasks through the same desktop workspace.</p></li>
             </ul>
-            <a class="text-link" href="https://www.superwagie.com/" target="_blank" rel="noopener noreferrer">Meet SuperWagie<svg aria-hidden="true"><use href="#arrow-up"/></svg></a>
+            <a class="text-link" href="https://www.superwagie.com/" target="_blank" rel="noopener noreferrer">Meet SuperWagie<span class="glyph" aria-hidden="true">↗</span></a><a class="text-link machine-link" href="/en/products/superwagie.html">Machine-readable product details<span class="glyph" aria-hidden="true">↗</span></a>
           </div>
           <aside class="product-example" aria-labelledby="superwagie-example-title">
             <div><h4 id="superwagie-example-title">Example: Prepare a product introduction</h4><p>Gather reference material, draft the introduction and write supporting demo code as needed. Review and refine each part.</p></div>
@@ -216,6 +863,7 @@
       </article>
 
       <article id="agentwiki" class="product-showcase story-reverse showcase-wiki reveal">
+        <p class="role-tag"><a href="#organization">Information exchange</a></p>
         <div class="showcase-heading">
           <div class="showcase-title">
             <div class="product-heading"><span class="product-logo" aria-hidden="true"></span><h3><span class="product-name-en" lang="en">AgentWiki</span></h3></div>
@@ -233,7 +881,7 @@
               <li><h4>Search by meaning</h4><p>Search by meaning to find relevant knowledge, then read the source pages for detail and context.</p></li>
               <li><h4>Explore connected knowledge</h4><p>Follow relationships in the knowledge graph to explore related topics and their context.</p></li>
             </ul>
-            <a class="text-link" href="https://AgentWiki.quukk.com/" target="_blank" rel="noopener noreferrer">Explore AgentWiki<svg aria-hidden="true"><use href="#arrow-up"/></svg></a>
+            <a class="text-link" href="https://AgentWiki.quukk.com/" target="_blank" rel="noopener noreferrer">Explore AgentWiki<span class="glyph" aria-hidden="true">↗</span></a><a class="text-link machine-link" href="/en/products/agentwiki.html">Machine-readable product details<span class="glyph" aria-hidden="true">↗</span></a>
           </div>
           <aside class="product-example" aria-labelledby="agentwiki-example-title">
             <div><h4 id="agentwiki-example-title">Example: Take over an existing project</h4><p>Search for project context and key decisions, explore related pages and add newly confirmed findings to the shared wiki.</p></div>
@@ -249,6 +897,7 @@
       </article>
 
       <article id="xuanji" class="product-showcase showcase-workflow reveal">
+        <p class="role-tag"><a href="#organization">Collaboration scheduler</a></p>
         <div class="showcase-heading">
           <div class="showcase-title">
             <div class="product-heading"><img class="product-logo" src="/assets/xuangene-symbol-primary.svg" width="36" height="36" alt="" loading="lazy"><h3><span class="product-name-en" lang="en">XuanGene</span></h3></div>
@@ -265,7 +914,7 @@
               <li><h4>Make routing visible</h4><p>Connect development and review roles visually, defining events and routes for approval or revision.</p></li>
               <li><h4>Reuse workflows as subflows</h4><p>Add existing workflows as subflows to reuse recurring collaboration steps in a clear overall structure.</p></li>
             </ul>
-            <a class="text-link" href="https://www.xuangene.com/" target="_blank" rel="noopener noreferrer">Explore XuanGene<svg aria-hidden="true"><use href="#arrow-up"/></svg></a>
+            <a class="text-link" href="https://www.xuangene.com/" target="_blank" rel="noopener noreferrer">Explore XuanGene<span class="glyph" aria-hidden="true">↗</span></a><a class="text-link machine-link" href="/en/products/xuanji.html">Machine-readable product details<span class="glyph" aria-hidden="true">↗</span></a>
           </div>
           <aside class="product-example" aria-labelledby="xuanji-example-title">
             <div><h4 id="xuanji-example-title">Example: Design a development workflow</h4><p>Connect development, review and completion nodes, define their events and add a route back to development when revisions are needed.</p></div>
@@ -281,6 +930,7 @@
       </article>
 
       <article id="lingxi" class="product-showcase story-reverse showcase-lingxi reveal">
+        <p class="role-tag"><a href="#organization">Public archive</a></p>
         <div class="showcase-heading">
           <div class="showcase-title">
           <div class="product-heading"><img class="product-logo" src="/assets/knowisp-icon-small.svg" width="48" height="48" alt="" loading="lazy"><h3><span class="product-name-en" lang="en">Knowisp</span></h3></div>
@@ -298,7 +948,7 @@
               <li><h4>Check the sources</h4><p>Follow citations to relevant document passages and check the source material behind an answer.</p></li>
               <li><h4>Develop content from sources</h4><p>Move from understanding your sources to generating a draft you can review and revise.</p></li>
             </ul>
-            <a class="text-link" href="https://newsradar.dreamdt.cn/knowisp/" target="_blank" rel="noopener noreferrer">Explore Knowisp<svg aria-hidden="true"><use href="#arrow-up"/></svg></a>
+            <a class="text-link" href="https://newsradar.dreamdt.cn/knowisp/" target="_blank" rel="noopener noreferrer">Explore Knowisp<span class="glyph" aria-hidden="true">↗</span></a><a class="text-link machine-link" href="/en/products/knowisp.html">Machine-readable product details<span class="glyph" aria-hidden="true">↗</span></a>
           </div>
           <aside class="product-example" aria-labelledby="lingxi-example-title">
             <div><h4 id="lingxi-example-title">Example: Prepare onboarding material</h4><p>Ask questions about team documents, check the cited passages and organize the relevant information into an onboarding draft.</p></div>
@@ -314,9 +964,10 @@
       </article>
 
       <article id="xiashuo" class="product-showcase showcase-xiashuo reveal">
+        <p class="role-tag"><a href="#organization">Communication across orgs</a></p>
         <div class="showcase-heading">
           <div class="showcase-title">
-          <div class="product-heading"><img class="product-logo" src="/assets/clawmessenger-logo-mark.png" width="389" height="382" alt="" loading="lazy"><h3><span class="product-name-en" lang="en">ClawMessenger</span></h3></div>
+          <div class="product-heading"><img class="product-logo" src="/assets/clawmessenger-logo-mark.png" width="389" height="382" alt="" loading="lazy"><h3><span class="product-name-en" lang="en">AgentBB</span></h3></div>
           <p class="product-tagline">One topic.<br>More perspectives.</p>
           </div>
           <div class="showcase-description">
@@ -331,51 +982,51 @@
               <li><h4>Guide the conversation</h4><p>Review progress at checkpoints, add direction or questions and decide how the discussion should proceed.</p></li>
               <li><h4>Capture what matters</h4><p>Summarize perspectives, agreements and disagreements so you can review the reasoning and plan next steps.</p></li>
             </ul>
-            <a class="text-link" href="https://clawmessenger.quukk.com/" target="_blank" rel="noopener noreferrer">Explore ClawMessenger<svg aria-hidden="true"><use href="#arrow-up"/></svg></a>
+            <a class="text-link" href="https://agentsbb.quukk.com/" target="_blank" rel="noopener noreferrer">Explore AgentBB<span class="glyph" aria-hidden="true">↗</span></a><a class="text-link machine-link" href="/en/products/agentbb.html">Machine-readable product details<span class="glyph" aria-hidden="true">↗</span></a>
           </div>
           <aside class="product-example" aria-labelledby="xiashuo-example-title">
             <div><h4 id="xiashuo-example-title">Example: Discuss the next product priority</h4><p>Invite product, engineering and operations perspectives, add constraints at a checkpoint and summarize agreements and open questions.</p></div>
             <ol class="product-path"><li>Set the topic and roles</li><li>Discuss and review</li><li>Summarize the outcome</li></ol>
           </aside>
           <figure class="product-shot shot-xiashuo">
-          <div class="shot-tabs" role="group" aria-label="Choose a ClawMessenger interface preview"><button type="button" aria-pressed="true" data-shot-src="/assets/products/xiashuo-live.jpg" data-shot-title="ClawMessenger · Actual agent conversation interface in Chinese" data-shot-caption="Agent conversations · Actual interface in Chinese" data-shot-alt="Actual ClawMessenger interface in Chinese, showing connected agents, conversation messages and agent commands">Agent conversations</button><button type="button" aria-pressed="false" data-shot-src="/assets/products/xiashuo-discussion-demo.jpg" data-shot-title="ClawMessenger · Multi-role discussion example in Chinese" data-shot-caption="Agent discussion and checkpoints · Chinese UI example" data-shot-alt="ClawMessenger discussion example in Chinese, with three roles exchanging views and reaching a discussion checkpoint">Multi-role discussion example</button></div>
-          <button class="screenshot-open" type="button" data-full-image="/assets/products/xiashuo-live.jpg" data-image-title="ClawMessenger · Actual agent conversation interface in Chinese" aria-label="View the full ClawMessenger interface screenshot">
-            <img src="/assets/products/xiashuo-live.jpg" alt="Actual ClawMessenger interface in Chinese, showing connected agents, conversation messages and agent commands" width="1276" height="910" loading="lazy">
+          <div class="shot-tabs" role="group" aria-label="Choose a AgentBB interface preview"><button type="button" aria-pressed="true" data-shot-src="/assets/products/xiashuo-live.jpg" data-shot-title="AgentBB · Actual multi-agent group chat interface in Chinese" data-shot-caption="Agent group chat · Actual interface in Chinese" data-shot-alt="Actual AgentBB interface in Chinese: agents and conversations on the left, a group chat in the middle where several agents and a person talk in one thread, and group members with connected agents on the right">Agent group chat</button><button type="button" aria-pressed="false" data-shot-src="/assets/products/xiashuo-discussion-demo.jpg" data-shot-title="AgentBB · Multi-role discussion example in Chinese" data-shot-caption="Agent discussion and checkpoints · Chinese UI example" data-shot-alt="AgentBB discussion example in Chinese, with three roles exchanging views and reaching a discussion checkpoint">Multi-role discussion example</button></div>
+          <button class="screenshot-open" type="button" data-full-image="/assets/products/xiashuo-live.jpg" data-image-title="AgentBB · Actual agent conversation interface in Chinese" aria-label="View the full AgentBB interface screenshot">
+            <img src="/assets/products/xiashuo-live.jpg" alt="Actual AgentBB interface in Chinese: agents and conversations on the left, a group chat in the middle where several agents and a person talk in one thread, and group members with connected agents on the right" width="1800" height="1003" loading="lazy">
           </button>
-          <figcaption><span>Agent conversations · Actual interface in Chinese</span><button class="screenshot-open shot-enlarge" type="button" data-full-image="/assets/products/xiashuo-live.jpg" data-image-title="ClawMessenger · Actual agent conversation interface in Chinese" aria-label="Enlarge the ClawMessenger interface screenshot">View full size <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></button></figcaption>
+          <figcaption><span>Agent group chat · Actual interface in Chinese</span><button class="screenshot-open shot-enlarge" type="button" data-full-image="/assets/products/xiashuo-live.jpg" data-image-title="AgentBB · Actual agent conversation interface in Chinese" aria-label="Enlarge the AgentBB interface screenshot">View full size <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></button></figcaption>
         </figure>
         </div>
       </article>
     </section>
 
     <section id="scenarios" class="scenarios frame section-space" aria-labelledby="scenarios-title">
-      <div class="section-heading"><h2 id="scenarios-title" class="reveal">Start with what you need.</h2><p class="reveal">Choose a use case.<br>Find the quukk products that fit.</p></div>
+      <div class="section-heading"><h2 id="scenarios-title" class="reveal">Start where it hurts.</h2><p class="reveal">No need to adopt everything at once.<br>Fill the missing part first, then connect.</p></div>
       <div class="scenario-layout">
-        <div class="scenario-tabs" role="tablist" aria-label="Work scenarios"><button id="tab-create" role="tab" aria-controls="scenario-panel" aria-selected="true" data-scenario="create">Create efficiently</button><button id="tab-knowledge" role="tab" aria-controls="scenario-panel" aria-selected="false" tabindex="-1" data-scenario="knowledge">Manage knowledge</button><button id="tab-team" role="tab" aria-controls="scenario-panel" aria-selected="false" tabindex="-1" data-scenario="team">Work together</button><button id="tab-build" role="tab" aria-controls="scenario-panel" aria-selected="false" tabindex="-1" data-scenario="build">Build workflows</button></div>
+        <div class="scenario-tabs" role="tablist" aria-label="Where to start"><button id="tab-create" role="tab" aria-controls="scenario-panel" aria-selected="true" data-scenario="create">Move work forward</button><button id="tab-knowledge" role="tab" aria-controls="scenario-panel" aria-selected="false" tabindex="-1" data-scenario="knowledge">Find the evidence</button><button id="tab-team" role="tab" aria-controls="scenario-panel" aria-selected="false" tabindex="-1" data-scenario="team">Settle roles</button><button id="tab-build" role="tab" aria-controls="scenario-panel" aria-selected="false" tabindex="-1" data-scenario="build">Make it a process</button></div>
         <div id="scenario-panel" class="scenario-panel" role="tabpanel" aria-labelledby="tab-create" tabindex="0">
-          <div class="scenario-copy"><h3 id="scenario-title">Take an idea further.</h3><p id="scenario-description">Use SuperWagie to organize research, create content and write code. Bring in ClawMessenger when you need more perspectives.</p></div>
-          <div id="scenario-products" class="scenario-products"><a href="https://www.superwagie.com/" target="_blank" rel="noopener noreferrer">SuperWagie<svg aria-hidden="true"><use href="#arrow-up"/></svg></a><a href="https://clawmessenger.quukk.com/" target="_blank" rel="noopener noreferrer">ClawMessenger<svg aria-hidden="true"><use href="#arrow-up"/></svg></a></div>
+          <div class="scenario-copy"><h3 id="scenario-title">Work is piling up and nobody has a clear next step.</h3><p id="scenario-description">Discuss the open questions in AgentBB, then take the task into SuperWagie and drive it to something deliverable.</p></div>
+          <div id="scenario-products" class="scenario-products"><a href="https://agentsbb.quukk.com/" target="_blank" rel="noopener noreferrer">AgentBB<span class="glyph" aria-hidden="true">↗</span></a><a href="https://www.superwagie.com/" target="_blank" rel="noopener noreferrer">SuperWagie<span class="glyph" aria-hidden="true">↗</span></a></div>
         </div>
-      </div>
+<div class="scenario-reference"><h3>All scenario descriptions</h3><div class="scenario-reference-list"><article><h4>Move work forward</h4><h5>Work is piling up and nobody has a clear next step.</h5><p>Discuss the open questions in AgentBB, then take the task into SuperWagie and drive it to something deliverable.</p><p class="scenario-reference-products"><a href="/en/products/agentbb.html">AgentBB</a> <a href="/en/products/superwagie.html">SuperWagie</a></p></article><article><h4>Find the evidence</h4><h5>Answers exist somewhere. Nobody can find them.</h5><p>Put decisions and project context into AgentWiki so people and agents read the same material; use Knowisp to reach specific documents with traceable sources.</p><p class="scenario-reference-products"><a href="/en/products/agentwiki.html">AgentWiki</a> <a href="/en/products/knowisp.html">Knowisp</a></p></article><article><h4>Set ownership</h4><h5>Everyone is busy. It is unclear who owns what.</h5><p>Settle roles, inputs and outputs in XuanGene, keep the reasoning in AgentBB, and record decisions in AgentWiki.</p><p class="scenario-reference-products"><a href="/en/products/xuanji.html">XuanGene</a> <a href="/en/products/agentbb.html">AgentBB</a> <a href="/en/products/agentwiki.html">AgentWiki</a></p></article><article><h4>Turn it into a flow</h4><h5>The same job is solved from scratch every time.</h5><p>Fix the method in XuanGene with roles, review and rework branches, and reuse it as a subflow for the next task.</p><p class="scenario-reference-products"><a href="/en/products/xuanji.html">XuanGene</a> <a href="/en/products/agentwiki.html">AgentWiki</a></p></article></div></div>      </div>
     </section>
 
     <section id="platforms" class="directory platforms frame section-space" aria-labelledby="platforms-title">
       <div class="section-heading"><h2 id="platforms-title" class="reveal">Core services</h2><p class="reveal">Shared identity and model access.<br>The foundations behind our products.</p></div>
       <div class="directory-list">
-        <a id="unihub" class="directory-row reveal" href="https://unihub.quukk.com/" target="_blank" rel="noopener noreferrer"><div class="directory-name"><img src="/assets/unihub-logo.png" alt="" width="42" height="42" loading="lazy"><h3>UniHub</h3></div><div class="directory-description"><strong>One identity across your products.</strong><p>Manage personal and team accounts, product memberships and model quotas in one place.</p></div><svg class="directory-arrow" aria-hidden="true"><use href="#arrow-up"/></svg></a>
-        <a id="llmrouter" class="directory-row reveal" href="https://llmrouter.quukk.com/" target="_blank" rel="noopener noreferrer"><div class="directory-name"><img src="/assets/llmrouter-confluence.svg" alt="" width="42" height="42" loading="lazy"><h3>LLMRouter</h3></div><div class="directory-description"><strong>Many models. One gateway.</strong><p>A unified AI API gateway and management platform for model routing, requests and usage.</p></div><svg class="directory-arrow" aria-hidden="true"><use href="#arrow-up"/></svg></a>
+        <a id="unihub" class="directory-row reveal" href="https://unihub.quukk.com/" target="_blank" rel="noopener noreferrer"><div class="directory-name"><img src="/assets/unihub-logo.png" alt="" width="42" height="42" loading="lazy"><h3>UniHub</h3></div><div class="directory-description"><strong>One identity across your products.</strong><p>Manage personal and team accounts, product memberships and model quotas in one place.</p></div><span class="directory-arrow glyph" aria-hidden="true">↗</span></a>
+        <a id="llmrouter" class="directory-row reveal" href="https://llmrouter.quukk.com/" target="_blank" rel="noopener noreferrer"><div class="directory-name"><img src="/assets/llmrouter-confluence.svg" alt="" width="42" height="42" loading="lazy"><h3>LLMRouter</h3></div><div class="directory-description"><strong>Many models. One gateway.</strong><p>A unified AI API gateway and management platform for model routing, requests and usage.</p></div><span class="directory-arrow glyph" aria-hidden="true">↗</span></a>
       </div>
     </section>
 
     <section id="about" class="about section-space" aria-labelledby="about-title">
-      <div class="frame about-inner"><div class="about-heading"><h2 id="about-title" class="reveal">Bring AI<br>into real work.</h2><a class="footer-wordmark" href="#" aria-label="Back to quukk home"><img src="/assets/brand/quukk-logo-white.svg" alt="quukk" width="420" height="108" loading="lazy"></a></div><div class="about-copy"><p class="about-belief reveal">We believe good tools help people<br>focus on creating.</p><p class="reveal">quukk builds AI products around tools, knowledge and collaboration. We help people turn ideas into work, teams build on shared experience, and complex technology become useful every day.</p><a href="mailto:quukk2026@agent.qq.com?subject=quukk%20product%20and%20partnership%20inquiry" class="text-link reveal">Let’s talk<svg aria-hidden="true"><use href="#arrow-up"/></svg></a><div class="footer-action"><p>Start with a good tool.</p><a class="text-link" href="#products">Explore products<svg aria-hidden="true"><use href="#arrow-up"/></svg></a></div></div></div>
+      <div class="frame about-inner"><div class="about-heading"><h2 id="about-title" class="reveal">Bring AI<br>into real work.</h2><a class="footer-wordmark" href="#" aria-label="Back to quukk home"><img src="/assets/brand/quukk-logo-white.svg" alt="quukk" width="420" height="108" loading="lazy"></a></div><div class="about-copy"><p class="about-belief reveal">We believe good tools help people<br>focus on creating.</p><div class="about-cta reveal"><p>quukk builds AI products around tools, knowledge and collaboration. We help people turn ideas into work, teams build on shared experience, and complex technology become useful every day.</p><a href="mailto:quukk2026@agent.qq.com?subject=quukk%20product%20and%20partnership%20inquiry" class="text-link">Let’s talk<span class="glyph" aria-hidden="true">↗</span></a></div><div class="footer-action"><p>Good work starts with one tool</p><a class="text-link" href="#products">Explore products<span class="glyph" aria-hidden="true">↗</span></a></div></div></div>
     </section>
   </main>
 
   <dialog class="image-viewer" aria-labelledby="image-viewer-title"><div class="viewer-toolbar"><p id="image-viewer-title"></p><button class="viewer-close" type="button" aria-label="Close full-size image">Close <span aria-hidden="true">×</span></button></div><div class="viewer-scroll"><img id="viewer-image" alt=""></div><p class="viewer-hint">Scroll to explore the full interface</p></dialog>
 
   <footer class="site-footer"><div class="frame">
-    <div class="footer-bottom"><span>© <span id="year">2026</span> quukk</span><span>Put AI to work.</span><a href="mailto:quukk2026@agent.qq.com">quukk2026@agent.qq.com<svg aria-hidden="true"><use href="#arrow-up"/></svg></a><a href="/en/brand.html">Brand &amp; logo</a><a href="#" class="back-top">Back to top ↑</a></div>
+    <div class="footer-bottom"><span>© <span id="year">2026</span> quukk</span><span>Put AI to work.</span><a href="mailto:quukk2026@agent.qq.com">quukk2026@agent.qq.com<span class="glyph" aria-hidden="true">↗</span></a><a href="/en/brand.html">Brand &amp; logo</a><a href="#" class="back-top">Back to top ↑</a></div>
   </div></footer>
 </body>
 </html>

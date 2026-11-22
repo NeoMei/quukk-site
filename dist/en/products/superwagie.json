@@ -1,0 +1,39 @@
+{
+  "schema_version": "1",
+  "id": "superwagie",
+  "category": "application",
+  "name": "SuperWagie",
+  "aliases": [
+    "犇马",
+    "SuperWagie"
+  ],
+  "description": "A local AI work and coding agent for work and creation tasks.",
+  "url": "https://www.superwagie.com/",
+  "detail_page": "https://www.quukk.com/en/products/superwagie.html",
+  "capabilities": [
+    {
+      "id": "work-and-creation",
+      "name": "Work and creation",
+      "status": "public_description"
+    }
+  ],
+  "limits": [
+    "官网目录页的介绍不等同于登录后的端到端功能验收。"
+  ],
+  "access": "external_site",
+  "actions": [],
+  "status": "public_description",
+  "last_verified": "2026-11-14",
+  "evidence": [
+    {
+      "kind": "public_site_copy",
+      "url": "https://www.quukk.com/#superwagie",
+      "note_zh": "官网产品介绍。"
+    },
+    {
+      "kind": "interface_example",
+      "url": "https://www.quukk.com/#superwagie",
+      "note_zh": "页面中的工作台图像标注为演示数据。"
+    }
+  ]
+}

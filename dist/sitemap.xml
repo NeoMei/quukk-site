@@ -1,18 +1,32 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.quukk.com/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.quukk.com/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.quukk.com/en/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quukk.com/" />
   </url>
   <url>
     <loc>https://www.quukk.com/en/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.quukk.com/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.quukk.com/en/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quukk.com/" />
+  </url>
+  <url>
+    <loc>https://www.quukk.com/glossary.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.quukk.com/glossary.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quukk.com/en/glossary.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quukk.com/glossary.html" />
+  </url>
+  <url>
+    <loc>https://www.quukk.com/en/glossary.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.quukk.com/glossary.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quukk.com/en/glossary.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quukk.com/glossary.html" />
   </url>
   <url>
     <loc>https://www.quukk.com/brand.html</loc>
@@ -27,5 +41,103 @@
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.quukk.com/brand.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.quukk.com/en/brand.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quukk.com/brand.html" />
+  </url>
+  <url>
+    <loc>https://www.quukk.com/products/superwagie.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.quukk.com/products/superwagie.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quukk.com/en/products/superwagie.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quukk.com/products/superwagie.html" />
+  </url>
+  <url>
+    <loc>https://www.quukk.com/en/products/superwagie.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.quukk.com/products/superwagie.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quukk.com/en/products/superwagie.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quukk.com/products/superwagie.html" />
+  </url>
+  <url>
+    <loc>https://www.quukk.com/products/agentwiki.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.quukk.com/products/agentwiki.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quukk.com/en/products/agentwiki.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quukk.com/products/agentwiki.html" />
+  </url>
+  <url>
+    <loc>https://www.quukk.com/en/products/agentwiki.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.quukk.com/products/agentwiki.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quukk.com/en/products/agentwiki.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quukk.com/products/agentwiki.html" />
+  </url>
+  <url>
+    <loc>https://www.quukk.com/products/xuanji.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.quukk.com/products/xuanji.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quukk.com/en/products/xuanji.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quukk.com/products/xuanji.html" />
+  </url>
+  <url>
+    <loc>https://www.quukk.com/en/products/xuanji.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.quukk.com/products/xuanji.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quukk.com/en/products/xuanji.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quukk.com/products/xuanji.html" />
+  </url>
+  <url>
+    <loc>https://www.quukk.com/products/knowisp.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.quukk.com/products/knowisp.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quukk.com/en/products/knowisp.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quukk.com/products/knowisp.html" />
+  </url>
+  <url>
+    <loc>https://www.quukk.com/en/products/knowisp.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.quukk.com/products/knowisp.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quukk.com/en/products/knowisp.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quukk.com/products/knowisp.html" />
+  </url>
+  <url>
+    <loc>https://www.quukk.com/products/agentbb.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.quukk.com/products/agentbb.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quukk.com/en/products/agentbb.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quukk.com/products/agentbb.html" />
+  </url>
+  <url>
+    <loc>https://www.quukk.com/en/products/agentbb.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.quukk.com/products/agentbb.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quukk.com/en/products/agentbb.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quukk.com/products/agentbb.html" />
+  </url>
+  <url>
+    <loc>https://www.quukk.com/products/unihub.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.quukk.com/products/unihub.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quukk.com/en/products/unihub.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quukk.com/products/unihub.html" />
+  </url>
+  <url>
+    <loc>https://www.quukk.com/en/products/unihub.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.quukk.com/products/unihub.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quukk.com/en/products/unihub.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quukk.com/products/unihub.html" />
+  </url>
+  <url>
+    <loc>https://www.quukk.com/products/llmrouter.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.quukk.com/products/llmrouter.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quukk.com/en/products/llmrouter.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quukk.com/products/llmrouter.html" />
+  </url>
+  <url>
+    <loc>https://www.quukk.com/en/products/llmrouter.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.quukk.com/products/llmrouter.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.quukk.com/en/products/llmrouter.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.quukk.com/products/llmrouter.html" />
   </url>
 </urlset>

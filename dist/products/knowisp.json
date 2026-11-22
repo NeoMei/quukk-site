@@ -1,0 +1,45 @@
+{
+  "schema_version": "1",
+  "id": "knowisp",
+  "category": "application",
+  "name": "灵犀 Knowisp",
+  "aliases": [
+    "灵犀",
+    "Knowisp",
+    "LingXi"
+  ],
+  "description": "用于文档检索、知识问答和内容生成的知识工具。",
+  "url": "https://newsradar.dreamdt.cn/knowisp/",
+  "detail_page": "https://www.quukk.com/products/knowisp.html",
+  "capabilities": [
+    {
+      "id": "document-search",
+      "name": "文档检索",
+      "status": "public_description"
+    },
+    {
+      "id": "knowledge-qa",
+      "name": "知识问答",
+      "status": "public_description"
+    }
+  ],
+  "limits": [
+    "官网中的界面按示例展示，不代表生产模型调用结果。"
+  ],
+  "access": "external_site",
+  "actions": [],
+  "status": "public_description",
+  "last_verified": "2026-11-14",
+  "evidence": [
+    {
+      "kind": "public_site_copy",
+      "url": "https://www.quukk.com/#lingxi",
+      "note_zh": "官网产品介绍。"
+    },
+    {
+      "kind": "interface_example",
+      "url": "https://www.quukk.com/#lingxi",
+      "note_zh": "知识问答和内容生成图像标注为界面示例。"
+    }
+  ]
+}
