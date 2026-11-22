@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FAF7F2">
+  <title>智能组织 AgentOrg 的 AI 基础架构｜quukk 智人 Agentor 与四款工具</title>
+  <link rel="canonical" href="https://www.quukk.com/">
+  <link rel="alternate" hreflang="zh-CN" href="https://www.quukk.com/">
+  <link rel="alternate" hreflang="en" href="https://www.quukk.com/en/">
+  <link rel="alternate" hreflang="x-default" href="https://www.quukk.com/">
+  <script src="/language.js"></script>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css?v=20261103-footer">
+  <link rel="stylesheet" href="/product-shots.css?v=20261026-xuangene-logo">
+  <link rel="stylesheet" href="/hero-refresh.css">
+  <link rel="stylesheet" href="/language.css">
+  <link rel="stylesheet" href="/organization.css">
+  <script src="/app.js?v=20261030-knowisp-product" defer></script>
+  <meta name="description" content="quukk 是智能组织（AgentOrg）的 AI 基础架构：让智人（Agentor）带一支自己的 agent 队伍，用犇马 SuperWagie 推进任务、天枢 AgentWiki 交换信息、璇玑 XuanGene 调度流程、灵犀 Knowisp 取用资料，归一 UniHub 与万流 LLMRouter 统一身份、权限与 token。">
+  <meta name="keywords" content="智能组织,AgentOrg,智人,Agentor,用 agent 做事的人,智能组织形态,agent 编排,多智能体协作,犇马 SuperWagie,天枢 AgentWiki,璇玑 XuanGene,灵犀 Knowisp,虾说 AgentBB,归一 UniHub,万流 LLMRouter,quukk">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta property="og:site_name" content="quukk">
+  <meta property="og:title" content="智能组织 AgentOrg 的 AI 基础架构｜quukk 智人 Agentor 与四款工具">
+  <meta property="og:description" content="quukk 是智能组织（AgentOrg）的 AI 基础架构：让智人（Agentor）带一支自己的 agent 队伍，用犇马 SuperWagie 推进任务、天枢 AgentWiki 交换信息、璇玑 XuanGene 调度流程、灵犀 Knowisp 取用资料，归一 UniHub 与万流 LLMRouter 统一身份、权限与 token。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.quukk.com/">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:image" content="https://www.quukk.com/assets/quukk-warm-sculpture.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1254">
+  <meta property="og:image:height" content="1254">
+  <meta property="og:image:alt" content="quukk Q 品牌图形">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="智能组织 AgentOrg 的 AI 基础架构｜quukk 智人 Agentor 与四款工具">
+  <meta name="twitter:description" content="quukk 是智能组织（AgentOrg）的 AI 基础架构：让智人（Agentor）带一支自己的 agent 队伍，用犇马 SuperWagie 推进任务、天枢 AgentWiki 交换信息、璇玑 XuanGene 调度流程、灵犀 Knowisp 取用资料，归一 UniHub 与万流 LLMRouter 统一身份、权限与 token。">
+  <meta name="twitter:image" content="https://www.quukk.com/assets/quukk-warm-sculpture.jpg">
+  <meta name="twitter:image:alt" content="quukk Q 品牌图形">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.quukk.com/#organization",
+      "name": "quukk",
+      "url": "https://www.quukk.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.quukk.com/assets/brand/quukk-symbol-warm.svg",
+        "width": 224,
+        "height": 224
+      },
+      "email": "quukk2026@agent.qq.com"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.quukk.com/#website",
+      "name": "quukk",
+      "url": "https://www.quukk.com/",
+      "inLanguage": [
+        "zh-CN",
+        "en"
+      ],
+      "publisher": {
+        "@id": "https://www.quukk.com/#organization"
+      }
+    },
+    {
+      "@type": "DefinedTermSet",
+      "@id": "https://www.quukk.com/#glossary",
+      "name": "quukk 术语",
+      "hasDefinedTerm": [
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://www.quukk.com/#agentor",
+          "name": "智人（Agentor）",
+          "alternateName": [
+            "Agentor",
+            "agentor"
+          ],
+          "description": "使用 agent 做事的人：不亲手操作每一步，而是带一支自己的 agent 队伍，判断留给自己，检索、起草、核对、跑代码交给 agent。",
+          "inDefinedTermSet": {
+            "@id": "https://www.quukk.com/#glossary"
+          }
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://www.quukk.com/#agentorg",
+          "name": "智能组织（AgentOrg）",
+          "alternateName": [
+            "AgentOrg",
+            "Agent Org",
+            "智能组织"
+          ],
+          "description": "由智人与 agent 混编成的组织：不按固定岗位分层，而按任务临时组队；把执行、信息交换、流程调度与资料存档分开，再用一套统一的身份与额度托住。",
+          "inDefinedTermSet": {
+            "@id": "https://www.quukk.com/#glossary"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://www.quukk.com/#webpage",
+      "url": "https://www.quukk.com/",
+      "name": "智能组织 AgentOrg 的 AI 基础架构｜quukk",
+      "description": "quukk 用犇马、天枢、璇玑、灵犀四款工具，加上归一与万流这层底座，把智能组织里的执行、交换、调度与资料分开安放。",
+      "inLanguage": "zh-CN",
+      "isPartOf": {
+        "@id": "https://www.quukk.com/#website"
+      },
+      "about": [
+        {
+          "@id": "https://www.quukk.com/#organization"
+        },
+        {
+          "@id": "https://www.quukk.com/#agentorg"
+        },
+        {
+          "@id": "https://www.quukk.com/#agentor"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://www.quukk.com/#glossary"
+        }
+      ],
+      "mainEntity": {
+        "@id": "https://www.quukk.com/#product-list"
+      }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://www.quukk.com/#product-list",
+      "name": "quukk 应用平台",
+      "numberOfItems": 5,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "犇马 SuperWagie",
+          "url": "https://www.quukk.com/#superwagie"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "天枢 AgentWiki",
+          "url": "https://www.quukk.com/#agentwiki"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "璇玑 XuanGene",
+          "url": "https://www.quukk.com/#xuanji"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "灵犀 Knowisp",
+          "url": "https://www.quukk.com/#lingxi"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "虾说 AgentBB",
+          "url": "https://www.quukk.com/#xiashuo"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.quukk.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "什么是智人（Agentor）？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "用 agent 做事的人，不亲手操作每一步，而是带一支自己的 agent 队伍。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "什么是智能组织（AgentOrg）？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "由智人与 agent 混编成的组织，按任务临时组队，用工具层支撑执行、交换、调度与存档。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "quukk 在智能组织里提供什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "四款应用与一层底座：犇马执行任务、天枢交换知识、璇玑调度流程、灵犀存放资料，归一与万流统一身份和 token。"
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <svg class="svg-defs" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
+    <symbol id="document" viewBox="0 0 24 24"><path d="M14 3H5v18h14V8l-5-5Zm0 0v6h5M8 13h8m-8 4h6"/></symbol>
+    <symbol id="code" viewBox="0 0 24 24"><path d="m7 6-6 6 6 6m10-12 6 6-6 6M14 3l-4 18"/></symbol>
+    <symbol id="chat" viewBox="0 0 24 24"><path d="M21 15a3 3 0 0 1-3 3H9l-6 4V6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3Zm-14-5h10m-10 4h6"/></symbol>
+    <symbol id="spark" viewBox="0 0 24 24"><path d="m12 2 3 7 7 3-7 3-3 7-3-7-7-3 7-3Z"/></symbol>
+    <symbol id="people" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2m20 0v-2a4 4 0 0 0-3-3.87M15 3.13a4 4 0 0 1 0 7.75"/><circle cx="9" cy="7" r="4"/></symbol>
+    <symbol id="link" viewBox="0 0 24 24"><path d="m10 13 4-4m-6 6-2 2a4 4 0 0 1-6-6l5-5a4 4 0 0 1 6 0m2 3 2-2a4 4 0 0 1 6 6l-5 5a4 4 0 0 1-6 0" transform="translate(1 0)"/></symbol>
+    <symbol id="layers" viewBox="0 0 24 24"><path d="m12 3 10 6-10 6L2 9l10-6ZM2 15l10 6 10-6M2 12l10 6 10-6"/></symbol>
+    <marker id="workflow-arrow" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M1 1l4 2-4 2" fill="none" stroke="#b48261" stroke-width="1"/></marker>
+  </defs></svg>
+
+  <header class="site-header frame">
+    <a href="#" class="wordmark" aria-label="quukk 首页"><img src="/assets/brand/quukk-logo-warm.svg" alt="quukk" width="164" height="42"></a>
+    <nav id="main-nav" aria-label="主导航"><a href="#organization">智能组织</a><a href="#products">应用平台</a><a href="#scenarios">应用场景</a><a href="#platforms">支撑平台</a><a href="#about">关于我们</a></nav>
+    <div class="language-switch" role="group" aria-label="语言 / Language"><a href="/" data-language="zh" lang="zh-CN" hreflang="zh-CN" aria-current="page">中文</a><span aria-hidden="true">/</span><a href="/en/" data-language="en" lang="en" hreflang="en" aria-label="Switch to English">EN</a></div>
+    <a class="button header-cta" href="#about">联系我们</a>
+    <button class="menu-toggle" aria-label="打开导航菜单" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
+  </header>
+
+  <main id="main">
+    <section class="hero frame" aria-labelledby="hero-title">
+      <div class="hero-intro">
+        <div class="hero-title-block"><p class="hero-eyebrow reveal">面向智能组织的 AI 基础架构</p>
+        <h1 id="hero-title" class="reveal">让智能，<br><span>成为生产力。</span></h1></div>
+        <div class="hero-story reveal">
+          <p class="hero-lead">从一个人的创作，<br>到一群智能体的协作。</p>
+          <p class="hero-description">quukk 提供组织 AI 转型所需的核心方法和工具，<br>让组织进化为智能组织成为可能。</p>
+          <a class="button" href="#products">探索应用<span class="glyph" aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="product-stage reveal" aria-label="犇马 SuperWagie 与璇玑 XuanGene 产品界面预览">
+        <img class="stage-mark" src="/assets/brand/quukk-symbol-warm.svg" alt="" width="224" height="224" aria-hidden="true">
+        <div class="stage-caption"><span>工具 · 知识 · 协作</span><p>让好想法，<br>进入工作现场。</p></div>
+        <figure class="stage-screen stage-secondary">
+          <figcaption><span>璇玑 XuanGene</span><span>多智能体工作流</span></figcaption>
+          <img src="/assets/products/xuanji-workflow.jpg" alt="璇玑 XuanGene 多智能体工作流编辑器" width="1440" height="865">
+        </figure>
+        <figure class="stage-screen stage-primary">
+          <figcaption><span><img src="/assets/superwagie-logo.png" alt="" width="18" height="18">犇马 SuperWagie</span><span>工作台 · 演示数据</span></figcaption>
+          <img src="/assets/products/superwagie-workbench.jpg" alt="犇马 SuperWagie 的任务、创作和即时贴工作台" width="1440" height="900" fetchpriority="high">
+        </figure>
+        <a class="stage-link" href="#superwagie">走进你的 AI 工作台 <span class="glyph glyph-right" aria-hidden="true">→</span></a>
+      </div>
+      <nav class="product-index" aria-label="快速探索五款应用">
+        <a href="#superwagie"><span>犇马<span class="product-name-en" lang="en">SuperWagie</span></span><small>办公与创作</small><span class="glyph" aria-hidden="true">↗</span></a>
+        <a href="#agentwiki"><span>天枢<span class="product-name-en" lang="en">AgentWiki</span></span><small>人与 Agent 的知识库</small><span class="glyph" aria-hidden="true">↗</span></a>
+        <a href="#xuanji"><span>璇玑<span class="product-name-en" lang="en">XuanGene</span></span><small>多智能体工作流</small><span class="glyph" aria-hidden="true">↗</span></a>
+        <a href="#lingxi"><span>灵犀<span class="product-name-en" lang="en">Knowisp</span></span><small>文档检索与问答</small><span class="glyph" aria-hidden="true">↗</span></a>
+        <a href="#xiashuo"><span>虾说<span class="product-name-en" lang="en">AgentBB</span></span><small>多视角讨论</small><span class="glyph" aria-hidden="true">↗</span></a>
+      </nav>
+    </section>
+
+    <section id="organization" class="organization frame section-space" aria-labelledby="organization-title">
+      <div class="section-heading"><h2 id="organization-title" class="reveal">智能组织</h2><p class="reveal">七个产品，<br>各占组织里的一个位置。</p></div>
+
+      <p class="org-lede reveal">一个人用 AI，提效的是他自己；一群人把 AI 放到对的位置，提效的是整条协作。所谓智能组织，就是把组织里原本靠人反复交代的几件事分开摆好——谁在做事，信息存在哪，下一步归谁调度，经验又沉淀在什么地方——再让它们彼此接上。接上了，个体的能力才会变成组织的常态。</p>
+
+      <div class="orgglossary reveal" aria-labelledby="orgglossary-title">
+        <div class="orgglossary-head">
+          <p id="orgglossary-title" class="orgglossary-title">两个词</p>
+        </div>
+        <dl class="orgglossary-list">
+          <div class="term">
+            <dt><b>智人</b><span lang="en">Agentor</span></dt>
+            <dd><p>用 agent 做事的人。不再亲手操作每一步，而是带一支自己的 agent 队伍：判断留给自己，检索、起草、核对、跑代码交给 agent。两个智人之间谈事，双方都带着自己的结论与依据，所以一轮就能对上，不必从头解释背景。</p></dd>
+          </div>
+          <div class="term">
+            <dt><b>智能组织</b><span lang="en">AgentOrg</span></dt>
+            <dd><p>由智人与 agent 混编成的组织：不按固定岗位分层，而是按任务临时组队。它把执行、信息交换、流程调度与资料存档分开，再用一套统一的身份与额度托住，让协作能按流程跑起来、经验能留下来。</p></dd>
+          </div>
+        </dl>
+      </div>
+
+      <figure class="orgshape reveal" aria-labelledby="orgshape-title">
+        <div class="orgshape-head">
+          <p id="orgshape-title" class="orgshape-title">智能组织的形态</p>
+          <p class="orgshape-sub">人不再是一个岗位，而是和 agent 编成部门。工具不摆在组织外面，就长在部门之间的接缝上。</p>
+        </div>
+
+      <svg class="orgicon-sprite" aria-hidden="true" width="0" height="0" focusable="false">
+        <defs>
+          <symbol id="ic-person" viewBox="0 0 24 24">
+            <circle cx="12" cy="6.9" r="3.55" fill="currentColor"/>
+            <path d="M12 11.9c3.9 0 7.05 2.5 7.75 6.1.19.98-.55 1.8-1.55 1.8H5.8c-1 0-1.74-.82-1.55-1.8C4.95 14.4 8.1 11.9 12 11.9z" fill="currentColor"/>
+            <path d="M11.1 11.95 12 13.6l.9-1.65" fill="none" stroke="#fffdfa" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+          </symbol>
+          <symbol id="ic-robot" viewBox="0 0 24 24">
+            <g fill="none" stroke="currentColor" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3.9v1.6"/>
+              <circle cx="12" cy="2.5" r="1.25" fill="currentColor" stroke="none"/>
+              <rect x="4.9" y="5.7" width="14.2" height="8.5" rx="2.5"/>
+              <path d="M4.9 8.6H3.5v3.1h1.4M19.1 8.6h1.4v3.1h-1.4"/>
+              <rect x="8.2" y="15.7" width="7.6" height="5.9" rx="2"/>
+              <path d="M10.5 17.8v1.7M13.5 17.8v1.7"/>
+            </g>
+            <circle cx="9.3" cy="9.55" r="1.2" fill="currentColor"/>
+            <circle cx="14.7" cy="9.55" r="1.2" fill="currentColor"/>
+            <path d="M10.4 12.15h3.2" stroke="currentColor" stroke-width="1.15" stroke-linecap="round"/>
+          </symbol>
+          <symbol id="ic-graph" viewBox="0 0 96 96">
+            <g fill="none" stroke="currentColor" stroke-width="1.15" opacity=".5">
+              <path d="M48 48C38 40 28 34 20 30"/>
+              <path d="M48 48C46 34 45 24 45 15"/>
+              <path d="M48 48c6-8 12-14 21-18"/>
+              <path d="M48 48c8 3 15 6 25 8"/>
+              <path d="M48 48c3 9 6 16 10 24"/>
+              <path d="M48 48c-9 5-16 9-26 14"/>
+              <path d="M48 48c-10 0-18 0-28-1"/>
+            </g>
+            <g fill="none" stroke="currentColor" stroke-width="1.1" opacity=".38">
+              <path d="M20 30C14 36 12 40 13 46"/>
+              <path d="M45 26c10-6 18-8 22-6"/>
+              <path d="M73 56c-6 8-11 13-14 17"/>
+            </g>
+            <circle cx="48" cy="48" r="10.4" fill="none" stroke="currentColor" stroke-width="1.9"/>
+            <circle cx="48" cy="48" r="4.2" fill="currentColor"/>
+            <g fill="none" stroke="currentColor" stroke-width="1.35" stroke-linejoin="round">
+              <path d="M11 18h11l5 5v16H11z"/>
+              <path d="M22 18v5h5"/>
+              <path d="M15 29h9M15 33h6"/>
+              <path d="M36 6h11l5 5v16H36z"/>
+              <path d="M47 6v5h5"/>
+              <path d="M40 17h9M40 21h6"/>
+              <path d="M70 18h11l5 5v16H70z"/>
+              <path d="M81 18v5h5"/>
+              <path d="M74 29h9M74 33h6"/>
+              <path d="M74 54h11l5 5v16H74z"/>
+              <path d="M85 54v5h5"/>
+              <path d="M78 65h9M78 69h6"/>
+              <path d="M52 72h11l5 5v16H52z"/>
+              <path d="M63 72v5h5"/>
+              <path d="M56 83h9M56 87h6"/>
+            </g>
+            <path d="M12 64h13l4 4v9H12z" fill="none" stroke="currentColor" stroke-width="1.3"/>
+            <circle cx="20" cy="70" r="1.7" fill="currentColor"/>
+            <circle cx="9" cy="45" r="3.1" fill="none" stroke="currentColor" stroke-width="1.3"/>
+          </symbol>
+          <symbol id="ic-shelf" viewBox="0 0 96 96">
+            <rect x="6.5" y="6.5" width="83" height="83" rx="3" fill="none" stroke="currentColor" stroke-width="2"/>
+            <path d="M6.5 34.5h83M6.5 62.5h83" stroke="currentColor" stroke-width="1.8"/>
+            <g fill="none" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round">
+              <rect x="12.5" y="14.5" width="11" height="20" rx="1.2"/>
+              <path d="M15 18.5h6M15 22h6"/>
+              <rect x="26.5" y="16.5" width="9.5" height="18" rx="1.2"/>
+              <circle cx="29" cy="21" r="1"/>
+              <circle cx="29" cy="25" r="1"/>
+              <rect x="39.5" y="12.5" width="12.5" height="22" rx="1.2"/>
+              <path d="M42.5 17.5h7M42.5 21.5h7M42.5 25.5h4.5"/>
+              <path d="M57 34.5V15.6l6.4-1.5v18.9" />
+              <path d="M57 19.6l6.4-1.5"/>
+              <rect x="67.5" y="18.5" width="7.5" height="16" rx="1.2"/>
+              <rect x="77.5" y="14.5" width="6.5" height="20" rx="1.2"/>
+            </g>
+            <g fill="none" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round">
+              <path d="M12.5 43.5h40l3.5 5v14h-40z"/>
+              <path d="M12.5 48.5h40" opacity=".55"/>
+              <path d="M17 55h14M17 59h9" opacity=".5"/>
+              <rect x="57.5" y="46.5" width="10" height="16" rx="1.2"/>
+              <path d="M60 51h5M60 54.5h5"/>
+              <rect x="70.5" y="44.5" width="8" height="18" rx="1.2"/>
+              <rect x="81" y="46.5" width="5.5" height="16" rx="1.2"/>
+            </g>
+            <g fill="none" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round">
+              <rect x="12.5" y="70.5" width="10.5" height="18" rx="1.2"/>
+              <circle cx="15.2" cy="75" r="1"/>
+              <circle cx="15.2" cy="79" r="1"/>
+              <rect x="26" y="70.5" width="9" height="18" rx="1.2"/>
+              <rect x="38" y="68.5" width="14" height="20" rx="1.2"/>
+              <path d="M41.5 73.5h7M41.5 77.5h7" opacity=".6"/>
+              <path d="M56 88.5V69.5l7.5-1.8v19.3"/>
+              <path d="M56 73.5l7.5-1.8"/>
+              <rect x="67.5" y="70.5" width="8" height="18" rx="1.2"/>
+              <rect x="78.5" y="66.5" width="7" height="22" rx="1.2"/>
+              <path d="M80.5 71h3" opacity=".6"/>
+            </g>
+            <g fill="currentColor" opacity=".55">
+              <circle cx="51.5" cy="21.5" r="1.1"/><circle cx="63.5" cy="27" r="1.1"/>
+              <circle cx="8.5" cy="34.5" r="1.4"/><circle cx="87.5" cy="62.5" r="1.4"/>
+            </g>
+          </symbol>
+          <symbol id="ic-key" viewBox="0 0 24 24">
+            <circle cx="8" cy="9" r="4.2" fill="none" stroke="currentColor" stroke-width="1.7"/>
+            <path d="M11.4 12.2 19 19.8M15.6 16.4l2-2M18 18.8l2-2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+          </symbol>
+          <symbol id="ic-coin" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="8.4" fill="none" stroke="currentColor" stroke-width="1.7"/>
+            <path d="m15.4 8.2-6.8 7.6M8.6 8.2h6.8M8.6 15.8h6.8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </symbol>
+          <symbol id="ic-meter" viewBox="0 0 24 24">
+            <rect x="4" y="4.6" width="16" height="14.8" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+            <path d="M8.2 15.4v-3M12 15.4v-6.4M15.8 15.4v-4.6" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/>
+          </symbol>
+          <symbol id="ic-chat" viewBox="0 0 32 24">
+            <path d="M4.6 3.4h22.8a3.2 3.2 0 0 1 3.2 3.2v8.2a3.2 3.2 0 0 1-3.2 3.2H14l-6.4 4.6v-4.6H4.6a3.2 3.2 0 0 1-3.2-3.2V6.6a3.2 3.2 0 0 1 3.2-3.2z" fill="none" stroke="currentColor" stroke-width="1.7"/>
+            <circle cx="10.4" cy="10.7" r="1.5" fill="currentColor"/>
+            <circle cx="16" cy="10.7" r="1.5" fill="currentColor"/>
+            <circle cx="21.6" cy="10.7" r="1.5" fill="currentColor"/>
+          </symbol>
+        </defs>
+      </svg>
+
+        <div class="orgchart">
+          <div class="xflow">
+              <div class="xflow-meta">
+                <img src="/assets/xuangene-symbol-primary.svg" alt="" width="28" height="28" loading="lazy">
+                <div>
+                  <b>璇玑 <i>XuanGene</i></b>
+                  <span>协作流程调度引擎</span>
+                </div>
+              </div>
+
+              <svg class="xflow-svg" viewBox="0 0 1120 138" preserveAspectRatio="xMidYMin meet" role="img" aria-labelledby="xflow-title">
+                <title id="xflow-title">璇玑把协作排成计划、分派、执行、审核、归档五步，审核不通过时回到执行</title>
+                <defs>
+                  <marker id="xf-arrow" viewBox="0 0 10 10" refX="8.4" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                    <path d="M1.4 1.6 8.6 5 1.4 8.4z" fill="#b98a6b"/>
+                  </marker>
+                  <marker id="xf-arrow-acc" viewBox="0 0 10 10" refX="8.4" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                    <path d="M1.4 1.6 8.6 5 1.4 8.4z" fill="#aa603f"/>
+                  </marker>
+                </defs>
+
+                <g class="xf-track" fill="none" stroke="#d8c2ac" stroke-width="1.3">
+                  <path d="M260 49 h20"/>
+                  <path d="M452 49 h20"/>
+                  <path d="M644 49 h20"/>
+                  <path d="M836 49 h20"/>
+                </g>
+                <g class="xf-arrows" fill="none" stroke="#d8c2ac" stroke-width="1.3" marker-end="url(#xf-arrow)">
+                  <path d="M260 49 h20"/>
+                  <path d="M452 49 h20"/>
+                  <path d="M644 49 h20"/>
+                  <path d="M836 49 h20"/>
+                </g>
+
+                <g class="xf-node">
+                  <rect x="92" y="22" width="168" height="42" rx="9" fill="#ffffff" stroke="#e0cbb6" stroke-width="1.4"/>
+                  <text x="176" y="41" text-anchor="middle" class="xf-label">计划</text>
+                  <text x="176" y="55" text-anchor="middle" class="xf-sub">定目标与范围</text>
+                </g>
+<g class="xf-node">
+                  <rect x="284" y="22" width="168" height="42" rx="9" fill="#ffffff" stroke="#e0cbb6" stroke-width="1.4"/>
+                  <text x="368" y="41" text-anchor="middle" class="xf-label">分派</text>
+                  <text x="368" y="55" text-anchor="middle" class="xf-sub">落到人与 agent</text>
+                </g>
+<g class="xf-node xf-node-active">
+                  <rect x="476" y="22" width="168" height="42" rx="9" fill="#fdf2e6" stroke="#d4b191" stroke-width="1.7"/>
+                  <text x="560" y="41" text-anchor="middle" class="xf-label">执行</text>
+                  <text x="560" y="55" text-anchor="middle" class="xf-sub">部门里干活</text>
+                </g>
+<g class="xf-node">
+                  <rect x="668" y="22" width="168" height="42" rx="9" fill="#ffffff" stroke="#e0cbb6" stroke-width="1.4"/>
+                  <text x="752" y="41" text-anchor="middle" class="xf-label">审核</text>
+                  <text x="752" y="55" text-anchor="middle" class="xf-sub">对照标准核对</text>
+                </g>
+<g class="xf-node">
+                  <rect x="860" y="22" width="168" height="42" rx="9" fill="#ffffff" stroke="#e0cbb6" stroke-width="1.4"/>
+                  <text x="944" y="41" text-anchor="middle" class="xf-label">归档</text>
+                  <text x="944" y="55" text-anchor="middle" class="xf-sub">结论进知识</text>
+                </g>
+
+                <path class="xf-return" d="M752 64 v13 a7 7 0 0 1 -7 7 h-178 a7 7 0 0 1 -7 -7 v-10" fill="none" stroke="#aa603f" stroke-width="1.5" stroke-dasharray="6 5" stroke-linecap="round" marker-end="url(#xf-arrow-acc)"/>
+                <circle cx="752" cy="64" r="2.4" fill="#aa603f"/>
+                <text x="656" y="116" text-anchor="middle" class="xf-note">审核不通过，回到执行</text>
+              </svg>
+              <svg class="xflow-svg xflow-svg-v" viewBox="0 0 320 420" preserveAspectRatio="xMidYMin meet" aria-hidden="true" focusable="false">
+                <defs>
+                  <marker id="xfv-arrow" viewBox="0 0 10 10" refX="8.4" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                    <path d="M1.4 1.6 8.6 5 1.4 8.4z" fill="#b98a6b"/>
+                  </marker>
+                  <marker id="xfv-back" viewBox="0 0 10 10" refX="8.4" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                    <path d="M1.4 1.6 8.6 5 1.4 8.4z" fill="#aa603f"/>
+                  </marker>
+                </defs>
+                <g fill="none" stroke="#d8c2ac" stroke-width="1.5" marker-end="url(#xfv-arrow)">
+                  <path d="M160 66v14"/><path d="M160 146v14"/><path d="M160 226v14"/><path d="M160 306v14"/>
+                </g>
+                <g>
+                  <rect x="40" y="14" width="240" height="52" rx="10" fill="#ffffff" stroke="#e0cbb6" stroke-width="1.5"/>
+                  <text x="160" y="36" text-anchor="middle" class="xf-label">计划</text>
+                  <text x="160" y="53" text-anchor="middle" class="xf-sub">定目标与范围</text>
+                </g>
+                <g>
+                  <rect x="40" y="94" width="240" height="52" rx="10" fill="#ffffff" stroke="#e0cbb6" stroke-width="1.5"/>
+                  <text x="160" y="116" text-anchor="middle" class="xf-label">分派</text>
+                  <text x="160" y="133" text-anchor="middle" class="xf-sub">落到人与 agent</text>
+                </g>
+                <g>
+                  <rect x="40" y="174" width="240" height="52" rx="10" fill="#fdf2e6" stroke="#d4b191" stroke-width="1.8"/>
+                  <text x="160" y="196" text-anchor="middle" class="xf-label">执行</text>
+                  <text x="160" y="213" text-anchor="middle" class="xf-sub">部门里干活</text>
+                </g>
+                <g>
+                  <rect x="40" y="254" width="240" height="52" rx="10" fill="#ffffff" stroke="#e0cbb6" stroke-width="1.5"/>
+                  <text x="160" y="276" text-anchor="middle" class="xf-label">审核</text>
+                  <text x="160" y="293" text-anchor="middle" class="xf-sub">对照标准核对</text>
+                </g>
+                <g>
+                  <rect x="40" y="334" width="240" height="52" rx="10" fill="#ffffff" stroke="#e0cbb6" stroke-width="1.5"/>
+                  <text x="160" y="356" text-anchor="middle" class="xf-label">归档</text>
+                  <text x="160" y="373" text-anchor="middle" class="xf-sub">结论进知识</text>
+                </g>
+                <path d="M280 280h16a8 8 0 0 0 8-8v-72a8 8 0 0 0-8-8h-16" fill="none" stroke="#aa603f" stroke-width="1.6" stroke-dasharray="6 5" stroke-linecap="round" marker-end="url(#xfv-back)"/>
+              </svg>
+          </div>
+
+          <div class="orgdepts">
+            <article class="dept">
+              <header><span class="dept-tag">写作与内容</span><h3>内容与品牌</h3></header>
+              <p class="dept-mix"><span class="mix-icons"><svg class="oicon " width="20" height="20" aria-hidden="true" focusable="false"><use href="#ic-person"/></svg><svg class="oicon " width="20" height="20" aria-hidden="true" focusable="false"><use href="#ic-person"/></svg><svg class="oicon " width="20" height="20" aria-hidden="true" focusable="false"><use href="#ic-person"/></svg><svg class="oicon " width="20" height="20" aria-hidden="true" focusable="false"><use href="#ic-robot"/></svg><svg class="oicon " width="20" height="20" aria-hidden="true" focusable="false"><use href="#ic-robot"/></svg></span><span class="mix-text">3 人 · 2 agent 混编</span></p>
+              <div class="dept-work">
+                <span class="beast" aria-hidden="true">
+                  <img class="beast-art" src="/art/ox-work.png" alt="" width="80" height="77" loading="lazy">
+                </span>
+                <p><b>犇马在干活</b><span>查资料 · 起草 · 改稿 · 交付</span></p>
+              </div>
+            </article>
+            <article class="dept">
+              <header><span class="dept-tag">方案与评审</span><h3>产品与工程</h3></header>
+              <p class="dept-mix"><span class="mix-icons"><svg class="oicon " width="20" height="20" aria-hidden="true" focusable="false"><use href="#ic-person"/></svg><svg class="oicon " width="20" height="20" aria-hidden="true" focusable="false"><use href="#ic-person"/></svg><svg class="oicon " width="20" height="20" aria-hidden="true" focusable="false"><use href="#ic-person"/></svg><svg class="oicon " width="20" height="20" aria-hidden="true" focusable="false"><use href="#ic-robot"/></svg><svg class="oicon " width="20" height="20" aria-hidden="true" focusable="false"><use href="#ic-robot"/></svg><svg class="oicon " width="20" height="20" aria-hidden="true" focusable="false"><use href="#ic-robot"/></svg></span><span class="mix-text">3 人 · 3 agent 混编</span></p>
+              <div class="dept-work">
+                <span class="beast" aria-hidden="true">
+                  <img class="beast-art" src="/art/ox-work.png" alt="" width="80" height="77" loading="lazy">
+                </span>
+                <p><b>犇马在干活</b><span>读文档 · 出方案 · 跑代码</span></p>
+              </div>
+            </article>
+            <article class="dept">
+              <header><span class="dept-tag">对外交付</span><h3>运营与客户</h3></header>
+              <p class="dept-mix"><span class="mix-icons"><svg class="oicon " width="20" height="20" aria-hidden="true" focusable="false"><use href="#ic-person"/></svg><svg class="oicon " width="20" height="20" aria-hidden="true" focusable="false"><use href="#ic-person"/></svg><svg class="oicon " width="20" height="20" aria-hidden="true" focusable="false"><use href="#ic-person"/></svg><svg class="oicon " width="20" height="20" aria-hidden="true" focusable="false"><use href="#ic-person"/></svg><svg class="oicon " width="20" height="20" aria-hidden="true" focusable="false"><use href="#ic-robot"/></svg><svg class="oicon " width="20" height="20" aria-hidden="true" focusable="false"><use href="#ic-robot"/></svg></span><span class="mix-text">4 人 · 2 agent 混编</span></p>
+              <div class="dept-work">
+                <span class="beast" aria-hidden="true">
+                  <img class="beast-art" src="/art/ox-work.png" alt="" width="80" height="77" loading="lazy">
+                </span>
+                <p><b>犇马在干活</b><span>整理材料 · 交付 · 留痕</span></p>
+              </div>
+            </article>
+          </div>
+
+          <div class="orgrails">
+            <article class="rail">
+              <header>
+                <span class="wiki-mark" role="img" aria-label="天枢 AgentWiki"></span>
+                <div><b>天枢 <i>AgentWiki</i></b><span>信息交换平台</span></div>
+              </header>
+              <div class="rail-body">
+                <svg class="oicon oicon-graph" width="104" height="104" aria-hidden="true" focusable="false"><use href="#ic-graph"/></svg>
+                <p>团队与智能体共用的知识库：文档、经验与项目上下文都沉淀在这里，可以检索、可以按关系顺藤摸瓜，人和 agent 读的是同一份材料。</p>
+              </div>
+            </article>
+            <article class="rail">
+              <header>
+                <img src="/assets/knowisp-icon-small.svg" alt="" width="24" height="24">
+                <div><b>灵犀 <i>Knowisp</i></b><span>组织公共资料库</span></div>
+              </header>
+              <div class="rail-body">
+                <svg class="oicon oicon-shelf" width="104" height="104" aria-hidden="true" focusable="false"><use href="#ic-shelf"/></svg>
+                <p>围绕文档的检索与问答：答案带着引用来源，可以顺着引用回到原文核对，分散的资料也能整理成随取随用的知识库。</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="orgbase">
+            <div class="orgbase-intro">
+              <span class="orgbase-tag">底座</span>
+              <p>两个平台不出现在日常协作里，但所有部门都站在它上面：身份、额度、模型与计费只做一次。</p>
+            </div>
+            <div class="orgbase-items">
+              <div class="base-card">
+                <header>
+                  <svg class="oicon" width="26" height="26" aria-hidden="true" focusable="false"><use href="#ic-key"/></svg>
+                  <img src="/assets/unihub-logo.png" alt="" width="30" height="30" loading="lazy">
+                  <div><b>归一 <i>UniHub</i></b><span>统一身份与账号</span></div>
+                </header>
+                <p>一个人在多款产品里是同一个身份：账号、产品权限、团队与模型额度都在这里管。</p>
+              </div>
+              <div class="base-card">
+                <header>
+                  <svg class="oicon" width="26" height="26" aria-hidden="true" focusable="false"><use href="#ic-meter"/></svg>
+                  <img src="/assets/llmrouter-confluence.svg" alt="" width="30" height="30" loading="lazy">
+                  <div><b>万流 <i>LLMRouter</i></b><span>统一模型入口与计费</span></div>
+                </header>
+                <p>模型调用走同一个网关：路由、token 用量与费用在一处记账，不在每个工具里各设一套。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="orgchat">
+          <header>
+            <span class="orgchat-tag">沟通</span>
+            <img src="/assets/clawmessenger-logo-mark.png" alt="" width="26" height="26">
+            <div><b>虾说 <i>AgentBB</i></b><span class="orgchat-kicker">智人与智人的沟通工具</span></div>
+          </header>
+          <div class="orgchat-body">
+            <div class="agentors">
+              <div class="agentor">
+                <p class="agentor-name">智人 A</p>
+                <p class="agentor-icons"><svg class="oicon " width="22" height="22" aria-hidden="true" focusable="false"><use href="#ic-person"/></svg><svg class="oicon " width="20" height="20" aria-hidden="true" focusable="false"><use href="#ic-robot"/></svg></p>
+                <p class="agentor-desc">人 + 自己的 agent，带着结论与依据来谈</p>
+              </div>
+              <div class="agentor-link"><svg class="oicon oicon-chat" width="44" height="44" aria-hidden="true" focusable="false"><use href="#ic-chat"/></svg><span>讨论 · 对齐</span></div>
+              <div class="agentor">
+                <p class="agentor-name">智人 B</p>
+                <p class="agentor-icons"><svg class="oicon " width="22" height="22" aria-hidden="true" focusable="false"><use href="#ic-person"/></svg><svg class="oicon " width="20" height="20" aria-hidden="true" focusable="false"><use href="#ic-robot"/></svg></p>
+                <p class="agentor-desc">人 + 自己的 agent，带着结论与依据来谈</p>
+              </div>
+            </div>
+            <p class="orgchat-note">两个智人之间，或两个智能组织之间，需要时用它对齐。它不是组织内部的执行工具。</p>
+          </div>
+        </aside>
+
+        <figcaption>形态示意：部门与人数用于说明分工，工具之间尚未自动打通。</figcaption>
+      </figure>
+
+
+
+      <p class="org-close reveal">不必一次上齐。缺哪一块，就先补哪一块；接上之后，组织自己会越用越顺。<a href="#products">看每个部件怎么做<span class="glyph" aria-hidden="true">↗</span></a></p>
+    </section>
+
+    <section id="products" class="products frame section-space" aria-labelledby="products-title">
+      <div class="section-heading"><h2 id="products-title" class="reveal">应用平台</h2><p class="reveal">每个都负责组织里的一件事。<br>放在一起，才是一套组织的基础。</p></div>
+
+      <article id="superwagie" class="product-showcase showcase-work reveal">
+        <p class="role-tag"><a href="#organization">任务执行者</a></p>
+        <div class="showcase-heading">
+          <div class="showcase-title">
+            <div class="product-heading"><img class="product-logo" src="/assets/superwagie-logo.png" width="32" height="32" alt="" loading="lazy"><h3><span>犇马</span> <span class="product-name-en" lang="en">SuperWagie</span></h3></div>
+            <p class="product-tagline">你的 AI 工作搭子</p>
+          </div>
+          <div class="showcase-description">
+            <p class="product-description">从办公创作到代码开发，在本地工作区把任务推进到完成。让资料检索、内容创作与代码工作，回到同一个桌面。</p>
+
+          </div>
+        </div>
+        <div class="product-story">
+          <div class="product-details">
+            <ul class="product-capabilities">
+              <li><h4>任务围绕项目展开</h4><p>在本地工作区围绕项目开展任务，把资料整理、内容创作与代码工作放在同一个工作环境中。</p></li>
+              <li><h4>从资料推进到初稿</h4><p>从查找资料、梳理信息到起草内容，围绕具体任务持续推进，让研究材料成为可以继续修改的初稿。</p></li>
+              <li><h4>办公与代码同台</h4><p>既能处理日常文档与内容创作，也能开展代码任务，让文字表达和程序实现共用一个桌面入口。</p></li>
+            </ul>
+            <a class="text-link" href="https://www.superwagie.com/" target="_blank" rel="noopener noreferrer">了解犇马 SuperWagie<span class="glyph" aria-hidden="true">↗</span></a>
+          </div>
+          <aside class="product-example" aria-labelledby="superwagie-example-title">
+            <div><h4 id="superwagie-example-title">使用示例：准备一份产品介绍</h4><p>在项目工作区整理参考资料，起草介绍内容，并按需要编写配套演示代码，再逐项检查和修改。</p></div>
+            <ol class="product-path"><li>整理参考资料</li><li>起草内容与演示</li><li>检查和修改</li></ol>
+          </aside>
+          <figure class="product-shot shot-work">
+          <button class="screenshot-open" type="button" data-full-image="/assets/products/superwagie-workbench.jpg" data-image-title="犇马 SuperWagie 工作台 · 演示数据" aria-label="查看 犇马 SuperWagie 工作台大图">
+            <img src="/assets/products/superwagie-workbench.jpg" alt="犇马 SuperWagie 工作台界面，展示任务管理、创作入口与工作安排，采用演示数据" width="1440" height="900" loading="lazy">
+          </button>
+          <figcaption><span>工作台 · 演示数据</span><button class="screenshot-open shot-enlarge" type="button" data-full-image="/assets/products/superwagie-workbench.jpg" data-image-title="犇马 SuperWagie 工作台 · 演示数据" aria-label="放大查看 犇马 SuperWagie 工作台">查看大图 <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></button></figcaption>
+        </figure>
+        </div>
+      </article>
+
+      <article id="agentwiki" class="product-showcase story-reverse showcase-wiki reveal">
+        <p class="role-tag"><a href="#organization">信息交换平台</a></p>
+        <div class="showcase-heading">
+          <div class="showcase-title">
+            <div class="product-heading"><span class="product-logo" aria-hidden="true"></span><h3><span>天枢</span> <span class="product-name-en" lang="en">AgentWiki</span></h3></div>
+            <p class="product-tagline">让知识，持续生长。</p>
+          </div>
+          <div class="showcase-description">
+            <p class="product-description">多 Agent 协作的共同大脑。把文档、经验与上下文连接起来，让团队与智能体共享可追溯的知识。</p>
+
+          </div>
+        </div>
+        <div class="product-story">
+          <div class="product-details">
+            <ul class="product-capabilities">
+              <li><h4>人与智能体共用</h4><p>将文档、经验与项目上下文沉淀到共享 Wiki，让团队成员与智能体围绕同一份知识开展工作。</p></li>
+              <li><h4>用自然语言找知识</h4><p>围绕工作中的问题进行语义搜索，找到相关知识页面，再回到原文阅读细节与上下文。</p></li>
+              <li><h4>沿知识关系探索</h4><p>通过知识图谱查看页面之间的联系，从一条信息继续探索相关主题，理解知识之间的来龙去脉。</p></li>
+            </ul>
+            <a class="text-link" href="https://AgentWiki.quukk.com/" target="_blank" rel="noopener noreferrer">探索天枢 AgentWiki<span class="glyph" aria-hidden="true">↗</span></a>
+          </div>
+          <aside class="product-example" aria-labelledby="agentwiki-example-title">
+            <div><h4 id="agentwiki-example-title">使用示例：接手一个已有项目</h4><p>先搜索项目背景与关键决策，再沿相关页面了解设计依据，将新确认的结论补充到共享 Wiki。</p></div>
+            <ol class="product-path"><li>搜索项目背景</li><li>阅读关联知识</li><li>补充项目结论</li></ol>
+          </aside>
+          <figure class="product-shot shot-wiki">
+          <button class="screenshot-open" type="button" data-full-image="/assets/products/agentwiki-reading.png" data-image-title="天枢 AgentWiki 项目页面与智能体对话界面" aria-label="查看 天枢 AgentWiki 项目页面与智能体对话界面大图">
+            <img src="/assets/products/agentwiki-reading.png" alt="天枢 AgentWiki 项目页面，左侧目录、中间周报内容和右侧智能体对话面板" width="3380" height="1866" loading="lazy">
+          </button>
+          <figcaption><span>项目页面与智能体对话 · 中文界面</span><button class="screenshot-open shot-enlarge" type="button" data-full-image="/assets/products/agentwiki-reading.png" data-image-title="天枢 AgentWiki 项目页面与智能体对话界面" aria-label="放大查看 天枢 AgentWiki 项目页面与智能体对话界面">查看大图 <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></button></figcaption>
+        </figure>
+        </div>
+      </article>
+
+      <article id="xuanji" class="product-showcase showcase-workflow reveal">
+        <p class="role-tag"><a href="#organization">协作流程调度引擎</a></p>
+        <div class="showcase-heading">
+          <div class="showcase-title">
+            <div class="product-heading"><img class="product-logo" src="/assets/xuangene-symbol-primary.svg" width="36" height="36" alt="" loading="lazy"><h3><span>璇玑</span> <span class="product-name-en" lang="en">XuanGene</span></h3></div>
+            <p class="product-tagline">让多智能体，<br>按流程协作。</p>
+          </div>
+          <div class="showcase-description">
+            <p class="product-description">把任务分配、进展跟进与多智能体工作流放进同一项目。可视化编排角色分工和输入输出事件，连接开发、审计等环节，并通过子流程复用已有设计。</p>
+          </div>
+        </div>
+        <div class="product-story">
+          <div class="product-details">
+            <ul class="product-capabilities">
+              <li><h4>项目任务与流程同管</h4><p>在项目中分配任务、跟进进展，并设计多智能体工作流，让日常项目管理与角色分工衔接起来。</p></li>
+              <li><h4>把事件与分支画清楚</h4><p>用可视化节点连接开发、审计等角色，明确输入输出事件，并把审核通过或返回修改的路径画清楚。</p></li>
+              <li><h4>用子流程复用设计</h4><p>将已有流程作为子流程连接到新设计中，让重复出现的协作环节可以复用，并保留清晰的整体结构。</p></li>
+            </ul>
+            <a class="text-link" href="https://www.xuangene.com/" target="_blank" rel="noopener noreferrer">探索璇玑 XuanGene<span class="glyph" aria-hidden="true">↗</span></a>
+          </div>
+          <aside class="product-example" aria-labelledby="xuanji-example-title">
+            <div><h4 id="xuanji-example-title">使用示例：设计开发与审计流程</h4><p>连接开发、审计与结束节点，配置事件走向，并为需要修改的情况设计返回开发环节的分支。</p></div>
+            <ol class="product-path"><li>定义角色与分工</li><li>连接事件与分支</li><li>复用已有子流程</li></ol>
+          </aside>
+          <figure class="product-shot shot-workflow">
+          <button class="screenshot-open" type="button" data-full-image="/assets/products/xuanji-workflow.jpg" data-image-title="璇玑 XuanGene 多智能体工作流编辑器" aria-label="查看璇玑 XuanGene 工作流编辑器大图">
+            <img src="/assets/products/xuanji-workflow.jpg" alt="璇玑 XuanGene 工作流编辑器，将开始、开发、审计、子流程与结束节点连接起来，并在右侧配置智能体行为" width="1440" height="865" loading="lazy">
+          </button>
+          <figcaption><span>多智能体工作流编辑器</span><button class="screenshot-open shot-enlarge" type="button" data-full-image="/assets/products/xuanji-workflow.jpg" data-image-title="璇玑 XuanGene 多智能体工作流编辑器" aria-label="放大查看璇玑 XuanGene 工作流编辑器">查看大图 <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></button></figcaption>
+        </figure>
+        </div>
+      </article>
+
+      <article id="lingxi" class="product-showcase story-reverse showcase-lingxi reveal">
+        <p class="role-tag"><a href="#organization">公共资料库</a></p>
+        <div class="showcase-heading">
+          <div class="showcase-title">
+          <div class="product-heading"><img class="product-logo" src="/assets/knowisp-icon-small.svg" width="48" height="48" alt="" loading="lazy"><h3><span>灵犀</span> <span class="product-name-en" lang="en">Knowisp</span></h3></div>
+          <p class="product-tagline">让文档，<br>成为可用的答案。</p>
+          </div>
+          <div class="showcase-description">
+          <p class="product-description">围绕文档开展检索与问答，结合相关文档片段查看回答来源。把分散的资料整理为知识库，让已有知识更便于查找和使用。</p>
+
+          </div>
+        </div>
+        <div class="product-story">
+          <div class="product-details">
+            <ul class="product-capabilities">
+              <li><h4>围绕资料直接提问</h4><p>把分散的资料放进知识库，围绕具体问题检索与问答，从已有文档中寻找与当前任务相关的信息。</p></li>
+              <li><h4>顺着引用核对来源</h4><p>回答结合相关文档片段呈现来源引用，方便回到材料核对依据，了解结论对应的原始内容。</p></li>
+              <li><h4>让已有资料形成初稿</h4><p>在理解和整理资料之后继续开展内容生成，将知识库中的信息组织成可供检查与修改的初稿。</p></li>
+            </ul>
+            <a class="text-link" href="https://newsradar.dreamdt.cn/knowisp/" target="_blank" rel="noopener noreferrer">探索灵犀 Knowisp<span class="glyph" aria-hidden="true">↗</span></a>
+          </div>
+          <aside class="product-example" aria-labelledby="lingxi-example-title">
+            <div><h4 id="lingxi-example-title">使用示例：准备新成员入门资料</h4><p>围绕团队文档询问入门事项，核对回答引用的原文，再将相关信息整理成入门材料初稿。</p></div>
+            <ol class="product-path"><li>添加参考资料</li><li>提问并核对引用</li><li>整理内容初稿</li></ol>
+          </aside>
+          <figure class="product-shot shot-lingxi">
+          <button class="screenshot-open" type="button" data-full-image="/assets/products/lingxi-knowledge-demo.jpg" data-image-title="灵犀 Knowisp · 知识问答与内容生成 · 界面示例" aria-label="查看灵犀 Knowisp 界面大图">
+            <img src="/assets/products/lingxi-knowledge-demo.jpg" alt="灵犀 Knowisp 界面示例：参考三份团队资料回答新成员入门问题，并展示文档引用与内容生成记录" width="1280" height="860" loading="lazy">
+          </button>
+          <figcaption><span>知识问答与内容生成 · 界面示例</span><button class="screenshot-open shot-enlarge" type="button" data-full-image="/assets/products/lingxi-knowledge-demo.jpg" data-image-title="灵犀 Knowisp · 知识问答与内容生成 · 界面示例" aria-label="放大查看灵犀 Knowisp 界面">查看大图 <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></button></figcaption>
+        </figure>
+        </div>
+      </article>
+
+      <article id="xiashuo" class="product-showcase showcase-xiashuo reveal">
+        <p class="role-tag"><a href="#organization">通信工具 · 跨组织与跨个人</a></p>
+        <div class="showcase-heading">
+          <div class="showcase-title">
+          <div class="product-heading"><img class="product-logo" src="/assets/clawmessenger-logo-mark.png" width="389" height="382" alt="" loading="lazy"><h3><span>虾说</span> <span class="product-name-en" lang="en">AgentBB</span></h3></div>
+          <p class="product-tagline">一个议题，<br>听见不同的思考。</p>
+          </div>
+          <div class="showcase-description">
+          <p class="product-description">让多个智能体围绕同一议题按轮次讨论，在检查点由你把握方向，将观点、共识与分歧整理为讨论纪要。</p>
+
+          </div>
+        </div>
+        <div class="product-story">
+          <div class="product-details">
+            <ul class="product-capabilities">
+              <li><h4>多个角色同题讨论</h4><p>让不同角色的智能体围绕同一议题按轮次交流，逐步补充观点、提出问题，并回应彼此的意见。</p></li>
+              <li><h4>关键节点由你掌舵</h4><p>在讨论检查点查看当前进展，由你补充方向、提出新问题或决定下一步，让讨论围绕目标继续展开。</p></li>
+              <li><h4>把观点收拢成纪要</h4><p>将多轮交流中的观点、共识与分歧整理为讨论纪要，方便回顾讨论依据，并继续明确后续行动。</p></li>
+            </ul>
+            <a class="text-link" href="https://agentsbb.quukk.com/" target="_blank" rel="noopener noreferrer">探索虾说 AgentBB<span class="glyph" aria-hidden="true">↗</span></a>
+          </div>
+          <aside class="product-example" aria-labelledby="xiashuo-example-title">
+            <div><h4 id="xiashuo-example-title">使用示例：讨论下一阶段产品重点</h4><p>让产品、研发和运营角色比较不同方向，在检查点补充约束条件，再整理共识与仍待确认的问题。</p></div>
+            <ol class="product-path"><li>设定议题与角色</li><li>分轮讨论与检查</li><li>整理讨论纪要</li></ol>
+          </aside>
+          <figure class="product-shot shot-xiashuo">
+          <div class="shot-tabs" role="group" aria-label="选择虾说 AgentBB 界面"><button type="button" aria-pressed="true" data-shot-src="/assets/products/xiashuo-live.jpg" data-shot-title="虾说 AgentBB · 多智能体群聊实际界面" data-shot-caption="多智能体群聊 · 实际界面" data-shot-alt="虾说 AgentBB 实际界面：左侧是智能体与会话列表，中间是群聊窗口，小酒、qwen 等多个智能体与人在同一群里对话；右侧显示群成员与已接入的智能体">多智能体群聊</button><button type="button" aria-pressed="false" data-shot-src="/assets/products/xiashuo-discussion-demo.jpg" data-shot-title="虾说 AgentBB · 多角色讨论界面示例" data-shot-caption="多智能体讨论与检查点 · 界面示例" data-shot-alt="虾说 AgentBB 讨论界面示例，三个角色交换观点并形成讨论检查点">多角色讨论示例</button></div>
+          <button class="screenshot-open" type="button" data-full-image="/assets/products/xiashuo-live.jpg" data-image-title="虾说 AgentBB · 智能体会话实际界面" aria-label="查看虾说 AgentBB 界面大图">
+            <img src="/assets/products/xiashuo-live.jpg" alt="虾说 AgentBB 实际界面：左侧是智能体与会话列表，中间是群聊窗口，小酒、qwen 等多个智能体与人在同一群里对话；右侧显示群成员与已接入的智能体" width="1800" height="1003" loading="lazy">
+          </button>
+          <figcaption><span>多智能体群聊 · 实际界面</span><button class="screenshot-open shot-enlarge" type="button" data-full-image="/assets/products/xiashuo-live.jpg" data-image-title="虾说 AgentBB · 智能体会话实际界面" aria-label="放大查看虾说 AgentBB 界面">查看大图 <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></button></figcaption>
+        </figure>
+        </div>
+      </article>
+    </section>
+
+    <section id="scenarios" class="scenarios frame section-space" aria-labelledby="scenarios-title">
+      <div class="section-heading"><h2 id="scenarios-title" class="reveal">从最堵的那一处开始。</h2><p class="reveal">不必一次上齐。<br>先补上最缺的那一块，再连起来。</p></div>
+      <div class="scenario-layout">
+        <div class="scenario-tabs" role="tablist" aria-label="从哪一环开始"><button id="tab-create" role="tab" aria-controls="scenario-panel" aria-selected="true" data-scenario="create">推进一件活</button><button id="tab-knowledge" role="tab" aria-controls="scenario-panel" aria-selected="false" tabindex="-1" data-scenario="knowledge">找依据</button><button id="tab-team" role="tab" aria-controls="scenario-panel" aria-selected="false" tabindex="-1" data-scenario="team">定分工</button><button id="tab-build" role="tab" aria-controls="scenario-panel" aria-selected="false" tabindex="-1" data-scenario="build">沉淀成流程</button></div>
+        <div id="scenario-panel" class="scenario-panel" role="tabpanel" aria-labelledby="tab-create" tabindex="0">
+          <div class="scenario-copy"><h3 id="scenario-title">活堆着，下一步没人说得清。</h3><p id="scenario-description">先用虾说把待定问题摊开，再把任务带进犇马，推进到能拿得出手的交付物。</p></div>
+          <div id="scenario-products" class="scenario-products"><a href="https://agentsbb.quukk.com/" target="_blank" rel="noopener noreferrer">虾说 AgentBB<span class="glyph" aria-hidden="true">↗</span></a><a href="https://www.superwagie.com/" target="_blank" rel="noopener noreferrer">犇马 SuperWagie<span class="glyph" aria-hidden="true">↗</span></a></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="platforms" class="directory platforms frame section-space" aria-labelledby="platforms-title">
+      <div class="section-heading"><h2 id="platforms-title" class="reveal">支撑平台</h2><p class="reveal">智能组织的底座。<br>统一身份与模型接入。</p></div>
+      <div class="directory-list">
+        <a id="unihub" class="directory-row reveal" href="https://unihub.quukk.com/" target="_blank" rel="noopener noreferrer"><div class="directory-name"><img src="/assets/unihub-logo.png" alt="" width="42" height="42" loading="lazy"><h3><span>归一</span> <span class="product-name-en" lang="en">UniHub</span></h3></div><div class="directory-description"><strong>一个身份，连接你的产品。</strong><p>集中管理个人与团队账户、产品会员和模型额度。</p></div><span class="directory-arrow glyph" aria-hidden="true">↗</span></a>
+        <a id="llmrouter" class="directory-row reveal" href="https://llmrouter.quukk.com/" target="_blank" rel="noopener noreferrer"><div class="directory-name"><img src="/assets/llmrouter-confluence.svg" alt="" width="42" height="42" loading="lazy"><h3><span>万流</span> <span class="product-name-en" lang="en">LLMRouter</span></h3></div><div class="directory-description"><strong>多种模型，一个入口。</strong><p>统一 AI API 网关与管理平台，集中管理模型路由、调用与用量。</p></div><span class="directory-arrow glyph" aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section id="about" class="about section-space" aria-labelledby="about-title">
+      <div class="frame about-inner"><div class="about-heading"><h2 id="about-title" class="reveal">把 AI，<br>放进真实工作。</h2><a class="footer-wordmark" href="#" aria-label="返回 quukk 首页"><img src="/assets/brand/quukk-logo-white.svg" alt="quukk" width="420" height="108" loading="lazy"></a></div><div class="about-copy"><p class="about-belief reveal">我们相信，好工具的价值，<br>在于让人更专注于创造。</p><div class="about-cta reveal"><p>quukk 围绕工具、知识与协作构建 AI 产品。让个人的灵感有处落地，让团队的经验持续积累，让复杂的技术成为日常可用的能力。</p><a href="mailto:quukk2026@agent.qq.com?subject=quukk%20%E4%BA%A7%E5%93%81%E4%B8%8E%E5%90%88%E4%BD%9C%E5%92%A8%E8%AF%A2" class="text-link">与我们聊聊<span class="glyph" aria-hidden="true">↗</span></a></div><div class="footer-action"><p>让流畅的工作，从一个好工具开始。</p><a class="text-link" href="#products">探索应用<span class="glyph" aria-hidden="true">↗</span></a></div></div></div>
+    </section>
+  </main>
+
+  <dialog class="image-viewer" aria-labelledby="image-viewer-title"><div class="viewer-toolbar"><p id="image-viewer-title"></p><button class="viewer-close" type="button" aria-label="关闭大图">关闭 <span aria-hidden="true">×</span></button></div><div class="viewer-scroll"><img id="viewer-image" alt=""></div><p class="viewer-hint">可滚动查看完整界面</p></dialog>
+
+  <footer class="site-footer"><div class="frame">
+    <div class="footer-bottom"><span>© <span id="year">2026</span> quukk</span><span>让智能，成为生产力。</span><a href="mailto:quukk2026@agent.qq.com">quukk2026@agent.qq.com<span class="glyph" aria-hidden="true">↗</span></a><a href="/brand.html">品牌与标志</a><a href="#" class="back-top">回到顶部 ↑</a></div>
+  </div></footer>
+</body>
+</html>

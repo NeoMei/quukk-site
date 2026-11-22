@@ -1,0 +1,39 @@
+{
+  "schema_version": "1",
+  "id": "xuanji",
+  "category": "application",
+  "name": "XuanGene",
+  "aliases": [
+    "璇玑",
+    "XuanGene"
+  ],
+  "description": "A collaboration tool for designing and orchestrating agent workflows.",
+  "url": "https://www.xuangene.com/",
+  "detail_page": "https://www.quukk.com/en/products/xuanji.html",
+  "capabilities": [
+    {
+      "id": "agent-workflows",
+      "name": "Agent workflows",
+      "status": "public_description"
+    }
+  ],
+  "limits": [
+    "工作流编辑器截图不表示工作流已经成功执行。"
+  ],
+  "access": "external_site",
+  "actions": [],
+  "status": "public_description",
+  "last_verified": "2026-11-14",
+  "evidence": [
+    {
+      "kind": "public_site_copy",
+      "url": "https://www.quukk.com/#xuanji",
+      "note_zh": "官网产品介绍。"
+    },
+    {
+      "kind": "user_provided_product_material",
+      "url": "https://www.quukk.com/#xuanji",
+      "note_zh": "工作流编辑器截图中的离线状态按原样保留。"
+    }
+  ]
+}

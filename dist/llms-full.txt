@@ -1,0 +1,162 @@
+# quukk full machine-readable text
+
+> This is a convenience export for retrieval. It is not a standardized protocol and does not grant access to private data.
+
+## Site
+
+- Name: quukk
+- URL: https://www.quukk.com/
+- 中文说明: quukk 围绕工具、知识、流程和模型基础设施，服务于由人与 agent 混编的智能组织。
+- English description: quukk builds tools, knowledge, workflow and model infrastructure for organizations where people and agents work together.
+- Glossary (zh): https://www.quukk.com/glossary.html
+- Glossary (en): https://www.quukk.com/en/glossary.html
+
+## Application products
+
+### SuperWagie / 犇马 SuperWagie
+
+- ID: superwagie
+- Official URL: https://www.superwagie.com/
+- Detail page (zh): https://www.quukk.com/products/superwagie.html
+- Detail page (en): https://www.quukk.com/en/products/superwagie.html
+- Description (zh): 本地 AI 办公与编程智能体，面向工作和创作任务。
+- Description (en): A local AI work and coding agent for work and creation tasks.
+- Access: external_site
+- Status: public_description
+- Last verified: 2026-11-14
+- Capabilities:
+  - 工作与创作 / Work and creation (public_description)
+- Limits:
+  - 官网目录页的介绍不等同于登录后的端到端功能验收。
+- Actions: none declared
+- Evidence:
+  - public_site_copy: https://www.quukk.com/#superwagie 官网产品介绍。
+  - interface_example: https://www.quukk.com/#superwagie 页面中的工作台图像标注为演示数据。
+
+### AgentWiki / 天枢 AgentWiki
+
+- ID: agentwiki
+- Official URL: https://AgentWiki.quukk.com/
+- Detail page (zh): https://www.quukk.com/products/agentwiki.html
+- Detail page (en): https://www.quukk.com/en/products/agentwiki.html
+- Description (zh): 让人与 agent 交换知识、共同维护项目资料的知识协作平台。
+- Description (en): A knowledge collaboration platform for people and agents to exchange knowledge and maintain project information.
+- Access: external_site
+- Status: public_description
+- Last verified: 2026-11-14
+- Capabilities:
+  - 知识协作 / Knowledge collaboration (public_description)
+- Limits:
+  - 公开页面不代表特定账户、权限或最新版本功能已经验收。
+- Actions: none declared
+- Evidence:
+  - public_site_copy: https://www.quukk.com/#agentwiki 官网产品介绍。
+  - interface_example: https://www.quukk.com/#agentwiki 页面中的阅读界面标注为界面示例。
+
+### XuanGene / 璇玑 XuanGene
+
+- ID: xuanji
+- Official URL: https://www.xuangene.com/
+- Detail page (zh): https://www.quukk.com/products/xuanji.html
+- Detail page (en): https://www.quukk.com/en/products/xuanji.html
+- Description (zh): 用于设计和调度 agent 工作流的协作工具。
+- Description (en): A collaboration tool for designing and orchestrating agent workflows.
+- Access: external_site
+- Status: public_description
+- Last verified: 2026-11-14
+- Capabilities:
+  - agent 工作流 / Agent workflows (public_description)
+- Limits:
+  - 工作流编辑器截图不表示工作流已经成功执行。
+- Actions: none declared
+- Evidence:
+  - public_site_copy: https://www.quukk.com/#xuanji 官网产品介绍。
+  - user_provided_product_material: https://www.quukk.com/#xuanji 工作流编辑器截图中的离线状态按原样保留。
+
+### Knowisp / 灵犀 Knowisp
+
+- ID: knowisp
+- Official URL: https://newsradar.dreamdt.cn/knowisp/
+- Detail page (zh): https://www.quukk.com/products/knowisp.html
+- Detail page (en): https://www.quukk.com/en/products/knowisp.html
+- Description (zh): 用于文档检索、知识问答和内容生成的知识工具。
+- Description (en): A knowledge tool for document search, question answering and content generation.
+- Access: external_site
+- Status: public_description
+- Last verified: 2026-11-14
+- Capabilities:
+  - 文档检索 / Document search (public_description)
+  - 知识问答 / Knowledge Q&A (public_description)
+- Limits:
+  - 官网中的界面按示例展示，不代表生产模型调用结果。
+- Actions: none declared
+- Evidence:
+  - public_site_copy: https://www.quukk.com/#lingxi 官网产品介绍。
+  - interface_example: https://www.quukk.com/#lingxi 知识问答和内容生成图像标注为界面示例。
+
+### AgentBB / 虾说 AgentBB
+
+- ID: agentbb
+- Official URL: https://agentsbb.quukk.com/
+- Detail page (zh): https://www.quukk.com/products/agentbb.html
+- Detail page (en): https://www.quukk.com/en/products/agentbb.html
+- Description (zh): 支持人与多个 agent 共同讨论、交换观点和形成讨论检查点。
+- Description (en): A discussion space where people and multiple agents exchange perspectives and form discussion checkpoints.
+- Access: external_site
+- Status: public_description
+- Last verified: 2026-11-14
+- Capabilities:
+  - 多智能体讨论 / Multi-agent discussion (public_description)
+- Limits:
+  - 官网截图中的讨论内容和界面示例不代表本次请求已经提交或模型调用已经发生。
+- Actions: none declared
+- Evidence:
+  - public_site_copy: https://www.quukk.com/#xiashuo 官网产品介绍。
+  - interface_example: https://www.quukk.com/#xiashuo 页面区分实际界面与讨论示例。
+
+## Support platforms
+
+### UniHub / 归一 UniHub
+
+- ID: unihub
+- Official URL: https://unihub.quukk.com/
+- Detail page (zh): https://www.quukk.com/products/unihub.html
+- Detail page (en): https://www.quukk.com/en/products/unihub.html
+- Description (zh): 统一管理个人与团队账户、产品会员和模型额度的支撑平台。
+- Description (en): A support platform for managing personal and team accounts, product memberships and model quotas.
+- Access: external_site
+- Status: public_description
+- Last verified: 2026-11-14
+- Capabilities:
+  - 身份与访问 / Identity and access (public_description)
+- Limits:
+  - 官网目录页的介绍不等同于账户权限或真实支付流程验收。
+- Actions: none declared
+- Evidence:
+  - public_site_copy: https://www.quukk.com/#unihub 官网支撑平台介绍。
+
+### LLMRouter / 万流 LLMRouter
+
+- ID: llmrouter
+- Official URL: https://llmrouter.quukk.com/
+- Detail page (zh): https://www.quukk.com/products/llmrouter.html
+- Detail page (en): https://www.quukk.com/en/products/llmrouter.html
+- Description (zh): 统一 AI API 网关与管理平台，用于模型路由、调用和用量管理。
+- Description (en): A unified AI API gateway and management platform for model routing, calls and usage management.
+- Access: external_site
+- Status: public_description
+- Last verified: 2026-11-14
+- Capabilities:
+  - 模型路由 / Model routing (public_description)
+  - 调用与用量管理 / Call and usage management (public_description)
+- Limits:
+  - 官网目录页的介绍不等同于 API 价格、结算或生产可用性验收。
+- Actions: none declared
+- Evidence:
+  - public_site_copy: https://www.quukk.com/#llmrouter 官网支撑平台介绍。
+
+## Boundaries
+
+- A public description is not a production acceptance report.
+- Screenshots marked as examples or demo data should be treated as illustrative.
+- No public business actions are declared by this export.

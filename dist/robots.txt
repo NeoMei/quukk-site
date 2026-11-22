@@ -1,0 +1,25 @@
+# Public pages are intentionally crawlable. robots.txt is a crawler preference,
+# not an access-control mechanism; private product data must require authentication.
+User-agent: *
+Allow: /
+
+# Search and user-triggered retrieval bots use the same public surface.
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://www.quukk.com/sitemap.xml

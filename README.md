@@ -49,12 +49,12 @@ python3 -m http.server 4173 --bind 127.0.0.1 --directory dist
 | 应用平台 | 犇马 SuperWagie | https://www.superwagie.com/ | 本地 AI 办公与编程智能体 |
 | 应用平台 | 天枢 AgentWiki | https://AgentWiki.quukk.com/ | 多 Agent 协作的共同大脑 |
 | 应用平台 | 璇玑 XuanGene | 用户提供的产品入口 http://113.249.120.24:3001/cuiqiang/issues 、产品说明与工作流编辑器截图 | 人与智能体项目协作、多智能体工作流设计 |
-| 应用平台 | 灵犀 LingXi | https://newsradar.dreamdt.cn/lingxi/ | 文档检索与知识问答 |
-| 应用平台 | 虾说 ClawMessenger | https://newsradar.dreamdt.cn/claw-web/ | 多 AI 智能体讨论 |
+| 应用平台 | 灵犀 Knowisp | https://newsradar.dreamdt.cn/knowisp/ | 文档检索与知识问答 |
+| 应用平台 | 虾说 AgentBB | https://agentsbb.quukk.com/ | 多 AI 智能体讨论 |
 | 支撑平台 | UniHub | https://unihub.quukk.com/ | 统一身份与账户中心 |
 | 支撑平台 | LLMRouter | https://llmrouter.quukk.com/ | 统一 AI API 网关与管理平台 |
 
-产品中英文名称和官网地址按用户 2026-10-25 的确认统一；五款应用分别为犇马 SuperWagie、天枢 AgentWiki、璇玑 XuanGene、灵犀 LingXi、虾说 ClawMessenger。联系邮箱 `quukk2026@agent.qq.com` 由用户指定。璇玑入口保留用户原始 HTTP 地址。
+产品中英文名称和官网地址按用户 2026-10-25 的确认统一；五款应用分别为犇马 SuperWagie、天枢 AgentWiki、璇玑 XuanGene、灵犀 Knowisp、虾说 AgentBB。联系邮箱 `quukk2026@agent.qq.com` 由用户指定。璇玑入口保留用户原始 HTTP 地址。
 
 ## 界面素材
 
@@ -64,7 +64,7 @@ python3 -m http.server 4173 --bind 127.0.0.1 --directory dist
 - **天枢 AgentWiki**：产品仓库已有的真实知识库阅读验收截图，内容为通用“页面管理”说明，账户为“设计验收”，并非最新版本验收声明。
 - **璇玑 XuanGene**：用户提供的真实工作流编辑器截图，仅保留编辑器区域，去掉浏览器和工作空间侧栏。节点离线状态原样保留，不表示工作流执行成功。
 - **灵犀**：依据用户登录后的真实三栏界面制作静态界面示例，按用户要求加入通用文档、问答引用和内容生成示例。图内、图注及大图标题均标注示例；不是生产模型运行结果。
-- **虾说 ClawMessenger**：默认使用用户切换账号后提供的真实智能体会话界面，截取时避开顶部账号栏。可切换到按真实布局制作的多角色讨论示例，明确标注“界面示例”。未提交讨论话题或发起真实模型调用。
+- **虾说 AgentBB**：默认使用用户切换账号后提供的真实智能体会话界面，截取时避开顶部账号栏。可切换到按真实布局制作的多角色讨论示例，明确标注“界面示例”。未提交讨论话题或发起真实模型调用。
 
 示例源文件与素材说明见 `design/product-refresh/`，不随静态站点部署。只有 `dist/` 的审阅后图片被部署。
 
@@ -84,3 +84,31 @@ python3 -m http.server 4173 --bind 127.0.0.1 --directory dist
 ## 产品层级
 
 依据用户最新定位，SuperWagie、AgentWiki、璇玑、灵犀知识库、虾说为五款重点应用，均使用独立图文展示与同等标题层级。UniHub、LLMRouter归入支撑平台，置于场景之后，使用简明开放目录。主导航分别提供应用平台、应用场景、支撑平台入口。场景推荐只呈现应用平台，未把账户或模型服务混入应用推荐；不承诺跨产品自动集成。
+
+## SEO 静态文件更新（2026-11-08）
+
+`dist/` 已同步本次核查的生产静态文件基线，包括完整的 CSS、JavaScript 与图片素材，并更新中英文首页和品牌页的搜索标题、描述、canonical、hreflang、Open Graph、Twitter Card 与 JSON-LD。结构化数据采用页面已有的品牌、公开邮箱及五款应用信息，首页页脚增加对应语言的品牌页链接。
+
+- `dist/robots.txt`：允许抓取公开站点，并声明 `https://www.quukk.com/sitemap.xml`。
+- `dist/sitemap.xml`：列出 `/`、`/en/`、`/brand.html`、`/en/brand.html` 四个规范 URL 及对应语言版本。
+- 正式发布根目录仍为 `dist/`；部署步骤及验收边界见 `deploy/README.md`。
+
+本次仓库同步完成了静态文件与本地引用核查；搜索收录、排名和流量变化需要发布后通过站长平台及实际数据确认。
+
+## Agent 与大模型入口
+
+面向 agent 的站点索引和产品目录以 `data/agent-products.json` 为源文件，生成到正式静态目录：
+
+- `dist/llms.txt`：简明的人工策展索引；它是社区约定，不是权限控制或训练退出机制。
+- `dist/llms-full.txt`：方便模型批量读取的扩展文本，仍需以页面和证据为准。
+- `dist/agent-manifest.json`：产品、能力、限制、官方入口、证据类型和最后核验日期的机器可读目录。
+- `dist/products/`、`dist/en/products/`：每个产品的中英文 HTML、Markdown 和 JSON 衍生页。
+
+更新产品事实后运行：
+
+```sh
+python3 scripts/build-agent-assets.py
+python3 scripts/verify-agent-friendly-site.py
+```
+
+验证脚本会检查产品目录是否一致、生成文件是否完整、产品页是否含静态事实和 JSON-LD、sitemap 是否覆盖产品页，以及是否残留过时的“四款工具”描述。网站不提供未实现的 API 或 MCP 动作；`actions` 只有在真实业务接口存在并完成认证、授权和审计设计后才可填写。

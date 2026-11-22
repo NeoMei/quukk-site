@@ -1,0 +1,29 @@
+# quukk
+
+> quukk 围绕工具、知识、流程和模型基础设施，服务于由人与 agent 混编的智能组织。
+
+## 机器可读入口
+
+- [agent-manifest.json](https://www.quukk.com/agent-manifest.json): 产品、能力、限制、状态、来源和最后核验日期。
+- [完整文本导出 llms-full.txt](https://www.quukk.com/llms-full.txt): 方便模型读取的完整文本；它不是正式标准。
+- [术语表](https://www.quukk.com/glossary.html): Agentor 与 AgentOrg 的定义。
+
+## 应用平台
+
+- [犇马 SuperWagie](https://www.superwagie.com/): 本地 AI 办公与编程智能体，面向工作和创作任务。 [产品页](https://www.quukk.com/products/superwagie.html) [Markdown](https://www.quukk.com/products/superwagie.md)
+- [天枢 AgentWiki](https://AgentWiki.quukk.com/): 让人与 agent 交换知识、共同维护项目资料的知识协作平台。 [产品页](https://www.quukk.com/products/agentwiki.html) [Markdown](https://www.quukk.com/products/agentwiki.md)
+- [璇玑 XuanGene](https://www.xuangene.com/): 用于设计和调度 agent 工作流的协作工具。 [产品页](https://www.quukk.com/products/xuanji.html) [Markdown](https://www.quukk.com/products/xuanji.md)
+- [灵犀 Knowisp](https://newsradar.dreamdt.cn/knowisp/): 用于文档检索、知识问答和内容生成的知识工具。 [产品页](https://www.quukk.com/products/knowisp.html) [Markdown](https://www.quukk.com/products/knowisp.md)
+- [虾说 AgentBB](https://agentsbb.quukk.com/): 支持人与多个 agent 共同讨论、交换观点和形成讨论检查点。 [产品页](https://www.quukk.com/products/agentbb.html) [Markdown](https://www.quukk.com/products/agentbb.md)
+
+## 支撑平台
+
+- [归一 UniHub](https://unihub.quukk.com/): 统一管理个人与团队账户、产品会员和模型额度的支撑平台。 [产品页](https://www.quukk.com/products/unihub.html) [Markdown](https://www.quukk.com/products/unihub.md)
+- [万流 LLMRouter](https://llmrouter.quukk.com/): 统一 AI API 网关与管理平台，用于模型路由、调用和用量管理。 [产品页](https://www.quukk.com/products/llmrouter.html) [Markdown](https://www.quukk.com/products/llmrouter.md)
+
+## 内容边界
+
+- 产品条目当前记录的是公开介绍，status 为 public_description。
+- 页面中的界面截图可能是演示数据或界面示例，不等同于生产环境能力验收。
+- 本站没有在此清单中声明匿名 API、MCP 工具或可直接执行的业务动作。
+- 每个产品条目的 evidence 和 last_verified 字段用于追溯来源和核验时间。

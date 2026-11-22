@@ -1,0 +1,39 @@
+{
+  "schema_version": "1",
+  "id": "agentwiki",
+  "category": "application",
+  "name": "AgentWiki",
+  "aliases": [
+    "天枢",
+    "AgentWiki"
+  ],
+  "description": "A knowledge collaboration platform for people and agents to exchange knowledge and maintain project information.",
+  "url": "https://AgentWiki.quukk.com/",
+  "detail_page": "https://www.quukk.com/en/products/agentwiki.html",
+  "capabilities": [
+    {
+      "id": "knowledge-collaboration",
+      "name": "Knowledge collaboration",
+      "status": "public_description"
+    }
+  ],
+  "limits": [
+    "公开页面不代表特定账户、权限或最新版本功能已经验收。"
+  ],
+  "access": "external_site",
+  "actions": [],
+  "status": "public_description",
+  "last_verified": "2026-11-14",
+  "evidence": [
+    {
+      "kind": "public_site_copy",
+      "url": "https://www.quukk.com/#agentwiki",
+      "note_zh": "官网产品介绍。"
+    },
+    {
+      "kind": "interface_example",
+      "url": "https://www.quukk.com/#agentwiki",
+      "note_zh": "页面中的阅读界面标注为界面示例。"
+    }
+  ]
+}

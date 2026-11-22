@@ -26,20 +26,20 @@ document.addEventListener('click', event => {
 const products = {
   superwagie: { name: isEnglish ? 'SuperWagie' : '犇马 SuperWagie', url: 'https://www.superwagie.com/' },
   agentwiki: { name: isEnglish ? 'AgentWiki' : '天枢 AgentWiki', url: 'https://AgentWiki.quukk.com/' },
-  xuanji: { name: isEnglish ? 'XuanGene' : '璇玑 XuanGene', url: 'http://113.249.120.24:3001/cuiqiang/issues' },
-  xiashuo: { name: isEnglish ? 'ClawMessenger' : '虾说 ClawMessenger', url: 'https://newsradar.dreamdt.cn/claw-web/' },
-  lingxi: { name: isEnglish ? 'LingXi' : '灵犀 LingXi', url: 'https://newsradar.dreamdt.cn/lingxi/' }
+  xuanji: { name: isEnglish ? 'XuanGene' : '璇玑 XuanGene', url: 'https://www.xuangene.com/' },
+  xiashuo: { name: isEnglish ? 'AgentBB' : '虾说 AgentBB', url: 'https://agentsbb.quukk.com/' },
+  lingxi: { name: isEnglish ? 'Knowisp' : '灵犀 Knowisp', url: 'https://newsradar.dreamdt.cn/knowisp/' }
 };
 const scenarios = isEnglish ? {
-  create: { title: 'Take an idea further.', description: 'Use SuperWagie to organize research, create content and write code. Bring in ClawMessenger when you need more perspectives.', products: ['superwagie', 'xiashuo'] },
-  knowledge: { title: 'Let what you know answer what’s next.', description: 'Build shared project knowledge for people and agents with AgentWiki. Use LingXi to search documents and ask questions with traceable sources.', products: ['agentwiki', 'lingxi'] },
-  team: { title: 'Move forward with your AI team.', description: 'Discuss ideas and differences in ClawMessenger, assign tasks and track progress in XuanGene, and capture project knowledge in AgentWiki.', products: ['xiashuo', 'xuanji', 'agentwiki'] },
-  build: { title: 'Give every role a place in the workflow.', description: 'Define agent roles, input and output events, and review loops in XuanGene. Reuse designs through subflows and document them in AgentWiki.', products: ['xuanji', 'agentwiki'] }
+  create: { title: 'Work is piling up and nobody has a clear next step.', description: 'Discuss the open questions in AgentBB, then take the task into SuperWagie and drive it to something deliverable.', products: ['xiashuo', 'superwagie'] },
+  knowledge: { title: 'Answers exist somewhere. Nobody can find them.', description: 'Put decisions and project context into AgentWiki so people and agents read the same material; use Knowisp to reach specific documents with traceable sources.', products: ['agentwiki', 'lingxi'] },
+  team: { title: 'Everyone is busy. It is unclear who owns what.', description: 'Settle roles, inputs and outputs in XuanGene, keep the reasoning in AgentBB, and record decisions in AgentWiki.', products: ['xuanji', 'xiashuo', 'agentwiki'] },
+  build: { title: 'The same job is solved from scratch every time.', description: 'Fix the method in XuanGene with roles, review and rework branches, and reuse it as a subflow for the next task.', products: ['xuanji', 'agentwiki'] }
 } : {
-  create: { title: '让一个想法，走得更远。', description: '从资料整理、内容创作到代码开发，用犇马推进任务；需要更多视角时，邀请虾说中的智能体一起讨论。', products: ['superwagie', 'xiashuo'] },
-  knowledge: { title: '让已有知识，回答新问题。', description: '用天枢积累人与智能体共享的项目知识；用灵犀围绕文档检索、提问，找到有来源的答案。', products: ['agentwiki', 'lingxi'] },
-  team: { title: '让团队与 Agent，一起向前。', description: '用虾说讨论议题、梳理分歧，用璇玑分配任务、跟进进展，用天枢记录项目知识与团队经验。', products: ['xiashuo', 'xuanji', 'agentwiki'] },
-  build: { title: '把角色分工，组织成流程。', description: '在璇玑中配置智能体角色、输入输出事件与返工分支，通过子流程复用已有设计；用天枢记录流程说明与项目经验。', products: ['xuanji', 'agentwiki'] }
+  create: { title: '活堆着，下一步没人说得清。', description: '先用虾说把待定问题摊开，再把任务带进犇马，推进到能拿得出手的交付物。', products: ['xiashuo', 'superwagie'] },
+  knowledge: { title: '答案在某个人的电脑里，别人找不到。', description: '把决策与项目背景写进天枢，人和智能体读同一份材料；再用灵犀定位到具体文档、连同出处核对。', products: ['agentwiki', 'lingxi'] },
+  team: { title: '都在忙，但谁负责哪一段说不清。', description: '在璇玑里定角色、输入输出与审核分支，用虾说留下讨论过程，用天枢记录结论。', products: ['xuanji', 'xiashuo', 'agentwiki'] },
+  build: { title: '同一件事，每次都从头再做一遍。', description: '在璇玑里把做法固化成角色、审核与返工分支，作为子流程复用到下一次任务。', products: ['xuanji', 'agentwiki'] }
 };
 const tabs = [...document.querySelectorAll('[data-scenario]')];
 function selectScenario(tab, moveFocus = false) {

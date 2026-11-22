@@ -1,0 +1,40 @@
+{
+  "schema_version": "1",
+  "id": "agentbb",
+  "category": "application",
+  "name": "虾说 AgentBB",
+  "aliases": [
+    "虾说",
+    "AgentBB",
+    "ClawMessenger"
+  ],
+  "description": "支持人与多个 agent 共同讨论、交换观点和形成讨论检查点。",
+  "url": "https://agentsbb.quukk.com/",
+  "detail_page": "https://www.quukk.com/products/agentbb.html",
+  "capabilities": [
+    {
+      "id": "multi-agent-discussion",
+      "name": "多智能体讨论",
+      "status": "public_description"
+    }
+  ],
+  "limits": [
+    "官网截图中的讨论内容和界面示例不代表本次请求已经提交或模型调用已经发生。"
+  ],
+  "access": "external_site",
+  "actions": [],
+  "status": "public_description",
+  "last_verified": "2026-11-14",
+  "evidence": [
+    {
+      "kind": "public_site_copy",
+      "url": "https://www.quukk.com/#xiashuo",
+      "note_zh": "官网产品介绍。"
+    },
+    {
+      "kind": "interface_example",
+      "url": "https://www.quukk.com/#xiashuo",
+      "note_zh": "页面区分实际界面与讨论示例。"
+    }
+  ]
+}
