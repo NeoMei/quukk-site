@@ -11,7 +11,7 @@
 
 - 官网中的界面按示例展示，不代表生产模型调用结果。
 
-- **官方产品入口**: https://newsradar.dreamdt.cn/knowisp/
+- **官方产品入口**: https://knowisp.quukk.com/
 - **访问方式**: external_site
 - **证据状态**: public_description
 - **最后核验**: 2026-11-14

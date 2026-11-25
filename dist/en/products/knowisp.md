@@ -11,7 +11,7 @@ A knowledge tool for document search, question answering and content generation.
 
 - 官网中的界面按示例展示，不代表生产模型调用结果。
 
-- **Official product URL**: https://newsradar.dreamdt.cn/knowisp/
+- **Official product URL**: https://knowisp.quukk.com/
 - **Access**: external_site
 - **Evidence status**: public_description
 - **Last verified**: 2026-11-14

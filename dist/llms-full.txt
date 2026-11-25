@@ -76,7 +76,7 @@
 ### Knowisp / 灵犀 Knowisp
 
 - ID: knowisp
-- Official URL: https://newsradar.dreamdt.cn/knowisp/
+- Official URL: https://knowisp.quukk.com/
 - Detail page (zh): https://www.quukk.com/products/knowisp.html
 - Detail page (en): https://www.quukk.com/en/products/knowisp.html
 - Description (zh): 用于文档检索、知识问答和内容生成的知识工具。
