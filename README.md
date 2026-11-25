@@ -49,7 +49,7 @@ python3 -m http.server 4173 --bind 127.0.0.1 --directory dist
 | 应用平台 | 犇马 SuperWagie | https://www.superwagie.com/ | 本地 AI 办公与编程智能体 |
 | 应用平台 | 天枢 AgentWiki | https://AgentWiki.quukk.com/ | 多 Agent 协作的共同大脑 |
 | 应用平台 | 璇玑 XuanGene | 用户提供的产品入口 http://113.249.120.24:3001/cuiqiang/issues 、产品说明与工作流编辑器截图 | 人与智能体项目协作、多智能体工作流设计 |
-| 应用平台 | 灵犀 Knowisp | https://newsradar.dreamdt.cn/knowisp/ | 文档检索与知识问答 |
+| 应用平台 | 灵犀 Knowisp | https://knowisp.quukk.com/ | 文档检索与知识问答 |
 | 应用平台 | 虾说 AgentBB | https://agentsbb.quukk.com/ | 多 AI 智能体讨论 |
 | 支撑平台 | UniHub | https://unihub.quukk.com/ | 统一身份与账户中心 |
 | 支撑平台 | LLMRouter | https://llmrouter.quukk.com/ | 统一 AI API 网关与管理平台 |

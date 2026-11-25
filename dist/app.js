@@ -28,7 +28,7 @@ const products = {
   agentwiki: { name: isEnglish ? 'AgentWiki' : '天枢 AgentWiki', url: 'https://AgentWiki.quukk.com/' },
   xuanji: { name: isEnglish ? 'XuanGene' : '璇玑 XuanGene', url: 'https://www.xuangene.com/' },
   xiashuo: { name: isEnglish ? 'AgentBB' : '虾说 AgentBB', url: 'https://agentsbb.quukk.com/' },
-  lingxi: { name: isEnglish ? 'Knowisp' : '灵犀 Knowisp', url: 'https://newsradar.dreamdt.cn/knowisp/' }
+  lingxi: { name: isEnglish ? 'Knowisp' : '灵犀 Knowisp', url: 'https://knowisp.quukk.com/' }
 };
 const scenarios = isEnglish ? {
   create: { title: 'Work is piling up and nobody has a clear next step.', description: 'Discuss the open questions in AgentBB, then take the task into SuperWagie and drive it to something deliverable.', products: ['xiashuo', 'superwagie'] },

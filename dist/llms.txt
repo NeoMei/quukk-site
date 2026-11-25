@@ -13,7 +13,7 @@
 - [犇马 SuperWagie](https://www.superwagie.com/): 本地 AI 办公与编程智能体，面向工作和创作任务。 [产品页](https://www.quukk.com/products/superwagie.html) [Markdown](https://www.quukk.com/products/superwagie.md)
 - [天枢 AgentWiki](https://AgentWiki.quukk.com/): 让人与 agent 交换知识、共同维护项目资料的知识协作平台。 [产品页](https://www.quukk.com/products/agentwiki.html) [Markdown](https://www.quukk.com/products/agentwiki.md)
 - [璇玑 XuanGene](https://www.xuangene.com/): 用于设计和调度 agent 工作流的协作工具。 [产品页](https://www.quukk.com/products/xuanji.html) [Markdown](https://www.quukk.com/products/xuanji.md)
-- [灵犀 Knowisp](https://newsradar.dreamdt.cn/knowisp/): 用于文档检索、知识问答和内容生成的知识工具。 [产品页](https://www.quukk.com/products/knowisp.html) [Markdown](https://www.quukk.com/products/knowisp.md)
+- [灵犀 Knowisp](https://knowisp.quukk.com/): 用于文档检索、知识问答和内容生成的知识工具。 [产品页](https://www.quukk.com/products/knowisp.html) [Markdown](https://www.quukk.com/products/knowisp.md)
 - [虾说 AgentBB](https://agentsbb.quukk.com/): 支持人与多个 agent 共同讨论、交换观点和形成讨论检查点。 [产品页](https://www.quukk.com/products/agentbb.html) [Markdown](https://www.quukk.com/products/agentbb.md)
 
 ## 支撑平台
